@@ -38,3 +38,19 @@ pip install -r requirements.txt
 ```
 
 Create `.env` file:
+
+## Usage
+
+```bash
+python -m evaluation.run_eval
+```
+
+Results saved to `results/` directory.
+
+## Knowledge Graph Stats
+
+- Entities: 2,727 (raw) → 2,314 (after deduplication)
+- Relations: 2,351
+- Deduplication rate: 15.1% (413 entities merged)
+- Consistency score Cons(G): 0.773
+- Quality functional Q(G): 0.730
