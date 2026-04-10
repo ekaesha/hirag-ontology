@@ -1,0 +1,41 @@
+{
+  "A1_extraction": {
+    "nodes": 2727,
+    "edges": 2351
+  },
+  "A2_typing": {
+    "typed": 2727,
+    "type_distribution": {
+      "Drug": 246,
+      "Condition": 764,
+      "Procedure": 338,
+      "Symptom": 78,
+      "AnatomicalStructure": 221,
+      "DosageRegimen": 198,
+      "LabTest": 434,
+      "Organization": 90,
+      "Other": 358
+    }
+  },
+  "A3_deduplication": {
+    "pairs_found": 603,
+    "entities_before": 2727,
+    "entities_after": 2314,
+    "edges_before": 2351,
+    "edges_after": 2340,
+    "reduction_pct": 15.14
+  },
+  "A4_validation": {
+    "cons_before": 0.8128,
+    "cons_after": 0.8133,
+    "violations_repaired": 0
+  },
+  "A5_reasoning": {
+    "suggestions_found": 2129,
+    "relations_added": 6
+  },
+  "A6_update": {
+    "final_nodes": 2314,
+    "final_edges": 2346
+  }
+}

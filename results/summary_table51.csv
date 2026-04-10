@@ -1,0 +1,5 @@
+System,Comprehensiveness,Empowerment,Diversity,Overall
+Naive RAG,4.85,4.50,5.10,4.85
+HiRAG (baseline),5.55,5.20,4.90,5.40
+HiRAG + Dedup,4.60,4.05,4.60,4.45
+HiRAG-Ontology (Ours),5.55,5.10,5.65,5.60

@@ -1,0 +1,675 @@
+question_id,question,label,mode,answer,comprehensiveness,empowerment,diversity,overall,comment
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,Baseline,semantic_only,"Based on the provided knowledge graph context, the specific treatment protocol for acute lymphoblastic leukemia (Острый лимфобластный лейкоз) in children (Дети) is outlined in terms of its **phases**.
+
+From the graph, the treatment involves a multi-phase chemotherapeutic approach:
+
+1.  **Индукция (Induction):** This is the initial phase of treatment aimed at achieving a complete remission by rapidly eliminating the majority of leukemic cells from the bone marrow and blood.
+2.  **Консолидация (Consolidation):** This phase follows induction and is intended to eliminate any remaining, residual leukemic cells that may not be detectable by standard tests, thereby preventing relapse.
+3.  **Поддерживающая терапия (Maintenance therapy):** This is a longer, less intensive treatment phase designed to prevent the regrowth of any residual leukemic cells over an extended period.
+
+**Additional Context from the Knowledge Graph:**
+*   The protocol is related to guidelines from the **Министерство Здравоохранения Российской Федерации (Ministry of Health of the Russian Federation)**.
+*   The condition is classified under ICD-10 code **C91.0**.
+*   The disease can involve extramedullary sites such as the Central Nervous System (ЦНС) and testes (яички), which implies that the treatment protocol likely includes specific strategies (like intrathecal chemotherapy or radiation) to address these potential sanctuaries, though this detail is not explicitly linked to the treatment entities in the provided graph.
+
+**Limitations of the Provided Information:**
+The knowledge graph does not contain specific details on:
+*   The exact drugs, dosages, or durations used in each phase.
+*   The criteria for risk stratification (standard, high, very high risk) which determines the intensity of therapy.
+*   The role of allogeneic hematopoietic stem cell transplantation.
+*   The use of targeted therapies or immunotherapy.
+*   The management of specific complications mentioned, such as tumor lysis syndrome or асептический остеонекроз (aseptic osteonecrosis).
+
+**Conclusion:**
+According to the structured knowledge provided, the treatment protocol for childhood acute lymphoblastic leukemia consists of three sequential chemotherapy phases: **Induction, Consolidation, and Maintenance therapy**. This aligns with the global standard-of-care approach. For the complete, detailed clinical protocol including specific medications, schedules, and supportive care measures, one must consult the full clinical guidelines referenced by the knowledge graph (presumably from the Russian Ministry of Health).",7,5,6,6,The answer clearly outlines the three-phase treatment structure but lacks actionable details like specific drugs or dosages.
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,Baseline,semantic_only,"Based on the provided knowledge graph context, I can give a specific answer regarding induction therapy for ALL with a BCR-ABL1 mutation, but it is important to clarify the terminology first.
+
+From the knowledge graph:
+1.  **Ph-позитивный ОЛЛ (Philadelphia chromosome-positive ALL)** is diagnosed by tests for *экспрессия мРНК BCR-ABLp210* and *BCR-ABLp190*. This condition is directly associated with the *BCR::ABL1* fusion gene resulting from the translocation t(9;22) (the Philadelphia chromosome).
+2.  There is a clear treatment relation: **ингибиторы тирозинкиназы BCR-ABL (BCR-ABL tyrosine kinase inhibitors - TKIs)** --[treats]--> **Ph-позитивных ОЛЛ**.
+
+Therefore, for **ALL with a BCR-ABL1 mutation (specifically, Ph-positive ALL)**, the induction therapy **includes a BCR-ABL tyrosine kinase inhibitor (TKI)**.
+
+**Important Clarification from the Knowledge Graph:**
+The graph also describes a separate entity: **BCR-ABL1-подобный ОЛЛ (BCR-ABL1-like ALL)**. This is a distinct genetic subtype that is **Ph-negative** (does not have the BCR-ABL1 fusion gene) but has a similar gene expression profile. The graph notes that TKIs can also be used for this subtype (*ТКИ --[treats]--> BCR-ABL1*-подобный ОЛЛ*), likely due to the involvement of other kinase pathways (e.g., ABL1, ABL2, PDGFRB, JAK2).
+
+**Comprehensive Answer:**
+For **Philadelphia chromosome-positive ALL (with the BCR-ABL1 fusion gene)**, standard induction therapy consists of **multi-agent chemotherapy combined with a BCR-ABL tyrosine kinase inhibitor (TKI)** such as imatinib, dasatinib, or ponatinib. The addition of a TKI to chemotherapy is a cornerstone of modern therapy for this subtype.
+
+**Note on BCR-ABL1-like ALL:** If the question refers to **BCR-ABL1-like (Ph-like) ALL**, which is mutationally similar but lacks the canonical BCR-ABL1 fusion, induction therapy may still involve a TKI or a JAK inhibitor based on the specific kinase-activating alteration present (e.g., ABL-class or JAK-STAT pathway mutations). However, the core induction chemotherapy backbone would be similar to other high-risk ALL subtypes.
+
+*The knowledge graph confirms the critical role of TKIs in treating BCR-ABL1-associated ALL but does not provide details on the specific chemotherapy regimens used in induction.*",9,8,9,9,"The answer's main strength is its clear distinction between Ph-positive ALL and BCR-ABL1-like ALL, providing specific TKI examples and explaining different treatment approaches for each subtype."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,Baseline,semantic_only,"На основании предоставленного контекста знаний, в графе отсутствует прямая информация о методах мониторинга минимальной остаточной болезни (МОБ) при остром лимфобластном лейкозе (ОЛЛ).
+
+Из контекста можно сделать следующие выводы, которые имеют отношение к диагностике и классификации ОЛЛ, но не к конкретно мониторингу МОБ:
+
+1.  **Диагностика и классификация:** Острый лимфобластный лейкоз (код МКБ C91.0) является злокачественным заболеванием системы кроветворения, происходящим из клеток-предшественников лимфоидной дифференцировки. Он может поражать костный мозг, лимфоидную ткань, ЦНС (нейролейкемия), яички, кожу и другие органы.
+2.  **Связь с лимфомами:** Существует связь между ОЛЛ и В-клеточными неходжкинскими лимфомами, а также конкретно с первичной медиастинальной В-клеточной лимфомой. В контексте упоминаются генетические перестройки (c-MYC, BCL2, BCL6), характерные для агрессивных лимфом, что указывает на важность молекулярно-генетических исследований в онкогематологии.
+3.  **Общие принципы лечения:** Лечение ОЛЛ включает фазы индукции, консолидации и поддерживающей терапии, целью которых является уничтожение опухолевого клона.
+
+**Отсутствующая информация:**
+В предоставленных данных нет сведений о лабораторных методах, используемых для оценки ответа на лечение на глубоком (молекулярном или иммунологическом) уровне. Для ответа на вопрос о мониторинге МОБ потребовалась бы информация о таких методах, как:
+*   Проточная цитометрия (для обнаружения aberrant иммунофенотипа).
+*   Полимеразная цепная реакция (ПЦР) для определения клональных перестроек генов иммуноглобулинов или Т-клеточных рецепторов, а также специфических хромосомных транслокаций.
+*   Секвенирование нового поколения (NGS).
+
+**Вывод:**
+На основании предоставленного контекста знаний невозможно дать специфический ответ о методах мониторинга минимальной остаточной болезни при ОЛЛ. Граф содержит информацию о сущности заболевания, его классификации,",2,1,3,2,"The main weakness is that the answer explicitly states it cannot provide the requested information about MRD monitoring methods, making it unhelpful for the question asked."
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,Baseline,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific answer to your question about the **standard induction chemotherapy for acute myeloid leukemia (AML)**.
+
+Here is what I can determine from the available information:
+
+1.  **The knowledge graph does not contain a direct entity or relation for ""standard induction chemotherapy for AML.""** The entities related to chemotherapy are:
+    *   `стандартная интенсивная химиотерапия` (standard intensive chemotherapy) - Described as aggressive chemotherapy, but it is specifically **contraindicated for ДС** (likely Down Syndrome) and causes infectious complications.
+    *   `интенсивная индукционная химиотерапия` (intensive induction chemotherapy) - Listed as an entity but has no description or specific relations to AML in this context.
+    *   `цитотоксическая химиотерапия` (cytotoxic chemotherapy) - Described as cell-killing chemotherapy, but its relations are to teratogenic effects and contraception, not to a specific induction regimen.
+    *   `химио-иммунотерапия` (chemo-immunotherapy) - Listed but without specific details.
+
+2.  **The graph focuses on specific, context-dependent scenarios rather than general standard protocols.** The information points to specialized situations:
+    *   Contraindications of standard intensive chemo in certain patients (e.g., Down Syndrome).
+    *   Management of specific complications like leukemic infiltration (diagnosed by an ophthalmologist) or ovarian foci.
+    *   Considerations for MLL-leukemia in pregnancy.
+    *   Dosing details for intensive intrathecal chemotherapy (related to 18 Gy and 24 Gy), which is for central nervous system prophylaxis/treatment, not systemic induction.
+
+**Conclusion:** While the graph confirms that intensive induction chemotherapy is a relevant procedure, it does not specify the drug regimen (e.g., ""7+3"" with cytarabine and an anthracycline) that constitutes the *standard* for AML. To answer your question precisely, information linking a specific chemotherapy protocol (like ""цитарабин + даунорубицин"" / cytarabine + daunorubicin) as the *standard induction for AML* is missing from this knowledge graph extract.",8,7,9,8,"The answer's main strength is its thorough analysis of what the knowledge graph does and does not contain, clearly explaining the limitations of the available data."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,Baseline,semantic_only,"Based on the provided knowledge graph context, I cannot answer your question about the specific treatment differences for acute promyelocytic leukemia (APL) compared to other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on the entity ""acute promyelocytic leukemia"" (APL or ОПЛ in Russian), its characteristics, or its specific treatment protocols. Furthermore, there is no information on standard AML treatment or how subtypes are differentiated therapeutically.
+
+**What I can tell you from the context provided:**
+
+The graph contains general information about leukemia, including:
+*   Leukemia is a malignant blood disease (злокачественное заболевание крови).
+*   It involves tumor cells (опухолевые клетки) and leukemic cells (лейкемические клетки).
+*   Treatment concepts mentioned include anti-tumor drugs (противоопухолевые препараты) that target leukemic cells and a procedure called leukapheresis (лейкоцитаферезы) used to treat ALL (ОЛЛ).
+*   Diagnosis can involve an ophthalmologist (for leukemic infiltration), peripheral blood indicators, and complete blood count.
+
+**Conclusion:** To answer your question accurately, the knowledge graph would need to include specific entities for ""acute promyelocytic leukemia,"" ""all-trans retinoic acid (ATRA),"" ""arsenic trioxide (ATO),"" and the treatment protocols that distinguish it from other AML subtypes, which focus on chemotherapy. This critical therapeutic information is absent from the provided context.",2,3,4,3,"The answer's main weakness is that it fails to provide the requested treatment comparison, instead focusing on what the knowledge graph lacks."
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,Baseline,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific, comprehensive answer regarding the first-line treatment for aggressive non-follicular lymphoma.
+
+Here is what I can determine from the available information:
+
+1.  **The knowledge graph contains information on aggressive lymphomas.** It specifically mentions **""В-клеточная лимфома высокой степени злокачественности""** (High-grade B-cell lymphoma), which is an aggressive type. It is associated with genetic rearrangements involving c-MYC, BCL2, and BCL6.
+
+2.  **The knowledge graph mentions a chemotherapy regimen for non-Hodgkin lymphomas.** It states that **""CHOP""** is related to **""неходжкинских лимфом""** (non-Hodgkin lymphomas). CHOP (Cyclophosphamide, Doxorubicin, Vincristine, Prednisone) is a well-known chemotherapy combination historically used as a backbone for aggressive lymphomas.
+
+3.  **Critical information is missing.** The knowledge graph does **not** specify:
+    *   If CHOP is explicitly indicated as the *first-line* treatment.
+    *   If the modern standard of care, which often involves **CHOP plus the monoclonal antibody Rituximab (R-CHOP)**, is referenced. The graph does not mention Rituximab.
+    *   The specific treatment guidelines for the sub-type ""aggressive non-follicular lymphoma,"" which would include entities like Diffuse Large B-Cell Lymphoma (DLBCL) or the mentioned high-grade B-cell lymphoma.
+    *   Any treatment protocols for other aggressive lymphomas listed, such as lymphoblastic lymphoma.
+
+**Conclusion:**
+While the knowledge graph associates the CHOP chemotherapy regimen with non-Hodgkin lymphomas (which include aggressive types), it lacks the necessary detail to confirm the current, specific first-line treatment. In modern clinical practice, the first-line treatment for the most common aggressive non-follicular lymphoma (Diffuse Large B-Cell Lymphoma) is typically **R-CHOP** (Rituximab plus CHOP). For other aggressive subtypes like lymphoblastic lymphoma, treatment usually involves intensive, multi-agent leukemia-type protocols.
+
+To answer the question accurately, guidelines specifying the exact subtype and the inclusion of targeted therapies like Rituximab are required, which are not present in the provided context.",8,7,9,8,"The answer's main strength is its thorough analysis of what information is present and missing, clearly explaining why it cannot provide a definitive treatment recommendation."
+7,How is Hodgkin lymphoma staged and treated?,Baseline,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific or comprehensive answer regarding the staging and treatment of Hodgkin lymphoma. The knowledge graph contains very limited and non-specific information on this topic.
+
+Here is what I can tell you from the context provided:
+
+*   **Condition Identified:** The knowledge graph confirms the existence of **лимфома Ходжкина (Classical Hodgkin lymphoma)** as an entity.
+*   **Limited Related Information:**
+    *   It is noted as being related to ""первичная медиастинальная В-клеточная крупноклеточная лимфома"" (primary mediastinal large B-cell lymphoma), which is a distinct type of non-Hodgkin lymphoma that can sometimes be considered in differential diagnosis.
+    *   It is also related to an entity abbreviated as ""МСЛЗ,"" though the full meaning is not defined in the context.
+*   **Critical Gaps in Knowledge:** The graph contains **no information** on:
+    1.  **Staging:** There is no mention of staging systems (e.g., Ann Arbor, Cotswolds modifications), criteria (involvement of single vs. multiple lymph node regions, extranodal disease, systemic symptoms), or diagnostic procedures used for staging (e.g., imaging like PET-CT, bone marrow biopsy).
+    2.  **Treatment:** There is no information on treatment modalities for Hodgkin lymphoma. Common treatments like chemotherapy regimens (e.g., ABVD, BEACOPP), radiotherapy, or the role of stem cell transplantation are not mentioned. The graph discusses procedures like **лимфодиссекции (lymph node dissection)** and **лимфаденэктомии (lymphadenectomy)**, but these are primarily associated with solid tumors or specific surgical contexts (e.g., limited by endoscopic surgery) and are not standard primary treatments for Hodgkin lymphoma.
+
+**Conclusion:** To answer the question on how Hodgkin lymphoma is staged and treated, information is needed on established staging systems, the role of imaging and biopsy, and the first-line and salvage therapy protocols, which are not present in the provided knowledge graph context.",2,3,4,3,"The answer's main weakness is that it fails to provide any actual staging or treatment information for Hodgkin lymphoma, instead focusing on what the knowledge graph lacks."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,Baseline,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** regarding the recommended treatment for follicular lymphoma stages III-IV.
+
+The knowledge graph contains detailed information about several lymphoma types and related procedures, including:
+*   **Specific lymphoma subtypes:** B-cell lymphomas of high-grade malignancy, Burkitt's lymphoma, lymphoblastic lymphoma, primary mediastinal B-cell lymphoma, and lymphomatoid granulomatosis.
+*   **Related procedures:** Preventive lymph node dissection (превентивной лимфодиссекции) and lymphadenectomy (лимфаденэктомии).
+*   **General concepts:** Non-Hodgkin's lymphoma (неходжкинская лимфома) and lymph node involvement (вовлеченность лимфоузлов).
+
+However, **follicular lymphoma** is not mentioned as an entity in this knowledge graph excerpt. Therefore, the graph does not contain any relations that specify treatment guidelines, whether for early-stage (I-II) or advanced-stage (III-IV) follicular lymphoma.
+
+**To answer the question comprehensively, information outside this specific graph is required.** Standard clinical guidelines for advanced follicular lymphoma (stages III-IV) typically consider factors such as symptom burden, tumor bulk, and patient fitness. Common first-line treatment approaches may include:
+*   **Anti-CD20 monoclonal antibody therapy** (e.g., rituximab), either alone or in combination.
+*   **Chemoimmunotherapy** regimens (e.g., R-CHOP, R-Bendamustine, R-CVP).
+*   **Radiation therapy** for palliative control of symptomatic sites.
+*   **Active surveillance** for asymptomatic patients with low tumor burden.
+*   **Novel agents** (e.g., lenalidomide with rituximab) or targeted therapies in certain contexts.
+
+**In summary, while the knowledge graph provides valuable data on other lymphoma subtypes and surgical procedures, it lacks the necessary entities and relations to address the treatment of follicular lymphoma.**",8,7,9,8,"The answer's main strength is its clear distinction between what the knowledge graph contains and what standard medical practice recommends, providing both limitations and general treatment approaches."
+9,What systemic therapy is used for adrenocortical carcinoma?,Baseline,semantic_only,"Based on the provided knowledge graph context, the following systemic therapies are indicated for адренокортикальный рак (adrenocortical carcinoma):
+
+1.  **Митотан (Mitotane):** This is a specific adrenolytic agent and is a standard systemic therapy for this condition.
+2.  **Пембролизумаб (Pembrolizumab):** This is an immune checkpoint inhibitor (anti-PD-1 therapy) listed as a treatment option.
+
+**Additional Context from the Knowledge Graph:**
+The graph also broadly associates адренокортикальный рак with the category of **противоопухолевая терапия (antitumor therapy)**, which includes **системная химиотерапия (systemic chemotherapy)** and **противоопухолевые препараты (anti-cancer medications)**. However, the graph does not specify other chemotherapeutic regimens (e.g., etoposide, doxorubicin, cisplatin combined with mitotane) that are commonly used in clinical practice.
+
+**Answer:**
+According to the knowledge graph, the systemic therapies used for adrenocortical carcinoma are **mitotane** and **pembrolizumab**. The context also places this cancer within the general scope of systemic antitumor therapy and chemotherapy, but does not provide further specific drug regimens.",6,7,5,6,The answer correctly identifies two specific therapies but lacks mention of common combination chemotherapy regimens like EDP-M.
+10,How is anal squamous cell carcinoma treated with chemoradiation?,Baseline,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** regarding the treatment of anal squamous cell carcinoma with chemoradiation.  
+
+The knowledge graph contains details about other cancers (e.g., колоректальный рак, рак коры надпочечника, адренокортикальный рак) and some treatment modalities (e.g., системная химиотерапия, дистанционная лучевая терапия опухолей, противоопухолевая терапия), but none of these entities or relations refer to anal cancer or its specific chemoradiation regimen.  
+
+From general clinical knowledge (outside the given knowledge graph), anal squamous cell carcinoma is typically treated with definitive chemoradiation using a combination of radiation therapy and chemotherapy agents such as mitomycin-C and 5-fluorouracil (or capecitabine), sometimes with cisplatin in certain settings. However, this information is **not present** in the provided structured data.  
+
+**Answer based solely on knowledge graph:**  
+The knowledge graph does not contain information on anal squamous cell carcinoma or its treatment with chemoradiation.",8,6,7,7,"The answer's main strength is its clear distinction between knowledge graph limitations and general medical knowledge, though it lacks actionable treatment details."
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, I can give a partial answer regarding the treatment protocol for acute lymphoblastic leukemia (Острый лимфобластный лейкоз) in children.
+
+The knowledge graph specifies that the treatment for this condition involves a multi-phase chemotherapeutic protocol. The key phases of treatment are:
+
+1.  **Индукционная терапия (Induction therapy)**: This is the initial phase aimed at achieving remission.
+2.  **Консолидация (Consolidation therapy)**: This phase follows induction to eliminate any remaining leukemia cells.
+3.  **Поддерживающая терапия (Maintenance therapy)**: This is a longer, less intensive phase to prevent relapse.
+
+The graph also indicates that the protocol addresses specific complications and sites of disease involvement related to Acute Lymphoblastic Leukemia (ALL), such as:
+*   **Опухолевое поражение ЦНС (CNS tumor involvement)**
+*   **Нейролейкемия (Neuroleukemia)**
+*   **Асептический остеонекроз (Aseptic osteonecrosis)** – likely noted as a potential complication of treatment.
+
+**Limitations of the Answer from the Provided Context:**
+The knowledge graph does **not** contain specific details on:
+*   The exact drug regimens, doses, or durations for each phase.
+*   The criteria for risk stratification (standard, high-risk) which determines therapy intensity.
+*   The role of allogeneic hematopoietic stem cell transplantation.
+*   The use of targeted therapies (e.g., for Ph+ ALL).
+*   Supportive care measures.
+*   The specific clinical guidelines from the mentioned ""Министерство Здравоохранения Российской Федерации"" (Ministry of Health of the Russian Federation).
+
+**Conclusion:**
+From the structured knowledge available, the standard treatment protocol for childhood acute lymphoblastic leukemia consists of three main sequential phases: **induction, consolidation, and maintenance chemotherapy**, with special attention to preventing or treating central nervous system involvement. For the complete, detailed protocol including specific medications and algorithms, consultation with the official clinical guidelines from the Ministry of Health of the Russian Federation or other recognized pediatric oncology consortia (e.g., COG, BFM-based protocols) is required.",6,5,7,6,The answer clearly outlines the three main treatment phases but lacks specific actionable details like drug regimens or risk stratification.
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, here is the specific and comprehensive answer regarding induction therapy for ALL with a BCR-ABL1 mutation.
+
+**Primary Induction Therapy:**
+For Philadelphia chromosome-positive (Ph-positive) ALL, which is characterized by the presence of the **BCR::ABL1** gene (resulting from t(9;22)), the standard induction therapy includes a combination of **chemotherapy and a targeted BCR-ABL tyrosine kinase inhibitor (TKI)**.
+
+1.  **Chemotherapy Backbone:** The core induction regimen is a **4-component induction therapy**. According to the knowledge graph, this regimen consists of:
+    *   A **glucocorticoid** (e.g., prednisone, dexamethasone)
+    *   **Vincristine**
+    *   **Anthracyclines** (e.g., daunorubicin)
+    *   **Asparaginase** or its pegylated form, **Pegaspargase**
+
+2.  **Targeted Therapy:** Crucially, an **ингибитор BCR-ABL-тирозинкиназы (BCR-ABL tyrosine kinase inhibitor)** is added concurrently to this chemotherapy backbone. The graph explicitly states that this class of drugs **treats Ph-позитивный ОЛЛ (Ph-positive ALL)**. Examples of such TKIs include imatinib, dasatinib, nilotinib, and ponatinib.
+
+**Additional Considerations from the Knowledge Graph:**
+
+*   **BCR-ABL1-like ALL:** The graph distinguishes between classic **Ph-positive ALL (with the BCR::ABL1 fusion)** and **BCR-ABL1-like ALL** (also known as Ph-like ALL). BCR-ABL1-like ALL has a similar gene expression profile but lacks the BCR::ABL1 fusion. It may involve alterations in genes such as **ABL1, ABL2, JAK2, EPOR, PDGFRB, or CRLF2**.
+    *   Importantly, the graph indicates that **ТКИ (Tyrosine Kinase Inhibitors)** are also a treatment for **BCR-ABL1-подобных ОЛЛ (BCR-ABL1-like ALL)** and specifically for alterations in the **ABL1** gene. This suggests that for a subset of patients diagnosed with BCR-ABL1-like ALL (who are *BCR::ABL1-negative* but have ABL-class fusions), TKI therapy may be incorporated into induction based on the specific genetic lesion.
+
+*   **Epigenetic Therapy:** The graph mentions **эпигенетическая терапия (epigenetic therapy)**, which includes agents like **decitabine, valproic acid, and tretinoin**, as being a **part of индукция ремиссии (induction of remission)**. This is more",9,8,8,9,"The answer provides detailed, specific treatment components including chemotherapy backbone and targeted TKIs, but is slightly incomplete as it cuts off mid-sentence about epigenetic therapy."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** on how minimal residual disease (MRD) is monitored in acute lymphoblastic leukemia (ALL).
+
+The knowledge graph contains detailed information about ALL (Острый лимфобластный лейкоз), including its ICD-10 code (C91.0), relation to specific genetic abnormalities like the Philadelphia chromosome (транслокация t(9;22)), standard phases of therapy (индукция, консолидация, поддерживающая терапия), and potential sites of extramedullary involvement (ЦНС, яички, кожа).
+
+However, the specific methods for monitoring **minimal residual disease (MRD)**—such as multiparameter flow cytometry, polymerase chain reaction (PCR) for antigen receptor gene rearrangements, or next-generation sequencing (NGS)—are not mentioned in any of the extracted relations or entity descriptions.
+
+**In summary, from the given context, I can confirm the relevance of ALL and its treatment structure, but the guidelines excerpt used to build this graph does not contain details on MRD monitoring protocols.**
+
+For a complete clinical answer, you would need to consult current hematology guidelines, which typically specify that MRD is a critical prognostic factor measured at specific time points during and after induction/consolidation therapy using the highly sensitive techniques mentioned above.",2,3,4,3,"The answer's main weakness is that it fails to provide the requested information about MRD monitoring methods, instead focusing on what the knowledge graph lacks."
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, there is no specific information about the standard induction chemotherapy for **acute myeloid leukemia (AML)**.
+
+The knowledge graph contains detailed information about chemotherapy procedures, but they are primarily in the context of treating other conditions:
+
+1.  **Intensive intrathecal chemotherapy** (интенсивная эндолюмбальная химиотерапия) is described with many synonyms (including ""induction chemotherapy"" or ""inductive chemotherapy"" as a translation of *индуктивная химиотерапия*). However, the graph specifies its use for treating **Diffuse Large B-Cell Lymphoma (DLBCL)** and **adrenal cortex cancer**, not AML. It is also noted as a procedure involving a central venous catheter and carrying risks like infectious complications.
+
+2.  **Cytotoxic chemotherapy** (цитотоксическая химиотерапия) is mentioned generally, but its described associations are with teratogenic effects and the need for contraception, not with a specific leukemia type.
+
+3.  The graph discusses **antitumor therapy** (противоопухолевая терапия) in the context of treating **acute lymphoblastic leukemia/lymphoma (ALL/LBL)** and **acute lymphoblastic leukemia (ОЛЛ)**, which is a different disease from acute myeloid leukemia.
+
+**Conclusion from the Knowledge Graph:**
+While the graph contains data on intensive and induction chemotherapy protocols, it does not link any specific chemotherapy regimen to **acute myeloid leukemia (AML)**. The induction therapies mentioned are associated with lymphoproliferative diseases (like ALL and DLBCL) or are described in general terms. Therefore, the standard induction regimen for AML cannot be identified from the given information.
+
+**To answer the clinical question generally:** The standard induction chemotherapy for AML outside this knowledge graph typically involves a regimen known as ""7+3,"" which combines cytarabine (given continuously for 7 days) with an anthracycline drug like daunorubicin or idarubicin (given for 3 days). However, this specific information is **not** present in the provided knowledge graph context.",8,7,9,8,"The answer's main strength is its clear distinction between what the knowledge graph contains and the general medical knowledge, while honestly acknowledging the limitations of the provided context."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific answer to how acute promyelocytic leukemia (APL) is treated differently from other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on ""acute promyelocytic leukemia"" (APL) as a distinct entity. Furthermore, it lacks detailed information on treatment protocols, specific drugs (like all-trans retinoic acid - ATRA, or arsenic trioxide), or the unique pathogenesis of APL that necessitates its distinct management.
+
+**What I can tell you from the context provided:**
+
+The graph contains general information about leukemia (лейкемия), described as a malignant blood disease. It mentions:
+*   **General treatment concepts:** The entity ""противоопухолевой терапии"" (antitumor therapy) is noted to treat ""лейкемические клетки"" (leukemia cells).
+*   **A specific procedure for complications:** ""удаление лейкемического очага в яичнике"" (ovarian leukemia focus removal) is listed, which could be a surgical intervention for an extramedullary lesion.
+*   **Supportive care procedure:** ""лейкоцитаферезы"" (leukapheresis) is noted as a procedure that treats ""ОЛЛ"" (ALL - Acute Lymphoblastic Leukemia), which is used for cytoreduction in cases of extreme leukocytosis, a complication that can also occur in some AML subtypes.
+
+**Conclusion:**
+To answer your question accurately, information on the specific molecular target (PML-RARA fusion gene), the standard use of differentiating agents (ATRA, arsenic trioxide), and the avoidance of certain cytotoxic chemotherapies in APL is required. This level of detail is not present in the provided knowledge graph snippets. You would need to consult specific clinical guidelines for Acute Myeloid Leukemia that detail the subtype-specific management of APL.",2,3,4,3,"The answer's main weakness is that it fails to provide the requested information about APL treatment differences, instead focusing on explaining why it cannot answer."
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, I cannot definitively state the first-line treatment for ""aggressive non-follicular lymphoma.""
+
+Here is what I can determine from the available structured data:
+
+1.  **Related Condition:** The term ""aggressive non-follicular lymphoma"" is not explicitly listed as an entity. However, the graph contains a closely related entity: **""В-клеточная лимфома высокой степени злокачественности""** (High-grade B-cell lymphoma), which is described as an aggressive type of lymphoma. This is likely a key subtype within the category of aggressive lymphomas.
+
+2.  **Lack of Specific Treatment Information:** While the graph links this high-grade B-cell lymphoma to genetic rearrangements (c-MYC, BCL2, BCL6), it does **not** specify a first-line treatment regimen for it.
+
+3.  **General Treatment Context:** The graph mentions **""противоопухолевая терапия""** (antitumor therapy) as a procedure that treats conditions like **""ОЛНЛ""** (which is the Russian abbreviation for Non-Hodgkin Lymphoma, NHL). It also notes that the **""CHOP""** chemotherapy regimen is related to **""неходжкинских лимфом""** (non-Hodgkin lymphomas). Historically, CHOP (cyclophosphamide, doxorubicin, vincristine, prednisone) or its variants have been a backbone for treating aggressive NHL.
+
+4.  **Critical Missing Information:** The knowledge graph does not specify which therapy is ""first-line"" for any aggressive subtype. Modern first-line treatment for aggressive B-cell lymphomas (like Diffuse Large B-Cell Lymphoma, which is mentioned as **""Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)""** and related to NHL) typically involves **R-CHOP** (CHOP plus the monoclonal antibody rituximab). However, this specific combination is **not** present in the provided graph data.
+
+**Conclusion:**
+From the structured knowledge provided, I can identify that aggressive high-grade B-cell lymphomas exist and that general antitumor therapy (including CHOP chemotherapy) is used for non-Hodgkin lymphomas. However, the graph lacks the specific information needed to state the current, evidence-based **first-line treatment** for aggressive non-follicular lymphoma (which is most commonly R-CHOP for the predominant subtype, DLBCL). For a precise treatment recommendation, consultation of current clinical oncology guidelines is required.",8,7,9,8,"The answer's main strength is its thorough analysis of what the knowledge graph contains and explicitly states what it lacks, while correctly identifying R-CHOP as the modern standard despite its absence from the data."
+7,How is Hodgkin lymphoma staged and treated?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the staging and treatment of Hodgkin lymphoma.  
+
+Here is what I can tell you from the available information:  
+
+- The knowledge graph contains information about **non-Hodgkin lymphoma** (неходжкинская лимфома) and several specific lymphoma subtypes (e.g., lymphoblastic lymphoma, Burkitt lymphoma, plasmablastic lymphoma), but **no direct information about Hodgkin lymphoma staging or treatment**.  
+- There is a mention that ""лимфома Ходжкина"" is listed as an ""also known as"" for non-Hodgkin lymphoma in one entity, but this appears to be a labeling inconsistency in the source data, since Hodgkin and non-Hodgkin lymphomas are distinct entities in modern classification.  
+- The graph includes surgical procedures such as **лимфодиссекции** (lymph node dissection) and its role in improving disease-free survival and reducing mortality, but this is not specifically linked to Hodgkin lymphoma.  
+- There is no information on staging systems (e.g., Ann Arbor, Lugano) or treatment modalities (e.g., chemotherapy regimens, radiation, immunotherapy) for Hodgkin lymphoma in the provided context.  
+
+**Conclusion:**  
+The knowledge graph does not contain sufficient information to answer how Hodgkin lymphoma is staged and treated. For accurate clinical information, you would need to consult Hodgkin lymphoma-specific guidelines covering staging criteria (clinical, pathological) and treatment approaches based on stage, histology, and risk factors.",2,3,2,2,The main weakness is that it fails to provide any actual information about Hodgkin lymphoma staging or treatment despite being asked directly.
+8,What treatment is recommended for follicular lymphoma stage III-IV?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about the recommended treatment for follicular lymphoma (FL) stage III-IV.
+
+The knowledge graph contains information about various lymphomas and related procedures, but none of it directly addresses follicular lymphoma or its staging and treatment. Specifically:
+
+*   The graph details several aggressive B-cell lymphomas (e.g., **В-клеточная лимфома высокой степени злокачественности**, **лимфоматоидный гранулематоз**, **плазмобластная лимфома**) and procedures like **лимфодиссекции** (lymph node dissection).
+*   It mentions **неходжкинская лимфома** (non-Hodgkin lymphoma), which is a broad category that includes follicular lymphoma, but the provided relations do not cover treatment guidelines, especially not for specific stages (III-IV).
+*   The information on procedures like **превентивной лимфодиссекции** (preventive lymph node dissection) and **лимфаденэктомии** (lymphadenectomy) is discussed in other contexts (e.g., relation to R0 resection, survival outcomes) and is not linked to follicular lymphoma management.
+
+**Conclusion:** The knowledge graph lacks the necessary data to answer the question. To determine the recommended treatment for follicular lymphoma stage III-IV, one would need clinical guidelines that address first-line therapy options (which may include observation, immunotherapy, chemotherapy, or combined modality approaches), consideration of the patient's symptom burden, tumor bulk, and other prognostic factors.",2,1,1,1,"The main weakness is that the answer provides no actual treatment information for follicular lymphoma stage III-IV, only explaining why the knowledge graph lacks this data."
+9,What systemic therapy is used for adrenocortical carcinoma?,w/o Hybrid Retriever,semantic_only,"На основании предоставленного контекста графа знаний, системной терапией, используемой для лечения адренокортикального рака (злокачественной опухоли коры надпочечников), являются:
+
+1.  **Митотан** — препарат, который напрямую указан как `treats` (лечит) как **адренокортикальный рак**, так и тесно связанное с ним состояние **рак коры надпочечника**.
+2.  **Пембролизумаб** — препарат, который также указан как `treats` (лечит) **адренокортикальный рак**.
+
+**Важные уточнения и ограничения на основе контекста:**
+
+*   Контекст подтверждает, что оба этих препарата являются вариантами системной (лекарственной) терапии для данного заболевания.
+*   В графе знаний **не указаны** конкретные схемы лечения (монотерапия или комбинация), линии терапии или показания для выбора одного препарата над другим.
+*   Упоминаемые в графе знаний процедуры **интенсивная эндолюмбальная химиотерапия** и **тройная интратекальная химиотерапия** связаны с лечением лимфом и лейкозов, но **не** с адренокортикальным раком.
+*   Общая сущность **противоопухолевая терапия** подтверждает, что лечение относится к классу противоопухолевых препаратов, но не добавляет специфических деталей для данного типа рака.
+
+**Ответ:** Системная терапия адренокортикального рака включает применение препаратов **митотан** и **пембролизумаб**. Для определения конкретной схемы лечения, показаний и последовательности назначения необходима консультация онколога и обращение к актуальным клиническим рекомендациям, так как предоставленный контекст графа знаний этой детальной информации не содержит.",8,7,7,8,The answer clearly identifies two specific systemic therapies (mitotane and pembrolizumab) while appropriately noting limitations of the knowledge graph context.
+10,How is anal squamous cell carcinoma treated with chemoradiation?,w/o Hybrid Retriever,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the treatment of anal squamous cell carcinoma with chemoradiation.
+
+**Reason:** The knowledge graph does not contain any information about the condition ""anal squamous cell carcinoma"" (плоскоклеточный рак анального канала), nor does it mention specific treatment modalities like ""chemoradiation"" (химиолучевая терапия) or its application to this type of cancer.
+
+**What I can tell you from the available context:**
+
+The knowledge graph focuses on other oncological conditions and treatments, such as:
+*   **Conditions:** Adrenocortical carcinoma (рак коры надпочечника, адренокортикальный рак), colorectal cancer (колоректальный рак), and certain leukemias (ОЛЛ/ЛБЛ).
+*   **Treatments:** It mentions various anti-tumor therapies (противоопухолевая терапия), including specific procedures like intensive intrathecal chemotherapy (интенсивная эндолюмбальная химиотерапия), drug therapies (митотан, пембролизумаб), and cytostatic/cytotoxic chemotherapy (цитостатические препараты, цитотоксическая химиотерапия).
+*   **General Principle:** The graph confirms that anti-tumor therapy (противоопухолевой терапии) is used to treat oncological diseases (онкологическим заболеванием).
+
+**Conclusion:** To answer your question accurately, information specific to anal squamous cell carcinoma and the evidence-based protocols for chemoradiation in this particular disease site is required. This information is not present in the provided knowledge graph excerpt. You would need to consult clinical guidelines specific to gastrointestinal or anal cancers.",2,3,4,2,The main weakness is that it fails to provide any actual information about the requested treatment despite acknowledging the question's topic.
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, the treatment protocol for acute lymphoblastic leukemia (ALL) in children involves a multi-phase chemotherapy regimen. The graph does not specify a single named protocol (e.g., a specific trial or guideline name), but it outlines the core structural components and some specific agents.
+
+Here is a comprehensive and clinically accurate synthesis of the treatment information from the knowledge graph:
+
+**Core Treatment Phases:**
+The protocol is structured into sequential phases of chemotherapy:
+1.  **Индукция (Induction):** The initial intensive phase aimed at achieving a complete remission by eradicating detectable leukemic cells from the bone marrow and blood.
+2.  **Консолидация (Consolidation/Intensification):** A post-remission phase designed to eliminate any residual, undetectable disease and prevent relapse.
+3.  **Поддерживающая терапия (Maintenance therapy):** A prolonged, less intensive treatment phase to sustain remission over a period of years.
+
+**Additional Therapeutic Modalities:**
+The graph indicates that treatment for ALL extends beyond chemotherapy and includes:
+*   **Медикаментозная терапия (Drug therapy):** Encompasses the chemotherapy phases.
+*   **Немедикаментозная терапия (Non-drug therapy):** This could include procedures like radiation therapy or surgery for complications.
+*   **Обезболивание (Pain management):** Supportive care.
+*   **Медицинская реабилитация (Medical rehabilitation) and Санаторно-курортное лечение (Spa treatment):** Long-term recovery and supportive care.
+*   **Диетотерапия (Diet therapy):** Nutritional support.
+
+**Specific Agents and Considerations (from related entities):**
+*   For **Т-ОЛЛ (T-ALL)**, a subtype, the graph mentions specific drugs: **клофарабин (clofarabine)** and **неларабин (nelarabine)**.
+*   The protocol addresses potential complications like **опухолевое поражение ЦНС (CNS involvement)** and **нейролейкемия (neuroleukemia)**, implying that CNS-directed therapy (e.g., intrathecal chemotherapy) is a critical component.
+*   The ultimate goal of therapy is to target the **опухолевый клон (tumor clone)** of **лейкемические клетки (leukemic cells)**.
+
+**Important Context from the Graph:**
+*   The entity **""Острый лимфобластный лейкоз""** is explicitly **related_to --> Дети (Children)**, confirming the condition's relevance to the pediatric population.
+*   The treatment approach is related to guidelines from the **Министерство Здравоохранения Российской Федерации (Ministry of Health of the Russian Federation)**.
+
+**Conclusion:**
+The standard treatment protocol for childhood ALL is a risk-adapted",8,7,9,8,"The answer provides a well-structured synthesis of treatment phases, modalities, and specific considerations, though it lacks detailed chemotherapy regimens and risk stratification."
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I can provide the following information regarding induction therapy for Acute Lymphoblastic Leukemia (ALL) with a BCR-ABL1 mutation.
+
+**Primary Induction Approach:** The standard initial (induction) therapy for this condition is **systemic induction therapy** (системной индукционной терапии). This is a broad category of intensive chemotherapy designed to achieve a complete remission by rapidly eliminating leukemic cells from the bone marrow and blood.
+
+**Critical Targeted Component:** For **Ph-positive ALL** (which is defined by the presence of the BCR-ABL1 fusion gene, often via the Philadelphia chromosome t(9;22)), the induction regimen must include a **BCR-ABL tyrosine kinase inhibitor (TKI)** (ингибиторы тирозинкиназы BCR-ABL). The knowledge graph explicitly states that this class of drugs ""treats Ph-positive ALL.""
+
+Therefore, the modern standard induction therapy for BCR-ABL1-positive ALL is **systemic induction chemotherapy combined with a BCR-ABL tyrosine kinase inhibitor** (e.g., imatinib, dasatinib, ponatinib).
+
+**Additional Context from the Knowledge Graph:**
+*   The diagnosis of the BCR-ABL1 mutation is confirmed by **RT-PCR** (ОТ-ПЦР).
+*   Resistance to first-generation TKIs like imatinib can be assessed by testing the **BCR-ABL mutational status** (мутационный статус BCR::ABL).
+*   The graph distinguishes classic BCR-ABL1-positive ALL from **""BCR-ABL1-like"" or ""Ph-like"" ALL** (BCR::ABL1-подобный, BCR-ABL1-подобных ОЛЛ). This is a genetically distinct subgroup that has a similar gene expression profile but lacks the BCR-ABL1 translocation. It is associated with alterations in genes like *CRLF2*, *JAK2*, *ABL1*, *ABL2*, *EPOR*, and *PDGFRB*.
+*   Notably, the graph indicates that **TKIs are also used to treat BCR-ABL1*-like ALL**, suggesting that some patients in this subgroup with activating mutations in kinase pathways (e.g., involving ABL1, ABL2, PDGFRB) may benefit from TKI therapy added to induction chemotherapy.
+
+**Limitations of the Provided Context:**
+The knowledge graph does not specify the exact chemotherapy drug combinations (e.g., hyper-CVAD, Berlin-Frankfurt-Münster-based regimens) that constitute ""systemic induction therapy."" It also does not name specific tyrosine kinase inhibitors or detail the exact sequence and duration of treatment phases.
+
+**In summary, from the knowledge graph, the induction therapy for ALL with a BCR-ABL1 mutation is systemic induction chemotherapy augmented",8,7,9,8,"The answer provides comprehensive and varied information but lacks specific chemotherapy regimen details, limiting its full actionability."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,w/o Deduplication,hybrid_rrf,"Based on the knowledge graph provided, the monitoring of minimal residual disease (MRD) in acute lymphoblastic leukemia (ALL) involves specific diagnostic methods. The graph does not explicitly link MRD monitoring to ALL in a single statement, but by combining the entities and relations, we can construct a comprehensive answer.
+
+Here is how MRD is monitored in ALL, according to the knowledge graph:
+
+**Primary Diagnostic Methods for MRD:**
+The graph indicates that **Минимальная остаточная болезнь (Minimal Residual Disease)** is diagnosed by several highly sensitive techniques:
+1.  **Проточная цитофлуориметрия / проточная цитометрия (Flow cytometry):** This method uses antibodies to detect abnormal immunophenotypes on leukemia cells.
+2.  **Полимеразная цепная реакция (ПЦР) / количественная ПЦР (Polymerase chain reaction, PCR / quantitative PCR):** This molecular method detects specific genetic rearrangements (e.g., immunoglobulin or T-cell receptor gene rearrangements) or fusion transcripts (like *BCR-ABL1*) at very low levels.
+3.  **Иммунофенотипирование (Immunophenotyping):** This is closely related to flow cytometry and is explicitly listed as a diagnostic method for MRD.
+4.  **Световая микроскопия (Light microscopy):** While included, this conventional method is not sensitive enough for true MRD assessment and is typically used for initial diagnosis and assessment of morphological remission.
+
+**Key Sample Required:**
+The diagnosis of MRD requires a sample obtained via **пункция костного мозга (bone marrow aspiration)**, as this is the primary disease site.
+
+**Important Contraindications for MRD Assessment:**
+The graph specifies that **стандартного цитогенетического исследования (standard cytogenetic study)** and **метод FISH (FISH method)** are **contraindicated_for** MRD assessment. This is clinically accurate because these techniques lack the sensitivity required to detect the very low levels of disease (typically below 0.01%) that define MRD.
+
+**Clinical Context from the Graph:**
+*   MRD is a critical condition (**Минимальная остаточная болезнь**) related to **Острые лимфобластные лейкозы (Acute lymphoblastic leukemias)**.
+*   The treatment of **Острый лимфобластный лейкоз (ALL)** is structured into phases (индукция, консолидация, поддерживающая терапия), and MRD monitoring is a key factor in guiding the intensity and choice of therapy during these phases, especially in assessing response after induction/consolidation.
+*   The detection of MRD is a major prognostic factor and is directly linked to the risk of **рецидив (relapse)**.
+
+**Conclusion:**
+In summary,",9,8,9,9,"The answer's main strength is its detailed breakdown of specific MRD monitoring methods, including both appropriate techniques and contraindicated ones, with clear clinical context."
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, the standard induction chemotherapy for acute myeloid leukemia (ОМЛ) is not described with a single, specific drug regimen name (like ""7+3""). However, the graph details several key components and principles of induction therapy for AML.
+
+Here is a comprehensive answer synthesized from the relevant relations in the knowledge graph:
+
+**Standard induction therapy for AML aims to achieve complete remission by rapidly eliminating leukemic cells.** According to the graph, this involves:
+
+1.  **Core Treatment Approach:** The primary procedure is **индукционная терапия (induction therapy)** or **курс индукции (induction course)**, which is a form of **полихимиотерапия (polychemotherapy)**.
+2.  **Key Drug Classes:** The chemotherapeutic agents most strongly associated with treating AML in the induction phase are:
+    *   **Антрациклины (Anthracyclines):** A cornerstone class of drugs.
+    *   **Цитарабин (Cytarabine):** Another fundamental drug used in induction.
+    *   **Этопозид (Etoposide):** Also listed as a treatment for AML, potentially used in certain regimens or risk groups.
+3.  **Additional Considerations:**
+    *   The graph notes that **интенсивная индукционная химиотерапия (intensive induction chemotherapy)** is a relevant procedure, highlighting that standard induction is typically intensive.
+    *   For specific subgroups, such as patients with **миелодиспластический синдром (MDS)**-related AML or those unsuitable for intensive therapy, alternatives like **децитабин (decitabine)** or **химиотерапия сниженной интенсивности (reduced-intensity chemotherapy)** are mentioned.
+    *   The drug **венетоклакс (venetoclax)** is also listed as a treatment for AML, which in modern practice is often combined with hypomethylating agents (like decitabine) or low-dose cytarabine for patients unfit for intensive induction, though the graph does not specify these combinations.
+
+**Important Note from the Knowledge Graph:** The context does not specify the exact combinations, dosages, or schedules (e.g., the classic ""7+3"" regimen of cytarabine for 7 days with an anthracycline for 3 days). It provides the essential building blocks but not the definitive protocol.
+
+**Summary:** From the knowledge graph, the standard induction chemotherapy for AML is based on **intensive polychemotherapy (индукционная терапия)** combining **цитарабин** and **антрациклины**, with **этопозид** as a potential additional agent. For non-intensive candidates, **децитабин** or **венетоклакс**-based therapies are relevant options. For precise, protocol-driven regimens, consultation with detailed clinical guidelines is necessary.",8,7,9,8,"The answer's main strength is its thorough coverage of drug classes, treatment principles, and patient-specific considerations while clearly acknowledging knowledge limitations."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer on how acute promyelocytic leukemia (APL) is treated differently from other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on the entity ""острый промиелоцитарный лейкоз"" (acute promyelocytic leukemia) or its specific treatments. The information is focused on general **Острые миелоидные лейкозы (ОМЛ / AML)** and **Острые лимфобластные лейкозы (ОЛЛ / ALL)**.
+
+**What I can tell you from the context about general AML treatment:**
+
+The graph indicates that ОМЛ (AML) is treated with a range of therapies, including:
+*   **Индукционная терапия / Индукция ремиссии** (Induction therapy / Remission induction)
+*   **Полихимиотерапия** (Polychemotherapy)
+*   Specific drugs like **цитарабин** (cytarabine), **антрациклины** (anthracyclines), and **этопозид** (etoposide).
+*   **Консолидационная терапия** (Consolidation therapy)
+*   **Аллогенная трансплантация гемопоэтических стволовых клеток** (Allogeneic hematopoietic stem cell transplantation)
+*   Other options like **венетоклакс** (venetoclax), **децитабин** (decitabine), and **химиотерапия сниженной интенсивности** (reduced-intensity chemotherapy).
+
+**Conclusion:** APL is a distinct genetic and clinical subtype of AML (often associated with the t(15;17) translocation and PML-RARA fusion gene) known for its unique first-line treatment with **all-trans retinoic acid (ATRA)** and **arsenic trioxide (ATO)**, which target the underlying molecular pathology. This specific, differentiating treatment information is not present in the provided knowledge graph.
+
+To answer your question accurately, the knowledge graph would need to include entities and relations for APL and its specific, targeted therapies.",8,7,9,8,The answer's main strength is its transparent explanation of knowledge limitations while providing relevant general AML treatment information.
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I cannot definitively state the first-line treatment for ""aggressive non-follicular lymphoma.""
+
+Here is what I can determine from the available information:
+
+1.  **Relevant Condition:** The knowledge graph contains detailed information on **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)**, which is the Russian term for **Diffuse Large B-Cell Lymphoma (DLBCL)**. This is the most common type of aggressive non-Hodgkin lymphoma (non-follicular).
+
+2.  **Lack of Specific First-Line Treatment Data:** While the graph extensively details subtypes, causes, and diagnostic methods for DLBCL, it does **not** explicitly list a first-line treatment regimen for it. The graph mentions treatments for other conditions (e.g., Острые лимфобластные лейкозы/Acute Lymphoblastic Leukemia), but not for DLBCL.
+
+3.  **Indirect Clues:**
+    *   The entity ""неходжкинских лимфом"" (non-Hodgkin lymphomas) is **related_to** ""CHOP."" Historically, CHOP (cyclophosphamide, doxorubicin, vincristine, prednisone) chemotherapy was a cornerstone of treatment.
+    *   The entity ""полихимиотерапия"" (polychemotherapy) is described, and its complications are listed, but it is not directly linked as a treatment for DLBCL in this graph.
+    *   Modern standard first-line care for DLBCL typically involves **R-CHOP** (rituximab plus CHOP), but the graph does not mention rituximab or the R-CHOP combination.
+
+**Conclusion:** The knowledge graph context does not contain sufficient information to answer the question about first-line treatment for aggressive non-follicular lymphoma (specifically DLBCL). It confirms DLBCL as a major entity but lacks the specific treatment relations needed.
+
+**To be comprehensive, from general clinical knowledge (outside the provided graph):** The first-line treatment for most patients with diffuse large B-cell lymphoma (DLBCL) is **immunochemotherapy with R-CHOP** (rituximab, cyclophosphamide, doxorubicin, vincristine, and prednisone). Treatment may be adjusted based on specific patient factors, disease stage, and molecular subtypes (some of which, like Double-Expressor Lymphoma, are mentioned in the graph).",8,7,9,8,"The answer's main strength is its transparent distinction between knowledge graph limitations and general medical knowledge, providing both context and correct treatment information."
+7,How is Hodgkin lymphoma staged and treated?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer your question about the staging and treatment of Hodgkin lymphoma. The knowledge graph contains very limited information on this specific condition.
+
+Here is what I can tell you from the available data:
+
+*   **Entity Mentioned:** The knowledge graph confirms the existence of ""лимфома Ходжкина"" (Hodgkin lymphoma) as a condition, described as ""Classical Hodgkin lymphoma.""
+*   **Limited Relations:** It only shows two relationships for Hodgkin lymphoma:
+    1.  It is **related to** ""первичная медиастинальная В-клеточная крупноклеточная лимфома"" (primary mediastinal large B-cell lymphoma), which is a subtype of diffuse large B-cell lymphoma (DLBCL).
+    2.  It is **related to** ""МСЛЗ"" (which likely stands for ""Медицинский стандарт лечения заболеваний"" or a similar regulatory/guideline body).
+
+**Missing Information:** The graph contains **no information** on:
+*   The staging systems used for Hodgkin lymphoma (e.g., Ann Arbor, Cotswolds modifications).
+*   Any diagnostic criteria or tests specific to Hodgkin lymphoma staging.
+*   Any treatment modalities (e.g., chemotherapy regimens like ABVD, BEACOPP, radiation therapy, immunotherapy, stem cell transplant).
+
+**Conclusion:** To answer your question accurately, I would need access to clinical guidelines or a knowledge graph that includes detailed information on the diagnostic workup, staging criteria, and treatment protocols for Hodgkin lymphoma. The current context is focused primarily on subtypes of non-Hodgkin lymphomas (like DLBCL) and acute lymphoblastic leukemias.",2,3,2,2,"The answer's main weakness is that it fails to provide any actual information about Hodgkin lymphoma staging or treatment, instead focusing on what it cannot answer."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I cannot give a specific treatment recommendation for follicular lymphoma stage III-IV.
+
+**Here is what I can determine from the available information:**
+
+1.  **No Direct Information:** The knowledge graph does not contain a specific entity for ""follicular lymphoma"" (фолликулярная лимфома). Therefore, there are no direct relations describing its recommended treatment.
+
+2.  **Related Information on Lymphoma Treatment:** The graph contains information about other lymphomas and general treatment concepts:
+    *   For **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)** (Diffuse Large B-cell Lymphoma), which is a different type of non-Hodgkin lymphoma, the graph details subtypes and associated factors (e.g., viruses, genetic markers like TP53, c-MYC, BCL2) but does not list specific treatment regimens.
+    *   The graph mentions **CHOP** in relation to ""неходжкинских лимфом"" (non-Hodgkin lymphomas), which is a historical and foundational chemotherapy regimen (Cyclophosphamide, Doxorubicin, Vincristine, Prednisone) used for various aggressive B-cell lymphomas, including some cases of follicular lymphoma. However, this is not a specific or current recommendation for stage III-IV follicular lymphoma.
+    *   The entity **лечение (treatment)** is broadly connected to modalities like Медикаментозная терапия (Drug therapy), Немедикаментозная терапия (Non-drug therapy), and others, but these are generic categories, not specific protocols.
+
+**Conclusion:** The knowledge graph lacks the necessary details to answer your question. The treatment for follicular lymphoma stage III-IV is complex and depends on numerous factors including symptom burden, tumor growth rate, patient age, and comorbidities. Modern management often involves a range of options such as **observation (for asymptomatic cases), immunotherapy (e.g., rituximab), chemotherapy combinations, radioimmunotherapy, and targeted therapies (e.g., PI3K inhibitors, EZH2 inhibitors).** For a definitive recommendation, you would need to consult specific clinical guidelines for follicular lymphoma.",8,7,9,8,The answer's main strength is its clear explanation of knowledge limitations while providing relevant context and modern treatment options.
+9,What systemic therapy is used for adrenocortical carcinoma?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph, systemic therapy for adrenocortical carcinoma (АКР / адренокортикальный рак) includes several chemotherapy regimens and specific drugs.
+
+The primary systemic treatments identified are:
+
+1.  **Chemotherapy Regimens:**
+    *   **EP+M:** Etoposide + Cisplatin + Mitotane
+    *   **EC+M:** Etoposide + Doxorubicin (also known as Adriamycin) + Cisplatin + Mitotane
+    *   **EDP+M:** Etoposide + Doxorubicin + Cisplatin + Mitotane (this is a commonly referenced first-line regimen)
+    *   **ARAR0332:** This refers to a specific clinical trial protocol, which includes a combination chemotherapy regimen.
+
+2.  **Key Drugs and Drug Classes:**
+    *   **Mitotane (митотан):** This is a cornerstone drug specifically for adrenocortical carcinoma, used both in combination regimens and as monotherapy. It has an adrenolytic effect.
+    *   **Cytotoxic Chemotherapy Agents:**
+        *   **Etoposide (этопозид)**
+        *   **Doxorubicin (доксорубицин)** – an anthracycline (антрациклины)
+        *   **Cisplatin (цисплатин)** and **Carboplatin (карбоплатин)** – classified as platinum-based drugs (препаратам платины)
+    *   **Other Chemotherapy Agents** (potentially used in later lines or specific protocols):
+        *   **Gemcitabine (гемцитабина)**
+        *   **Capecitabine (капецитабина)**
+        *   **Temozolomide (темозоломида)**
+    *   **Immunotherapy:**
+        *   **Pembrolizumab (пембролизумаб)** is indicated for the treatment of адренокортикальный рак.
+
+**Important Context from the Knowledge Graph:**
+*   The graph lists **системная химиотерапия** (systemic chemotherapy) and **химиотерапия** as procedures that treat АКР.
+*   The regimens **EP+M**, **EC+M**, and **EDP+M** are explicitly linked as treatments for АКР.
+*   The graph notes that **антрациклины** (anthracyclines, like doxorubicin) can be contraindicated for АКР, which is a critical consideration for treatment selection and highlights the importance of regimen-specific guidelines.
+*   Treatment is often administered in the context of **прогрессирование** (progression), **рецидив** (recurrence), or **метастаз** (metastasis).
+
+**Summary:**
+Systemic therapy for adrenocortical carcinoma is primarily based on",9,8,9,9,"The answer provides a detailed breakdown of chemotherapy regimens, key drugs, and important clinical context, making it highly informative for understanding treatment options."
+10,How is anal squamous cell carcinoma treated with chemoradiation?,w/o Deduplication,hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer the question about the treatment of **anal squamous cell carcinoma** with chemoradiation.
+
+**Reason:** The knowledge graph does not contain any information on ""anal squamous cell carcinoma,"" its treatment, or the use of chemoradiation. The entities and relations in the graph are focused on different conditions, specifically:
+*   Adrenocortical carcinoma (АКР / адренокортикальный рак)
+*   Acute lymphoblastic leukemia (Острые лимфобластные лейкозы)
+*   Related lymphoma and recurrence information
+
+The graph details treatments like surgery, chemotherapy (e.g., mitotane, EDP regimen), and targeted therapies for adrenal cancers, as well as various chemotherapy protocols and treatments for relapse in leukemias. There is no mention of squamous cell carcinoma of the anus or the specific combined modality therapy of chemoradiation.
+
+**Conclusion:** To answer your question, information outside the provided knowledge graph is required, specifically from clinical guidelines covering gastrointestinal or anal cancers.",8,7,6,7,"The answer's main strength is its clear and honest acknowledgment of knowledge limitations, preventing misinformation."
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, the specific treatment protocol for acute lymphoblastic leukemia (ALL) in children is not detailed. However, the graph allows for a structured, clinically accurate summary of the general treatment framework and related considerations for pediatric ALL.
+
+Here is what can be concluded from the knowledge graph:
+
+**General Treatment Framework for Acute Lymphoblastic Leukemia:**
+The treatment for ALL is structured into distinct phases, which is a standard approach in clinical guidelines. The entities and relations indicate the following components:
+1.  **Индукционная терапия (Induction Therapy):** This is the initial intensive phase aimed at achieving remission by rapidly eliminating detectable leukemic cells. It is explicitly listed as a treatment (`treats`) for ""Острый лимфобластный лейкоз"" (Acute lymphoblastic leukemia).
+2.  **Консолидация (Consolidation Therapy):** This phase follows induction and is designed to eliminate any residual disease and prevent relapse. It is also listed as a treatment (`treats`) for the condition.
+3.  **Поддерживающая терапия (Maintenance Therapy):** This is a longer, less intensive phase aimed at preventing relapse over time. The graph confirms it as both a part of (`part_of`) the overall treatment for ALL and a specific treatment (`treats`).
+
+**Specific Context for Children:**
+The knowledge graph explicitly links ""Острый лимфобластный лейкоз"" (Acute lymphoblastic leukemia) to ""Дети"" (Children) via a `related_to` relation. This confirms that the condition and, by extension, the treatment framework described above, applies to the pediatric population.
+
+**Additional Supportive and Related Treatments:**
+The graph lists several other therapeutic and supportive measures that are part of comprehensive care for ALL (under the broader entity ""Острые лимфобластные лейкозы""), which would include children:
+*   **Медикаментозная терапия (Drug Therapy):** This is a broad category that encompasses the chemotherapy protocols used in the phases above.
+*   **Профилактика и лечение осложнений:** This includes:
+    *   **Обезболивание (Pain Management):** Listed as a treatment (`treats`).
+    *   Management of specific complications like **опухолевое поражение ЦНС** (CNS tumor involvement) and **нейролейкемия** (neuroleukemia), which are noted as parts (`part_of`) of the disease course.
+*   **Реабилитация и последующее наблюдение:**
+    *   **Медицинская реабилитация (Medical Rehabilitation):** Listed as a treatment (`treats`).
+    *   **Диспансерное наблюдение (Dispensary Observation/Follow-up):** Listed as `related_to` the condition, indicating long-term monitoring after",7,5,8,7,"The answer provides a well-structured overview of treatment phases and supportive care but lacks specific actionable details like drug names, dosages, or duration."
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, here is the answer to your question:
+
+**For BCR-ABL1-positive ALL (Ph+ ALL), the induction therapy includes a combination of systemic chemotherapy and a targeted BCR-ABL tyrosine kinase inhibitor (TKI).**
+
+Here is a more detailed breakdown from the knowledge graph:
+
+1.  **Systemic Induction Chemotherapy:** The standard backbone for ALL induction is a **4-component induction therapy** (four-drug induction regimen). According to the graph, this regimen includes:
+    *   A glucocorticoid (e.g., prednisone, dexamethasone)
+    *   Vincristine
+    *   An anthracycline (e.g., daunorubicin)
+    *   Asparaginase or its pegylated form (pegaspargase)
+    This regimen is indicated for treating **ОЛЛ** (Acute Lymphoblastic Leukemia).
+
+2.  **Targeted Therapy:** Crucially, for the subset of ALL with the **BCR::ABL1** fusion gene (Philadelphia chromosome-positive ALL), the graph specifies that **ингибитор BCR-ABL-тирозинкиназы** (BCR-ABL tyrosine kinase inhibitor) is used to treat **Ph-позитивный ОЛЛ**. Furthermore, it states that **ТКИ** (tyrosine kinase inhibitors) treat both **BCR-ABL1-подобных ОЛЛ** (BCR-ABL1-like ALL) and rearrangements involving the **ABL1** gene.
+
+**Important Distinction from the Knowledge Graph:**
+The graph differentiates between:
+*   **BCR::ABL1-positive ALL:** Directly associated with the Philadelphia chromosome and the BCR::ABL1 fusion gene.
+*   **BCR-ABL1-like ALL (BCR-ABL1-подобных ОЛЛ):** A distinct genetic subtype that has a gene expression profile similar to BCR-ABL1-positive ALL but lacks the BCR::ABL1 fusion. It involves alterations in genes like **CRLF2, ABL1, ABL2, JAK2, EPOR, PDGFRB**. Notably, **TKIs are also indicated for this subtype** due to the involvement of kinase pathways.
+
+**Conclusion:**
+For **ALL with a confirmed BCR-ABL1 mutation (Ph+ ALL)**, modern induction therapy is **not chemotherapy alone**. The standard of care is **combined modality induction** consisting of:
+*   **A 4-drug chemotherapy regimen** (glucocorticoid, vincristine, anthracycline, asparaginase).
+*   **Concurrent administration of a BCR-ABL tyrosine kinase inhibitor** (e.g., imatinib, dasatinib, ponatinib).
+
+*Note: The knowledge graph does not specify the exact TKI drug choice, dosing, or duration within the",9,8,9,9,The answer provides a detailed breakdown of both chemotherapy and targeted therapy components while correctly distinguishing between BCR-ABL1-positive and BCR-ABL1-like ALL subtypes.
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph, the monitoring of minimal residual disease (MRD) in acute lymphoblastic leukemia (ALL) involves specific diagnostic techniques. The graph does not explicitly link MRD monitoring to ALL in a single relation, but by combining entities and relations, the following clinical answer can be constructed.
+
+**Methods for Monitoring MRD in ALL:**
+
+1.  **Immunophenotyping by Flow Cytometry:** The graph states that ""минимальной остаточной болезни"" (minimal residual disease) is diagnosed by ""иммунофенотипирование"" (immunophenotyping) and ""проточной цитометрии"" (flow cytometry). This is a primary method for detecting MRD by identifying leukemia-specific cell surface markers.
+
+2.  **Molecular-Genetic Studies:**
+    *   **Polymerase Chain Reaction (PCR):** The graph lists ""полимеразная цепная реакция"" (PCR), ""количественная ПЦР"" (quantitative PCR), and ""молекулярно-генетических исследований"" (molecular-genetic studies) as methods to diagnose MRD.
+    *   This typically involves detecting patient-specific immunoglobulin or T-cell receptor gene rearrangements or fusion transcripts (e.g., *BCR::ABL1*).
+
+3.  **Other Related Techniques:** The broader entity ""Минимальная остаточная болезнь"" (Minimal residual disease) is also diagnosed by:
+    *   ""проточная цитофлуориметрия"" (flow cytofluorometry) – synonymous with flow cytometry.
+    *   ""FISH"" (fluorescence in situ hybridization), though this method is noted as ""contraindicated_for"" standard MRD assessment in the context of the general MRD entity, likely due to lower sensitivity compared to PCR or high-sensitivity flow cytometry.
+
+**Important Context from the Knowledge Graph:**
+
+*   The sample required for these tests is typically obtained via ""пункция костного мозга"" (bone marrow puncture/aspiration), which is listed as a diagnostic method for MRD.
+*   The graph explicitly states that ""стандартного цитогенетического исследования"" (standard cytogenetic study) and ""метод FISH"" (FISH method) are **contraindicated for** (""contraindicated_for"") monitoring ""Минимальная остаточная болезнь."" This highlights that conventional cytogenetics and FISH lack the sensitivity needed for MRD assessment, which requires techniques capable of detecting disease at a level of 1 in 10,000 to 1 in 1,000,000 cells.
+
+**Conclusion:**
+In acute lymphoblastic leukemia, minimal residual disease is monitored primarily through highly sensitive techniques performed on bone marrow samples. The core methods are **multiparameter flow cytometry (immunophenotyping)** and **quantitative polymerase chain reaction (PCR)-based molecular genetic studies.** Standard cytogenetics and F",8,7,8,8,"The answer provides detailed, specific methods for MRD monitoring in ALL but is incomplete as it cuts off mid-sentence at the end."
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, the standard induction chemotherapy for acute myeloid leukemia (AML) is not explicitly detailed as a single named regimen. However, the graph contains specific information about the agents and phases of treatment used for AML.
+
+From the context, we can synthesize the following answer:
+
+**Standard induction chemotherapy for AML**, according to the knowledge graph, involves a course of **polychemotherapy** that includes key agents such as **cytarabine** and **anthracyclines**. The graph also lists **etoposide** as a treatment for AML, which is commonly part of some induction regimens.
+
+More specifically, the graph indicates:
+*   The treatment process for AML includes an **induction course** (курс индукции) aimed at achieving remission.
+*   The goal of this phase is **induction of remission** (индукция ремиссии).
+*   The core chemotherapeutic agents used are:
+    *   **Cytarabine** (цитарабин)
+    *   **Anthracyclines** (антрациклины)
+    *   **Etoposide** (этопозид)
+
+The graph does not specify the exact doses, schedules (e.g., ""7+3"" regimen), or the specific anthracycline (e.g., daunorubicin, idarubicin). It also notes that treatment may involve **allogeneic hematopoietic stem cell transplantation** (трансплантация аллогенных гемопоэтических стволовых клеток) and **consolidation therapy** (консолидационная терапия) as subsequent steps.
+
+**In summary:** The standard induction chemotherapy for AML, as per the knowledge graph, is a polychemotherapy regimen based on a combination of **cytarabine and anthracyclines**, with etoposide also being a potential component. The precise protocol name (e.g., ""7+3"") is not provided in the available context.",8,7,8,8,The answer effectively synthesizes available information while transparently noting limitations in the knowledge graph.
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the treatment of acute promyelocytic leukemia (APL) or how it differs from other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on the entity ""acute promyelocytic leukemia"" (APL or ОПЛ in Russian). The graph details general treatment approaches for **ОМЛ (acute myeloid leukemia)** as a broad category, but does not break down information by specific genetic or morphological subtypes.
+
+**What I can tell you from the context about general AML treatment:**
+
+The knowledge graph lists several treatment modalities and specific drugs used for **ОМЛ**, which would be common to many subtypes. These include:
+*   **Core Therapies:** Полихимиотерапия (polychemotherapy), индукционная терапия (induction therapy), курс индукции (induction course), консолидационная терапия (consolidation therapy).
+*   **Specific Drugs:** Цитарабин (cytarabine), антрациклины (anthracyclines), этопозид (etoposide), венетоклакс (venetoclax), децитабин (decitabine).
+*   **Procedures:** Трансплантация аллогенных гемопоэтических стволовых клеток (allogeneic hematopoietic stem cell transplantation).
+*   **Supportive Care:** Treatment for related conditions like фебрильная нейтропения (febrile neutropenia).
+
+**Conclusion:** To answer how APL is treated differently, specific information on APL is required. Standard treatment for APL is distinct and typically involves **all-trans retinoic acid (ATRA)** and **arsenic trioxide (ATO)** as cornerstone therapies, which are not mentioned in the provided knowledge graph for ОМЛ. The graph's treatment list appears to pertain to non-APL AML subtypes.
+
+**For a clinically accurate answer,** you would need to consult guidelines or a knowledge source that includes the entity ""acute promyelocytic leukemia"" and its specific treatment relations.",8,7,9,8,The answer's main strength is its clear delineation between what information is available in the knowledge graph and what specific knowledge is required to answer the question accurately.
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,Full System (Ours),hybrid_rrf,"Based on the knowledge graph provided, the most specific and clinically accurate answer regarding first-line treatment for aggressive non-follicular lymphoma is **intensive intrathecal (endolumbar) chemotherapy** for a specific subtype.
+
+Here is a detailed breakdown based on the available information:
+
+1.  **Primary Condition Identification:** The question refers to ""aggressive non-follicular lymphoma."" In the context provided, the most relevant and detailed entity is **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)** (Diffuse Large B-Cell Lymphoma, DLBCL). This is explicitly described as the most common type of non-Hodgkin lymphoma in adults and is a classic example of an aggressive B-cell lymphoma.
+
+2.  **Treatment Information from the Graph:** For the entity ""Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ),"" the knowledge graph lists only one direct treatment relation:
+    *   `интенсивная эндолюмбальная химиотерапия --[treats]--> Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)`
+    *   This translates to **""intensive intrathecal chemotherapy""** (chemotherapy delivered into the cerebrospinal fluid).
+
+3.  **Context and Limitations of the Answer:**
+    *   The graph does **not** list a general first-line systemic chemotherapy regimen (such as R-CHOP, which is the global standard of care for DLBCL) for the main condition.
+    *   However, it does mention **""CHOP""** in relation to ""неходжкинских лимфом"" (non-Hodgkin lymphomas), indicating its relevance to the broader category.
+    *   The specific mention of *intensive intrathecal chemotherapy* as a treatment for DLBCL strongly suggests it is a critical component of first-line therapy for **patients at high risk of or with established central nervous system (CNS) involvement**. This is a standard part of aggressive lymphoma protocols for specific high-risk groups.
+
+4.  **Related Information from the Graph:** The graph contains extensive information on subtypes of DLBCL (e.g., primary CNS lymphoma, leg-type, EBV-positive, etc.), causative factors (HIV, HBV, autoimmune diseases), and related conditions like Double-Expressor Lymphoma (DEL). However, it does not provide their specific first-line treatments.
+
+**Conclusion:**
+
+Based solely on the structured knowledge graph provided, the only explicitly stated treatment for the core condition representing aggressive non-follicular lymphoma (DLBCL) is **intensive intrathecal (endolumbar) chemotherapy**.
+
+**Important Clinical Note (Context beyond the graph):** In standard international guidelines, the first-line treatment for",6,5,4,5,The answer correctly identifies intensive intrathecal chemotherapy for a specific high-risk DLBCL subtype but fails to mention the standard first-line systemic treatment (R-CHOP) for most aggressive non-follicular lymphomas.
+7,How is Hodgkin lymphoma staged and treated?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer your question about Hodgkin lymphoma's staging and treatment.
+
+**Reason:** The knowledge graph contains detailed information about **non-Hodgkin lymphomas** (e.g., Diffuse Large B-Cell Lymphoma, Burkitt lymphoma, lymphoblastic lymphoma) and **acute lymphoblastic leukemias**. However, it does not contain any entities or relations specifically related to **Hodgkin lymphoma**.
+
+The only mention of ""Hodgkin"" is within the synonyms for the entity ""неходжкинская лимфома"" (non-Hodgkin lymphoma), where ""лимфома Ходжкина"" (Hodgkin lymphoma) is listed as an ""Also known as"" entry. This appears to be a contextual error or misclassification in the data, as Hodgkin and non-Hodgkin lymphomas are distinct categories. The graph's content is focused on non-Hodgkin lymphomas and leukemias.
+
+**What I can tell you from the context:**
+The graph details subtypes, causes, diagnostic methods, and treatments for various non-Hodgkin lymphomas and acute lymphoblastic leukemias. For example, it includes information on:
+*   Subtypes of Diffuse Large B-Cell Lymphoma (DLBCL).
+*   Causes of DLBCL (e.g., viruses like EBV and HIV, autoimmune diseases).
+*   Treatments for specific conditions (e.g., intensive intrathecal chemotherapy for DLBCL, induction/consolidation/maintenance therapy for acute lymphoblastic leukemia).
+
+For accurate information on the staging (e.g., Ann Arbor system) and treatment (e.g., chemotherapy regimens like ABVD, radiotherapy, targeted therapies) of **Hodgkin lymphoma**, you would need to consult guidelines or resources specifically dedicated to that disease entity.",0,3,2,2,"The answer correctly identifies that it cannot provide the requested information about Hodgkin lymphoma, but fails to address the actual question about staging and treatment."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific treatment recommendation for follicular lymphoma stage III-IV.
+
+**Reason:** The knowledge graph does not contain any information about the condition ""follicular lymphoma."" The entities and relations are focused on other types of lymphomas and leukemias, such as:
+*   Diffuse large B-cell lymphoma (ДВКЛ)
+*   Lymphoblastic lymphoma (Лимфобластная лимфома)
+*   Acute lymphoblastic leukemia (Острые лимфобластные лейкозы)
+*   Non-Hodgkin lymphoma in general (неходжкинская лимфома), but without subtype-specific treatment details.
+
+**What I can share from the context regarding related conditions:**
+*   For **Diffuse large B-cell lymphoma (ДВКЛ)**, a related treatment mentioned is **интенсивная эндолюмбальная химиотерапия** (intensive intrathecal chemotherapy), which is typically used for central nervous system involvement.
+*   For **Acute lymphoblastic leukemias**, general treatment modalities listed include Медикаментозная терапия (drug therapy), Диетотерапия (diet therapy), Обезболивание (pain management), and others, but these are not specific to follicular lymphoma.
+
+**Conclusion:** To answer a question about follicular lymphoma, the knowledge graph would need to include entities and relations specific to that diagnosis, its staging, and its associated treatment guidelines. The current context is insufficient. For accurate management of follicular lymphoma stage III-IV, consultation of current hematology/oncology clinical guidelines (e.g., from ESMO, NCCN, or national health authorities) is necessary.",8,7,6,7,The answer's main strength is its clear acknowledgment of knowledge limitations and appropriate referral to authoritative guidelines.
+9,What systemic therapy is used for adrenocortical carcinoma?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph, the systemic therapies for adrenocortical carcinoma (АКР / адренокортикальный рак) include several chemotherapy regimens and specific drugs.
+
+Here is a comprehensive list of systemic treatments extracted from the graph:
+
+**1. Chemotherapy Regimens:**
+*   **EP+M:** Etoposide + Cisplatin + Mitotane
+*   **EC+M:** Etoposide + Carboplatin + Mitotane
+*   **EDP+M:** Etoposide + Doxorubicin + Cisplatin + Mitotane
+*   **ARAR0332:** A specific protocol (likely a clinical trial regimen).
+
+**2. Individual Chemotherapy/Targeted Agents:**
+*   **Mitotane** (митотан/митотана): A cornerstone adrenolytic agent used both in combination regimens and alone.
+*   **Doxorubicin** (доксорубицин)
+*   **Etoposide** (этопозид)
+*   **Cisplatin** (цисплатин)
+*   **Carboplatin** (карбоплатин)
+*   **Gemcitabine** (гемцитабина)
+*   **Capecitabine** (капецитабина)
+*   **Temozolomide** (темозоломида)
+*   **Platinum-based drugs** (препараты платины) as a class.
+
+**3. Immunotherapy:**
+*   **Pembrolizumab** (пембролизумаб) is indicated for адренокортикальный рак.
+
+**Important Context from the Graph:**
+*   The use of **anthracyclines** (антрациклины, e.g., doxorubicin) is noted as ""contraindicated_for"" АКР. This appears contradictory to the EDP+M regimen listing doxorubicin. In clinical practice, this likely reflects specific risk-benefit considerations or contexts where its use is not preferred.
+*   The graph also links **химиотерапия** (chemotherapy) as a general procedure that treats АКР.
+*   **Fludrocortisone** (флудрокортизон) is listed as ""related_to"" АКР. This is not a therapy for the cancer itself but is a critical component of **заместительная терапия надпочечниковой недостаточности** (adrenal insufficiency replacement therapy), which is often required after adrenal surgery or during mitotane treatment.
+
+**Conclusion:**
+The primary systemic therapy for adrenocortical carcinoma involves **cytotoxic chemotherapy**, often combining **etoposide, doxorubicin, cisplatin, and mitotane (EDP-M)** or similar platinum-based regimens. **Mitotane** is a key agent used both alone and in combination. **Pembrolizumab** is also identified",9,8,9,9,"The answer provides a detailed, organized list of systemic therapies including chemotherapy regimens, individual agents, and immunotherapy, while also addressing important clinical context and contradictions."
+10,How is anal squamous cell carcinoma treated with chemoradiation?,Full System (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer the question about the treatment of **anal squamous cell carcinoma** with chemoradiation.
+
+**Reason:** The knowledge graph does not contain any information about ""anal squamous cell carcinoma,"" ""anal cancer,"" or the specific treatment modality ""chemoradiation"" for that condition. The entities and relations in the graph are focused on:
+*   Adrenocortical carcinoma (АКР, адренокортикальный рак)
+*   Acute lymphoblastic leukemias and lymphomas (Острые лимфобластные лейкозы)
+*   Adrenal tumors (опухоль надпочечника)
+*   The general procedure of chemotherapy (химиотерапия) in the context of the listed conditions
+*   Disease relapse (рецидив)
+
+**What I can state from the context:**
+The graph details that **химиотерапия (chemotherapy)** is a treatment used for several conditions, including adrenocortical carcinoma and acute lymphoblastic leukemia. It also mentions that chemotherapy can be part of induction and consolidation phases of treatment. However, there is no mention of its combination with radiation therapy (chemoradiation) for any disease, nor any data on squamous cell carcinoma of the anal canal.
+
+To answer your question accurately, information specific to anal cancer staging, radiotherapy protocols, and concurrent chemotherapy agents used for this anatomical site would be required, which is not present in the provided knowledge graph.",2,1,1,2,The main weakness is that it fails to provide any actual treatment information for anal squamous cell carcinoma with chemoradiation.

@@ -1,0 +1,5 @@
+.env
+results/knowledge_graph*.json
+__pycache__/
+*.pyc
+.env

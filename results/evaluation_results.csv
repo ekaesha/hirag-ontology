@@ -1,0 +1,1249 @@
+question_id,question,label,mode,answer,comprehensiveness,empowerment,diversity,overall,comment
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, the specific treatment protocol for acute lymphoblastic leukemia (Острый лимфобластный лейкоз) in children is outlined in a structured, multi-phase approach.
+
+The treatment consists of three main sequential phases:
+
+1.  **Индукция (Induction):** This is the initial, intensive phase of treatment aimed at achieving a complete remission by rapidly destroying the majority of leukemic cells.
+2.  **Консолидация (Consolidation):** This phase follows induction and is designed to eliminate any remaining leukemia cells that may not be detectable, thereby consolidating the remission and preventing early relapse.
+3.  **Поддерживающая терапия (Maintenance therapy):** This is a longer-term, less intensive treatment phase intended to prevent relapse over a prolonged period.
+
+**Additional Context from the Knowledge Graph:**
+
+*   The condition is specifically coded as **C91.0** according to the ICD (МКБ).
+*   The protocol is related to guidelines from the **Министерство Здравоохранения Российской Федерации** (Ministry of Health of the Russian Federation).
+*   The disease can involve extramedullary sites such as the **ЦНС (central nervous system)**, **яички (testes)**, and **кожа (skin)**, which would necessitate specific diagnostic assessments and likely influence therapy (e.g., CNS-directed treatment).
+*   The graph does not contain specific details about the chemotherapeutic agents used, radiation therapy, risk stratification, dosages, or the duration of each phase, which are all critical components of a complete clinical protocol.
+
+**Conclusion:**
+The core treatment protocol for childhood acute lymphoblastic leukemia, as per the knowledge graph, is a three-phase regimen: **Induction, Consolidation, and Maintenance therapy**. For the complete detailed protocol including specific drugs, criteria, and management of complications, one must consult the full clinical guidelines referenced by the Ministry of Health.",6,4,7,6,"The answer correctly identifies the three-phase structure but lacks specific actionable treatment details like drug names, dosages, or risk stratification."
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I can provide the following information regarding induction therapy for ALL with a BCR-ABL1 mutation.
+
+The knowledge graph specifies that **ингибиторы тирозинкиназы BCR-ABL (BCR-ABL tyrosine kinase inhibitors, TKIs)** are used to treat **Ph-позитивных ОЛЛ (Ph-positive ALL)**. The presence of a BCR-ABL1 mutation, typically resulting from the Philadelphia chromosome translocation t(9;22), defines Ph-positive ALL.
+
+Therefore, the core induction therapy for **ALL with a BCR-ABL1 mutation (Ph-positive ALL)** includes **BCR-ABL tyrosine kinase inhibitors (TKIs)** in combination with standard chemotherapy.
+
+**Important Clarifications from the Knowledge Graph:**
+
+1.  **BCR-ABL1-like ALL:** The graph distinguishes between classic **Ph-positive ALL** (with the BCR-ABL1 fusion gene) and **BCR-ABL1-like (or BCR-ABL1*-подобный) ALL**. The latter is a genetically distinct subgroup that *lacks* the BCR-ABL1 translocation but has a similar gene expression profile and activation of kinase signaling pathways (involving genes like *CRLF2, JAK2, ABL1, ABL2, EPOR, PDGFRB*).
+2.  **Therapy for BCR-ABL1-like ALL:** The graph also states that **ТКИ (TKIs)** are used to treat **BCR-ABL1*-подобный ОЛЛ**. This implies that certain TKIs (e.g., dasatinib, which targets ABL and other kinases) may be effective in this subgroup, particularly for cases with alterations in *ABL1, ABL2, PDGFRB*, or *JAK2*.
+
+**Summary Answer:**
+
+For **ALL with the canonical BCR-ABL1 mutation (Ph-positive ALL)**, induction therapy consists of **a combination of standard multi-agent chemotherapy and a BCR-ABL tyrosine kinase inhibitor (TKI)**, such as imatinib, dasatinib, or ponatinib.
+
+The knowledge graph does not provide specific details on the exact chemotherapy regimens or the choice of TKI, which would depend on factors like patient age, toxicity profile, and the presence of specific resistance mutations (which can be identified via **мутационный статус BCR::ABL (BCR-ABL mutation analysis)**).
+
+**Note on BCR-ABL1-like ALL:** If the question refers to the **BCR-ABL1-like ALL** subgroup (which is Ph-negative but has a similar molecular phenotype), the knowledge graph indicates that **TKIs can also be a component of therapy**, targeting the specific activated kinase pathway identified in the leukemic cells.",9,8,9,9,"The answer's main strength is its clear distinction between Ph-positive ALL and BCR-ABL1-like ALL, providing nuanced therapy guidance for both conditions."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,Naive RAG,semantic_only,"На основании предоставленного контекста знаний, в графе отсутствует прямая информация о методах мониторинга минимальной остаточной болезни (МОБ) при остром лимфобластном лейкозе (ОЛЛ).
+
+Из контекста можно сделать следующие выводы, которые имеют отношение к диагностике и лечению ОЛЛ, но не конкретно к мониторингу МОБ:
+
+1.  **Сущность заболевания:** Острый лимфобластный лейкоз (ОЛЛ) — это злокачественное заболевание системы кроветворения (костного мозга), при котором образуется опухолевый клон лимфоидных клеток. Он может поражать не только костный мозг и кровь, но и другие органы, включая ЦНС (нейролейкемия), яички, кожу и лимфоидную ткань.
+2.  **Стандартное лечение:** Терапия ОЛЛ включает фазы индукции, консолидации и поддерживающей терапии.
+3.  **Диагностика:** Для диагностики лимфоидных новообразований (как ОЛЛ, так и неходжкинских лимфом) может использоваться пункционная биопсия. Для подтверждения поражения ЦНС (нейролейкемии) требуется осмотр врача-офтальмолога.
+4.  **Классификация:** В графе упоминаются различные подтипы, такие как Ph-негативные ОЛЛ и В-клеточные лимфомы высокой степени злокачественности, которые могут быть связаны с определенными генными перестройками (c-MYC, BCL2, BCL6). Это указывает на важность молекулярно-генетического анализа при этих заболеваниях.
+
+**Отсутствующая информация:**
+В предоставленных данных нет сведений о конкретных лабораторных методах, используемых для мониторинга МОБ, таких как:
+*   Проточная цитометрия (для обнаружения aberrant иммунофенотипа лейкемических клеток).
+*   Полимеразная цепная реакция (ПЦР) для определения клональных перестроек генов иммуноглобулинов или T-клеточных рецепторов, а также специфических хромосомных транслокаций.
+*   Секвенирование нового поколения (NGS).
+*   Частота и временные точки проведения таких исследований (после индукции, консолидации и т.д.).
+*   Пороговые значения МОБ,",2,1,3,2,The main weakness is that the answer explicitly states it lacks the requested information about MRD monitoring methods in ALL.
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific answer to the question about the **standard induction chemotherapy for acute myeloid leukemia (AML)**.
+
+Here is what I can determine from the available information:
+
+1.  **The knowledge graph does not explicitly name a ""standard induction chemotherapy for AML.""** The entities and relations focus on other specific contexts.
+
+2.  **The graph mentions related chemotherapy procedures, but not for AML induction:**
+    *   **`стандартная интенсивная химиотерапия` (standard intensive chemotherapy):** It is described as aggressive chemotherapy and is noted as being *contraindicated for* a condition abbreviated as ""ДС"" and as *causing* infectious complications. Its specific application is not defined here.
+    *   **`интенсивная индукционная химиотерапия` (intensive induction chemotherapy):** This is listed as an entity but has no description or specific relations linking it to AML in this context.
+    *   **`цитотоксическая химиотерапия` (cytotoxic chemotherapy):** Described as cell-killing chemotherapy, with noted side effects (teratogenic) and a relation to contraception, but not specified for AML induction.
+
+3.  **The graph contains information on leukemia and specific procedures, but not the requested standard of care:**
+    *   It confirms `лейкемия` (leukemia) as a malignant blood disease.
+    *   It details specific procedures like `интенсивная эндолюмбальная химиотерапия` (intensive intrathecal chemotherapy) for CNS prophylaxis and `удаление лейкемического очага в яичнике` (ovarian leukemia focus removal), which are not standard induction regimens.
+    *   It mentions conditions like `MLL-лейкемия` (MLL-rearranged leukemia) in relation to pregnancy.
+
+**Conclusion:** The knowledge graph excerpt provided does not contain the necessary information to state what the standard induction chemotherapy is for Acute Myeloid Leukemia. To answer this question, a clinical guideline specifying the first-line, most commonly used drug combinations for AML (such as ""7+3"" regimens involving cytarabine and an anthracycline) would be required.",8,7,9,8,"The answer's main strength is its thorough analysis of what the knowledge graph does and does not contain, clearly explaining why it cannot provide the specific standard of care."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot answer your question about the specific treatment differences for acute promyelocytic leukemia (APL) compared to other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on ""acute promyelocytic leukemia"" (APL), its specific treatments (such as all-trans retinoic acid - ATRA, or arsenic trioxide - ATO), or the general treatment protocols for ""AML subtypes."" The entities and relations in the context are focused on broader concepts like leukemia cells, general procedures (leukapheresis), and lab tests (white blood cells), but do not include the specific clinical guidelines for differentiating the management of AML subtypes.
+
+**What I can tell you from the context:**
+*   The graph contains information on **MLL-rearranged leukemia** and its relation to pregnancy.
+*   It mentions that **leukemic cells** are treated with **anti-tumor drugs** (`противоопухолевые препараты --[treats]--> лейкемические клетки`).
+*   It notes that **leukapheresis** (`лейкоцитаферезы`) is a procedure used to treat **Acute Lymphoblastic Leukemia (ОЛЛ)**, which is a different major category of leukemia from AML.
+
+To answer your question accurately, the knowledge graph would need to include entities for ""acute promyelocytic leukemia,"" ""ATRA,"" ""arsenic trioxide,"" and ""differentiation therapy,"" along with their specific relations to treatment guidelines and comparisons to standard AML chemotherapy. This information is not present in the provided context.",2,3,4,3,"The answer's main weakness is that it fails to provide any actual treatment information about APL versus other AML subtypes, despite acknowledging the question's importance."
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific, comprehensive answer regarding the first-line treatment for aggressive non-follicular lymphoma.
+
+Here is what I can determine from the available information:
+
+1.  **Related Condition:** The knowledge graph contains information on **""В-клеточная лимфома высокой степени злокачественности""** (High-grade B-cell lymphoma), which is described as an aggressive type of lymphoma. This aligns with the ""aggressive"" part of your question.
+2.  **Lack of Treatment Specifics:** The graph does **not** specify any first-line treatment regimens for this or any other aggressive lymphoma. There is no mention of chemotherapy protocols (like R-CHOP), radiotherapy, or immunotherapy as standard treatments.
+3.  **Indirect Treatment Clues:**
+    *   For the broader category of **""неходжкинских лимфом""** (non-Hodgkin lymphomas), the graph notes a relation to **""CHOP""**. CHOP is a historic chemotherapy backbone, but the graph does not state it is a first-line treatment, nor does it specify for which subtypes.
+    *   For **""острый лимфобластный лейкоз/лимфома""** (acute lymphoblastic leukemia/lymphoma), the graph mentions **""индукционно-консолидационная терапия""** (induction-consolidation therapy) and **""поддерживающая терапия""** (maintenance therapy) as parts of its management. However, this is a distinct disease from the aggressive non-follicular lymphomas (like diffuse large B-cell lymphoma) implied by your question.
+
+**Conclusion:** The knowledge graph lacks the necessary data on treatment protocols to answer your question. To determine the first-line treatment for aggressive non-follicular lymphoma (e.g., Diffuse Large B-Cell Lymphoma, DLBCL), you would need to consult current clinical guidelines, which typically specify regimens such as **R-CHOP** (rituximab plus cyclophosphamide, doxorubicin, vincristine, and prednisone) as the standard first-line therapy, with potential modifications based on specific molecular features and patient factors.",8,7,8,8,The answer's main strength is its clear explanation of knowledge limitations while providing relevant context and directing to proper clinical guidelines.
+7,How is Hodgkin lymphoma staged and treated?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific or comprehensive answer regarding the staging and treatment of Hodgkin lymphoma. The knowledge graph contains very limited and non-specific information on this topic.
+
+Here is what I can tell you from the context provided:
+
+*   **Condition Identified:** The knowledge graph confirms ""лимфома Ходжкина"" (Classical Hodgkin lymphoma) as a known entity.
+*   **Limited Related Information:**
+    1.  It is noted as being related to ""первичная медиастинальная В-клеточная крупноклеточная лимфома"" (primary mediastinal large B-cell lymphoma), which is a distinct type of non-Hodgkin lymphoma that can have similar presentation.
+    2.  It is also related to an entity abbreviated ""МСЛЗ"" (which is not defined in the provided context).
+
+**Crucial Missing Information:**
+The knowledge graph lacks all critical data needed to answer your question:
+*   **Staging:** There is no information on staging systems (e.g., Ann Arbor or Lugano classification), criteria (involvement of single vs. multiple lymph node regions, extranodal disease, systemic symptoms), or required diagnostic procedures (imaging, bone marrow biopsy).
+*   **Treatment:** There is **no information** on treatment modalities for Hodgkin lymphoma. The graph mentions chemotherapy regimens (e.g., CHOP) only in relation to non-Hodgkin lymphomas. It does not mention standard regimens for Hodgkin lymphoma (e.g., ABVD, BEACOPP), radiotherapy, or the role of stem cell transplantation.
+
+**Conclusion:**
+To answer the question ""How is Hodgkin lymphoma staged and treated?"" accurately, information is needed on staging classifications, risk stratification, first-line chemotherapy protocols, radiation therapy fields, and treatment algorithms based on stage and response. This information is not present in the provided knowledge graph excerpt.
+
+**For a clinically accurate answer, you would need to consult current clinical guidelines which detail the modern staging workup (involving PET-CT) and risk-adapted treatment protocols combining chemotherapy and involved-site radiotherapy.**",2,3,2,2,"The answer's main weakness is that it fails to provide any actual information about Hodgkin lymphoma staging or treatment, instead focusing on what the knowledge graph lacks."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** regarding the recommended treatment for follicular lymphoma (any stage).
+
+The knowledge graph contains detailed information about several lymphoma types and related procedures, but none directly address follicular lymphoma or its staging and treatment. Specifically, the graph includes entities for:
+*   В-клеточная лимфома высокой степени злокачественности (High-grade B-cell lymphoma)
+*   Лимфобластная лимфома (Lymphoblastic lymphoma)
+*   неходжкинская лимфома (Non-Hodgkin lymphoma) as a broad category
+*   эндемический вариант лимфомы Беркитта (Endemic Burkitt lymphoma)
+*   первичная медиастинальная В-клеточная лимфома (Primary mediastinal B-cell lymphoma)
+*   лимфоматоидный гранулематоз (Lymphomatoid granulomatosis)
+
+It also describes surgical procedures like **превентивной лимфодиссекции (preventive lymph node dissection)** and **лимфаденэктомии (lymphadenectomy)**, but these are linked to conditions like ""вовлеченность лимфоузлов"" (lymph node involvement) and are not specified as treatments for follicular lymphoma.
+
+**Conclusion:** The knowledge graph lacks the necessary data to answer the question about first-line or standard treatment recommendations for stage III-IV follicular lymphoma. To answer this question, information from clinical guidelines on systemic therapies (such as immunotherapy, chemotherapy, targeted agents, or radiation) specific to follicular lymphoma would be required.",2,1,3,2,The main weakness is that it fails to provide any actual treatment information for follicular lymphoma stage III-IV despite being asked for a medical recommendation.
+9,What systemic therapy is used for adrenocortical carcinoma?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, the systemic therapies specifically indicated for **адренокортикальный рак (adrenocortical carcinoma)** are:
+
+1.  **Митотан (Mitotane):** This is directly stated as a treatment (`treats`) for адренокортикальный рак.
+2.  **Пембролизумаб (Pembrolizumab):** This is also directly stated as a treatment (`treats`) for адренокортикальный рак.
+
+**Additional Context from the Knowledge Graph:**
+*   The graph mentions broader categories of therapy like **системная химиотерапия (systemic chemotherapy)**, **противоопухолевые препараты (anti-cancer medications)**, and **лекарственная противоопухолевая терапия (drug antitumor therapy)**. However, these are not explicitly linked to адренокортикальный рак in the provided data.
+*   The graph specifies that **индуктивная химиотерапия (induction chemotherapy)** is contraindicated for patients in a **тяжелое соматическое состояние (severe somatic condition)**, but this is a general precaution, not a specific recommendation for adrenocortical carcinoma.
+
+**Conclusion:**
+From the structured information available, the specific systemic drug therapies for adrenocortical carcinoma are **mitotane** and **pembrolizumab**. The knowledge graph does not contain information on other potential chemotherapeutic regimens (e.g., etoposide, doxorubicin, cisplatin) that may be used in combination with mitotane or in specific clinical scenarios.",6,7,5,6,The answer correctly identifies two specific therapies but lacks mention of combination chemotherapy regimens commonly used in practice.
+10,How is anal squamous cell carcinoma treated with chemoradiation?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about the treatment of anal squamous cell carcinoma with chemoradiation.  
+
+The knowledge graph contains details about other cancers (e.g., колоректальный рак, рак коры надпочечника, адренокортикальный рак) and some treatment modalities (e.g., системная химиотерапия, дистанционная лучевая терапия опухолей, противоопухолевая терапия), but none of these entities or relations refer to anal cancer or its specific chemoradiation regimen.  
+
+From general oncology knowledge (outside the given graph), anal squamous cell carcinoma is commonly treated with definitive chemoradiation using a combination of radiation therapy and chemotherapy agents such as mitomycin C and 5-fluorouracil, or sometimes cisplatin-based regimens. However, this information is **not present** in the provided structured data.  
+
+**Answer based solely on the knowledge graph:**  
+The knowledge graph does not contain information on anal squamous cell carcinoma or its treatment with chemoradiation.",8,6,7,7,The answer's main strength is clearly distinguishing between knowledge graph limitations and general medical knowledge.
+11,What is the recommended treatment for basal cell skin cancer?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is no information regarding the recommended treatment for basal cell skin cancer.
+
+The knowledge graph contains information on various oncological conditions and treatments, such as:
+*   **Conditions:** Acute lymphoblastic leukemia (ОЛЛ), lymphoblastic lymphoma (ЛБЛ), acute non-lymphoblastic leukemia (ОЛНЛ), colorectal cancer (колоректальный рак), and adrenocortical carcinoma (рак коры надпочечника).
+*   **Treatments:** Antitumor therapy (противоопухолевая терапия), drug therapy, external beam radiation (дистанционная лучевая терапия), adjuvant chemotherapy, radiofrequency ablation (РЧА), and the drug mitotane (митотан).
+
+However, basal cell carcinoma (basal cell skin cancer) is not listed as an entity in this knowledge graph, and no treatment relations are specified for it.
+
+**Answer:** The knowledge graph does not contain information on the diagnosis or treatment of basal cell skin cancer. For clinical recommendations, you must consult specific dermatology or oncology guidelines for non-melanoma skin cancers.",2,4,1,2,"The main weakness is that it fails to provide any actual treatment information for basal cell skin cancer, instead only stating what the knowledge graph lacks."
+12,How is biliary tract cancer managed with chemotherapy?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** regarding the management of biliary tract cancer (рак желчевыводящих путей) with chemotherapy.
+
+The knowledge graph contains detailed information on several other oncological conditions and procedures, including:
+*   **Колоректальный рак** (colorectal cancer) and its relation to pembrolizumab.
+*   **Рак коры надпочечника / адренокортикальный рак** (adrenocortical carcinoma), including its diagnosis (via ALT, AST, LDH, IHC) and treatment options (mitotane, pembrolizumab, adjuvant chemotherapy, DLT, RFA).
+*   General procedures like **системная химиотерапия** (systemic chemotherapy) and **стадирование опухолевого процесса** (tumor staging).
+*   Organizational structures like **онкологический диспансер** (oncology dispensary) and **онкологический консилиум** (oncology case review committee).
+
+However, the entity ""biliary tract cancer"" is not present in the graph, and therefore no relations specifying its management with chemotherapy are available.
+
+**Conclusion:** To answer the question about the management of biliary tract cancer with chemotherapy, information outside the provided knowledge graph is required. This would typically involve specific chemotherapy regimens (e.g., gemcitabine plus cisplatin), their use in adjuvant, neoadjuvant, or palliative settings, and potential targeted therapies based on molecular profiling.",2,1,3,2,"The main weakness is that the answer fails to provide any actual information about biliary tract cancer chemotherapy management, despite acknowledging what information is missing."
+13,What is the standard treatment protocol for bladder cancer?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** regarding the standard treatment protocol for bladder cancer.  
+
+The knowledge graph contains information about:  
+- Therapeutic protocols in general (e.g., “терапевтический протокол,” “протоколов лечения”)  
+- Specific chemotherapy types (e.g., “стандартная интенсивная химиотерапия,” “индуктивная химиотерапия”)  
+- Antitumor therapy (“противоопухолевая терапия”) and its relation to certain hematologic malignancies (ОЛЛ/ЛБЛ, ОЛНЛ)  
+- Organizational aspects (онкологический диспансер)  
+
+However, **bladder cancer is not mentioned** in any of the extracted entities or relations. Therefore, I cannot provide a specific treatment protocol for bladder cancer from this knowledge base.  
+
+If you need information on bladder cancer treatment protocols, I would require additional clinical guidelines or data related to that specific malignancy.",2,3,1,2,The main weakness is that it fails to provide any actual information about bladder cancer treatment despite being asked a direct medical question.
+14,How are bone and cartilage sarcomas treated?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific or comprehensive answer on the treatment of bone and cartilage sarcomas in general.
+
+The knowledge graph contains information about specific conditions and treatments, but it does not include direct data on the standard treatment protocols for primary bone and cartilage sarcomas (like osteosarcoma, chondrosarcoma, Ewing's sarcoma). The context focuses on related but distinct conditions.
+
+Here is what I can tell you from the available context:
+
+1.  **Related Condition - Myeloid Sarcoma:** The graph mentions **Миелоидная саркома (Myeloid sarcoma)**, which is an extramedullary tumor of myeloid cells, often associated with **Острый миелоидный лейкоз (Acute Myeloid Leukemia - AML)**. It is not a primary bone/cartilage sarcoma. Its treatment is typically aligned with AML protocols, but this specific treatment is not detailed in the graph.
+
+2.  **Treatment for Bone Metastases:** The graph provides detailed information on treating **костные метастазы (bone metastases)**, which is the spread of cancer *to* the bone from another primary site (e.g., breast, prostate, lung cancer). This is different from a primary bone sarcoma. The treatments listed are:
+    *   **Антирезорбтивная терапия (Antiresorptive therapy)**
+    *   **Ингибиторы костной резорбции (Bone resorption inhibitors)**
+    *   **Бисфосфонаты (Bisphosphonates)**
+    *   **Деносумаб (Denosumab)**
+    These therapies are used to strengthen bone, reduce pain, and prevent complications like **патологические переломы (pathological fractures)**, **компрессия спинного мозга (spinal cord compression)**, and **гиперкальциемия (hypercalcemia)**. This information is relevant for managing secondary bone involvement but not for curing primary sarcomas.
+
+3.  **Diagnostic Methods Mentioned:** The graph lists several diagnostic tools for bone-related conditions (e.g., **МРТ костной ткани / Bone MRI**, **КТ костей / Bone CT**, **пункция костного мозга / bone marrow puncture**), but does not connect them to treatment plans for sarcomas.
+
+**Conclusion:** The knowledge graph lacks the necessary information to answer your question. To understand how bone and cartilage sarcomas are treated, you would need clinical guidelines covering modalities such as surgery (limb-sparing or amputation), chemotherapy (neoadjuvant/adjuvant), radiation therapy, and targeted therapies, which are not present in the provided context.",3,2,4,3,The answer correctly identifies the limitations of its knowledge base but fails to provide any actual treatment information for bone and cartilage sarcomas.
+15,How is febrile neutropenia managed during chemotherapy?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is no direct information on the specific management of febrile neutropenia during chemotherapy.
+
+However, the graph does contain relevant information about a significant **risk factor** and a **related complication** of intensive chemotherapy that is pertinent to the question:
+
+1.  **Risk of Infection:** The graph states that ""стандартная интенсивная химиотерапия"" (standard intensive chemotherapy) **causes** ""инфекционные осложнения"" (infectious complications). Febrile neutropenia is a classic and serious infectious complication of myelosuppressive chemotherapy.
+2.  **Contraindication in Vulnerable States:** The graph indicates that ""тяжелое соматическое состояние"" (severe somatic condition) is a **contraindication for** ""индуктивная химиотерапия"" (induction chemotherapy). A patient with febrile neutropenia would likely be considered in a severe condition, potentially necessitating a modification or delay in chemotherapy.
+
+**Conclusion from the knowledge graph:**
+While the specific management steps (e.g., empiric broad-spectrum antibiotics, granulocyte colony-stimulating factors, supportive care) are not detailed in the provided context, the graph confirms that infectious complications are a known and expected consequence of intensive chemotherapy regimens. Furthermore, it implies that the presence of a severe clinical condition, such as one caused by a serious infection, may alter the course of cytotoxic treatment.
+
+To answer the clinical question fully, information outside this specific graph is required, covering the standard protocols for diagnostic workup, antimicrobial therapy, and supportive measures in febrile neutropenia.",3,2,4,3,The answer correctly identifies the absence of direct management information but fails to provide any actionable clinical guidance for managing febrile neutropenia.
+16,What antiemetic regimens are used with highly emetogenic chemotherapy?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about antiemetic regimens or their use with highly emetogenic chemotherapy.
+
+The knowledge graph focuses on:
+1.  **Classifications of antitumor drugs** (e.g., прочие противоопухолевые препараты, цитостатические препараты).
+2.  **Specific chemotherapy procedures** (e.g., стандартная интенсивная химиотерапия, тройная интратекальная химиотерапия, цитотоксическая химиотерапия).
+3.  **Relationships** between these therapies and conditions they treat, cause, or are contraindicated for (e.g., causes инфекционные осложнения, causes тератогенные эффекты, treats онкологическим заболеванием).
+
+**Key gaps in the context for your question:**
+*   There is no entity for ""antiemetic"" or ""противорвотное средство.""
+*   There is no entity or description for ""highly emetogenic chemotherapy"" as a distinct category.
+*   There are no relations connecting any chemotherapy procedure to antiemetic treatment.
+
+**Conclusion:** The knowledge graph does not contain the necessary data to answer the question about specific antiemetic regimens. To answer this question clinically, one would need guidelines detailing the emetogenic potential of specific chemotherapeutic agents and the corresponding recommended prophylactic antiemetic therapy, which typically includes combinations of serotonin (5-HT3) receptor antagonists, neurokinin-1 (NK1) receptor antagonists, corticosteroids, and other agents. This information is absent from the provided context.",8,7,6,7,The answer's main strength is its clear explanation of why the knowledge graph lacks relevant information while correctly identifying what typical clinical guidelines would include.
+17,How is tumor lysis syndrome prevented and treated?,Naive RAG,semantic_only,"Based on the provided knowledge graph, here is a summary of the prevention and treatment strategies for tumor lysis syndrome (TLS).
+
+**Prevention and Treatment Strategies:**
+
+The primary goal is to manage the metabolic consequences of rapid tumor cell breakdown. The key interventions are:
+
+1.  **Hydration (Гидратация/Гидратационная терапия):** This is a fundamental measure. It helps maintain renal perfusion and promotes the excretion of uric acid and electrolytes released from lysed cells.
+
+2.  **Pharmacological Prophylaxis/Treatment:**
+    *   **Allopurinol (Аллопуринол):** Used to prevent and treat hyperuricemia by inhibiting the formation of uric acid.
+    *   **Urine Alkalinization (Защелачивание мочи):** This can be used to increase the solubility of uric acid, facilitating its excretion. (Note: Modern guidelines often have more nuanced recommendations on alkalinization, especially regarding phosphate precipitation).
+
+3.  **Management of Diuresis and Fluid Balance:**
+    *   **Forced Diuresis (Форсированный диурез):** Aggressive hydration to promote high urine output.
+    *   **Loop Diuretics (Петлевые диуретики):** May be used to manage fluid balance and maintain diuresis, but with caution to avoid dehydration.
+
+4.  **Specific Medication (in certain contexts):**
+    *   **Glucocorticoids (Глюкокортикоиды):** Are indicated in the knowledge graph as a treatment for TLS. These are typically used in the context of treating the underlying lymphoma or leukemia causing the syndrome, rather than as a direct therapy for the metabolic abnormalities.
+
+**Important Context from the Knowledge Graph:**
+
+*   **Cause:** The graph identifies that TLS can be caused by chemotherapy (ХТ) and by specific drugs like venetoclax (венетоклакс).
+*   **Complication:** TLS leads to **electrolyte disturbances (электролитные нарушения)**, specifically hyperkalemia, hyperphosphatemia, hypocalcemia, and hyperuricemia, which are the main targets of treatment.
+
+**Limitations of the Provided Information:**
+
+The knowledge graph does not contain specific details on:
+*   The criteria for defining laboratory or clinical TLS.
+*   Dosing regimens for hydration or medications.
+*   The use of **rasburicase** (a recombinant urate oxidase), which is a standard first-line agent for high-risk patients in modern guidelines.
+*   Specific indications for renal replacement therapy (dialysis) in severe cases.
+*   Risk stratification for different tumor types.
+
+**Conclusion:**
+
+According to the extracted knowledge, tumor lysis syndrome is prevented and treated with a combination of **vigorous hydration, allopurinol, urine alkalinization, forced diuresis (potentially aided by loop diuretics), and treatment",7,6,8,7,"The answer provides a well-structured overview of TLS management but lacks specific dosing, risk stratification, and modern agents like rasburicase."
+18,What supportive care is recommended during intensive chemotherapy?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I can identify specific supportive care measures that are directly linked to intensive chemotherapy procedures. However, the graph is not exhaustive and focuses on certain procedural and complication-related aspects.
+
+Here is a comprehensive answer based on the available structured information:
+
+**From the knowledge graph, the following supportive care measures are explicitly recommended or are integral parts of intensive chemotherapy regimens:**
+
+1.  **Infection Prophylaxis and Management:** The graph states that ""стандартная интенсивная химиотерапия"" (standard intensive chemotherapy) **causes** ""инфекционные осложнения"" (infectious complications). This directly implies that supportive care must include rigorous strategies to prevent, monitor for, and treat infections. This typically involves:
+    *   Use of prophylactic antibiotics, antifungals, and possibly antivirals.
+    *   Close monitoring of neutrophil counts and fever.
+    *   Prompt initiation of broad-spectrum antibiotics in case of febrile neutropenia.
+
+2.  **Central Venous Access:** For ""интенсивная высокодозная химиотерапия"" (intensive high-dose chemotherapy), the graph specifies that a ""центральный венозный катетер"" (central venous catheter) is a **part_of** the procedure. Furthermore, a ""порт/катетер инфузионного/инъекционного имплантируемого"" (implantable infusion/injection port/catheter) is **related_to** it. This indicates that the placement and maintenance of a reliable central venous access device is a critical supportive care measure for safe drug administration, blood sampling, and nutritional support.
+
+3.  **Hematopoietic Stem Cell Support:** For ""высокодозная химиотерапия"" (high-dose chemotherapy), the graph states that ""трансфузия гемопоэтических клеток"" (transfusion of hematopoietic [stem] cells) is a **part_of** the procedure. This is a cornerstone supportive therapy (stem cell rescue) that allows for the administration of myeloblative chemotherapy doses, followed by reinfusion of stem cells to rebuild the bone marrow.
+
+4.  **Intrathecal Chemotherapy as CNS Prophylaxis:** The entity ""интенсивная эндолюмбальная химиотерапия"" (intensive intrathecal chemotherapy) is related to specific radiation doses (24 Гр, 18 Гр). This implies that for certain intensive chemotherapy protocols (likely for leukemias or lymphomas with CNS risk), supportive care includes central nervous system (CNS) prophylaxis via intrathecal chemotherapy to prevent disease relapse in the brain and spinal cord.
+
+**Important Limitations and Context from the Knowledge Graph:**
+
+*   The graph does **not** mention other vital supportive care pillars such as:
+    *   **Antiemetic therapy** for nausea and vomiting.
+    *   **Growth factor support** (e.g.,",7,8,8,8,"The answer provides specific, actionable supportive care measures directly linked to chemotherapy procedures but acknowledges important limitations in coverage."
+19,Which chemotherapy drugs require dose adjustment for renal impairment?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, I cannot identify specific chemotherapy drugs that require dose adjustment for renal impairment.
+
+The knowledge graph contains information about chemotherapy procedures, their indications, contraindications, and general side effects, but it lacks the specific pharmacological data needed to answer your question. Here is what the graph does contain:
+
+*   **Entities related to drugs and dosage:** It includes entities like `препараты для противоопухолевой терапии` (antitumor therapy drugs) and `дозы лекарственных препаратов` (medication dosage regimens).
+*   **General relations:** It states that `лекарственные препараты` (drugs) are related to and have a dosage defined by `дозы лекарственных препаратов`.
+*   **Missing critical information:** The graph does not establish any relationship between specific antitumor drugs, their dosage regimens, and the condition of renal impairment (почечная недостаточность). There is no entity for renal impairment or a `requires_dose_adjustment_for` relation in the provided context.
+
+**Conclusion:** To determine which chemotherapy agents require dose adjustment for renal impairment, you would need to consult specific pharmacological references, drug monographs, or clinical guidelines that detail the pharmacokinetics, excretion pathways, and dose-modification protocols for individual chemotherapeutic agents in patients with reduced kidney function. The provided knowledge graph does not contain this level of detail.",8,7,6,7,The answer's main strength is its clear explanation of why the knowledge graph cannot answer the question and its guidance toward appropriate resources.
+20,What biomarkers are used to stratify risk in hematological malignancies?,Naive RAG,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about biomarkers used for risk stratification in hematological malignancies.
+
+The knowledge graph contains information about diagnostic procedures and tests for various tumors, but none are explicitly linked to *risk stratification* for hematological cancers.
+
+Here is what the context does contain that is related:
+
+1.  **A specific diagnostic test for a hematological malignancy:** The graph states that **ОПЛ** (which is the Russian abbreviation for Acute Promyelocytic Leukemia, a type of AML) is diagnosed by **""цитологическое и цитохимическое исследования опухолевых клеток в пунктате КМ""** (cytological and cytochemical examination of tumor cells in a bone marrow aspirate). While this is a crucial diagnostic tool, the context does not specify if the results of this test are used for risk stratification.
+
+2.  **Other diagnostic methods for tumors:** The graph mentions CT and ultrasound for diagnosing malignant tumors in general, and a biopsy for diagnosing extramedullary foci of AML. Again, these are diagnostic, not specifically for risk stratification.
+
+**Conclusion:** The knowledge graph lacks entities or relations that describe biomarkers (such as genetic mutations, cytogenetic abnormalities, or measurable proteins) and their direct use in stratifying risk for hematological malignancies like AML, ALL, CML, lymphoma, or myeloma. To answer the question fully, information on specific genetic markers (e.g., FLT3, NPM1, TP53 mutations in AML; IgHV mutation status in CLL; cytogenetic risk groups in multiple myeloma) would be required, which is not present in the provided context.",2,3,4,3,The answer correctly identifies the absence of relevant information in the provided context but fails to provide any actual biomarkers used in clinical practice.
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, the treatment protocol for acute lymphoblastic leukemia (ALL) in children involves a multi-phase chemotherapy regimen. The graph does not specify a single named protocol but outlines the core structural components.
+
+Here is a comprehensive and clinically accurate answer derived from the knowledge graph:
+
+The standard treatment protocol for pediatric acute lymphoblastic leukemia consists of sequential phases of chemotherapy, as indicated by the relations for the entity **""Острый лимфобластный лейкоз""** (Acute lymphoblastic leukemia).
+
+The core treatment phases are:
+1.  **Индукция (Induction Therapy)**: This is the initial intensive phase aimed at achieving a complete remission by eradicating detectable leukemic cells from the bone marrow and blood.
+2.  **Консолидация (Consolidation Therapy)**: This phase follows induction and is designed to eliminate any residual, undetectable leukemia cells to prevent relapse and consolidate the remission.
+3.  **Поддерживающая терапия (Maintenance Therapy)**: This is a prolonged, less intensive treatment phase aimed at preventing relapse over a longer period.
+
+**Additional Context from the Knowledge Graph:**
+*   The condition is specifically **related to ""Дети"" (Children)**.
+*   Treatment is categorized under broader therapeutic modalities such as **""Медикаментозная терапия"" (Drug therapy)**.
+*   The overall management also includes supportive and adjunctive treatments like **""Обезболивание"" (Pain management)**, **""Диетотерапия"" (Diet therapy)**, and **""Медицинская реабилитация"" (Medical rehabilitation)**.
+*   For the specific subtype **Т-ОЛЛ (T-ALL)**, the graph mentions the drugs **клофарабин (clofarabine)** and **неларабин (nelarabine)** as treatments.
+
+**Important Limitations from the Provided Context:**
+The knowledge graph does not contain specific details on:
+*   The exact drug combinations, dosages, or durations for each phase.
+*   Risk stratification (standard-risk, high-risk) which determines therapy intensity.
+*   The role of central nervous system (CNS) prophylaxis (e.g., intrathecal chemotherapy), though **""опухолевое поражение ЦНС"" (CNS tumor involvement)** is noted as a part of the disease.
+*   The specific criteria for using **аллогенная трансплантация гемопоэтических стволовых клеток (allogeneic hematopoietic stem cell transplantation)**, which is mentioned in the context of AML but not explicitly for ALL in children here.
+*   Any named treatment protocols (e.g., from cooperative groups like COG, BFM).
+
+**Conclusion:**
+The foundational treatment protocol for childhood ALL is a multi-phase chemotherapy approach consisting of **Induction, Consolidation, and Maintenance therapy**. This structure is designed to achieve and sustain remission.",8,6,9,8,The answer's main strength is its clear structure and thorough explanation of treatment phases while transparently acknowledging limitations from the knowledge graph.
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I can provide the following information regarding induction therapy for ALL with a BCR-ABL1 mutation.
+
+**Primary Induction Therapy:** The knowledge graph specifies that **systemic induction therapy** (системной индукционной терапии) is the standard procedure used during the initial treatment phase (индукционной терапии). This is a broad category of intensive chemotherapy aimed at achieving remission.
+
+**Critical Targeted Component:** Crucially, for **Ph-positive ALL** (ОЛЛ with the BCR::ABL1 fusion gene from the Philadelphia chromosome), induction therapy must include a **BCR-ABL tyrosine kinase inhibitor (TKI)** (ингибиторы тирозинкиназы BCR-ABL). The graph explicitly states that this class of drugs ""treats Ph-positive ALL.""
+
+Therefore, the standard modern induction therapy for BCR-ABL1-positive ALL is **systemic induction chemotherapy combined with a BCR-ABL tyrosine kinase inhibitor** (e.g., imatinib, dasatinib, ponatinib).
+
+**Additional Context from the Graph:**
+*   The **BCR-ABL1 mutation status** (мутационный статус BCR::ABL) is a key test, as specific mutations can confer **resistance to imatinibu** (резистентность к иматинибу). This influences the choice of TKI.
+*   The graph distinguishes classic **BCR::ABL1-positive ALL** (related to t(9;22)) from **BCR-ABL1-like ALL** (BCR-ABL1-подобный ОЛЛ), which is a genetically similar but Philadelphia chromosome-negative subgroup. For this ""like"" subgroup, the graph indicates it is also treated with **TKIs** (ТКИ), suggesting that TKI therapy may be considered based on its specific genetic alterations (e.g., in *ABL1, ABL2, PDGFRB, JAK2, EPOR*).
+
+**Summary Answer:**
+Induction therapy for ALL with a BCR-ABL1 mutation (Philadelphia chromosome-positive ALL) consists of **systemic induction chemotherapy combined with a BCR-ABL tyrosine kinase inhibitor (TKI)**. The specific TKI is chosen based on factors including the patient's clinical profile and the mutational status of the BCR-ABL1 kinase domain to overcome potential resistance.",9,8,8,9,"The answer's main strength is its detailed breakdown of both the standard systemic induction chemotherapy and the critical targeted TKI component, including specific drug examples and resistance considerations."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,HiRAG (baseline),hybrid_rrf,"Based on the knowledge graph context provided, the monitoring of minimal residual disease (MRD) in acute lymphoblastic leukemia (ALL) involves specific diagnostic methods. The information is primarily linked to the entity **""Минимальная остаточная болезнь"" (Minimal Residual Disease)** and its relations.
+
+Here is a comprehensive and clinically accurate answer based on the extracted knowledge:
+
+**Methods for Monitoring Minimal Residual Disease (MRD) in ALL:**
+
+1.  **Flow Cytometry (Проточная цитометрия/цитофлуориметрия):** This is a key technique for detecting MRD by identifying leukemia-specific immunophenotypes on cells.
+2.  **Molecular Methods (Молекулярно-биологические методы):**
+    *   **Polymerase Chain Reaction (Полимеразная цепная реакция / ПЦР):** Specifically, **quantitative PCR (количественная ПЦР)** is used to detect and measure specific genetic rearrangements or mutations found in the leukemic clone at very low levels.
+3.  **Immunophenotyping (Иммунофенотипирование):** This method, often performed via flow cytometry, analyzes the protein expression patterns on cells to distinguish residual leukemic cells from normal ones.
+4.  **Bone Marrow Puncture (Пункция костного мозга):** This is the standard procedure for obtaining the sample (bone marrow aspirate) required for the above analyses. MRD assessment is typically performed on bone marrow samples.
+5.  **Light Microscopy (Световая микроскопия):** While mentioned in the context, conventional microscopy has limited sensitivity for MRD detection and is generally insufficient on its own for modern MRD monitoring.
+
+**Important Context from the Knowledge Graph:**
+*   The graph explicitly states that **standard cytogenetic investigation (стандартного цитогенетического исследования)** and the **FISH method (метод FISH)** are **contraindicated for** (or not suitable for) monitoring MRD. This implies that these techniques lack the sensitivity required for low-level detection, even though FISH is listed elsewhere as a diagnostic tool.
+*   MRD is a critical condition (**part_of**) in the context of hematologic malignancies (**гемобластозах**).
+
+**Limitations of the Provided Context:**
+The knowledge graph does not specify the exact timing of MRD assessments (e.g., post-induction, post-consolidation), the clinical risk groups it defines, or how the results directly influence treatment decisions for ALL. Furthermore, while it lists diagnostic methods, it does not detail their comparative sensitivity or standard reporting thresholds (e.g., 10⁻⁴, 10⁻⁵).
+
+**Conclusion:**
+In summary, MRD in ALL is primarily monitored using **highly sensitive techniques performed on bone marrow aspirates**, specifically **multiparameter flow cytometry** and **quant",8,7,8,8,The answer provides detailed technical methods but lacks clinical context about timing and treatment implications.
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, the standard induction chemotherapy for acute myeloid leukemia (ОМЛ) is not described with a single, specific protocol name. However, the graph details several key components and treatment approaches that constitute induction therapy for AML.
+
+Here is a comprehensive summary of the induction chemotherapy elements for AML derived from the knowledge graph:
+
+1.  **Primary Treatment Goal:** The initial phase is referred to as **индукция ремиссии (induction of remission)**, which is directly linked to treating AML.
+2.  **Core Chemotherapy Agents:** The graph specifies several drug classes and specific agents used to treat AML, which form the backbone of induction regimens:
+    *   **Антрациклины (Anthracyclines)** such as daunorubicin or idarubicin.
+    *   **Цитарабин (Cytarabine)**.
+    *   **Этопозид (Etoposide)** is also listed as a treatment.
+    *   These are collectively referred to as **полихимиотерапия (polychemotherapy)**.
+3.  **Treatment Protocols:** The knowledge graph mentions specific protocols:
+    *   **Протокол ML-DS-2006** is explicitly indicated for treating AML (likely referring to a protocol for AML in patients with Down syndrome).
+    *   The broader procedure **интенсивная индукционная химиотерапия (intensive induction chemotherapy)** is identified as a key approach.
+4.  **Alternative/Adjuvant Options:** For patients who may not tolerate intensive induction, the graph lists **химиотерапия сниженной интенсивности (reduced-intensity chemotherapy)**. Furthermore, other drugs like **венетоклакс (venetoclax)**, **децитабин (decitabine)**, and **Вальпроевая кислота (valproic acid)** are also connected to AML treatment, often used in combination regimens or for specific patient subgroups.
+
+**Conclusion:**
+The standard induction chemotherapy for acute myeloid leukemia, as per the knowledge graph, involves **intensive polychemotherapy based on a combination of cytarabine and an anthracycline**, possibly supplemented with etoposide. This aligns with the global standard of ""7+3"" induction (7 days of cytarabine + 3 days of an anthracycline). The specific regimen may be guided by protocols like ML-DS-2006 for certain populations, and alternative lower-intensity options exist for unfit patients.
+
+*Note: The knowledge graph does not provide specific details on dosing, schedules, or the exact combinations of these drugs for a standard ""7+3"" regimen. For those precise details, consultation with full clinical guidelines is necessary.*",9,8,9,9,"The answer's main strength is its thorough breakdown of treatment components, protocols, and alternatives while clearly noting knowledge limitations."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, there is **no specific information** about acute promyelocytic leukemia (APL) or its distinct treatment.
+
+The knowledge graph contains detailed information about **acute lymphoblastic leukemia (Острые лимфобластные лейкозы, Острый лимфобластный лейкоз)** and general **acute myeloid leukemia (ОМЛ)**, but it does not differentiate between AML subtypes. Specifically, it does not mention APL (which is often classified as AML with t(15;17) or PML::RARA fusion).
+
+Here is what I can conclude from the available data:
+
+1.  **General AML Treatment:** The graph lists several treatment modalities for ОМЛ (AML), including:
+    *   **Индукционная терапия / курс индукции** (Induction therapy)
+    *   **Консолидационная терапия** (Consolidation therapy)
+    *   **Аллогенная трансплантация гемопоэтических стволовых клеток** (Allogeneic hematopoietic stem cell transplantation)
+    *   Specific drugs like **цитарабин** (cytarabine), **антрациклины** (anthracyclines), **этопозид** (etoposide), **венетоклакс** (venetoclax), and **децитабин** (decitabine).
+
+2.  **Absence of APL-Specific Data:** The knowledge graph does not contain the hallmark treatments that differentiate APL from other AML subtypes. In standard clinical practice, APL is uniquely treated with:
+    *   **All-trans retinoic acid (ATRA)** – a differentiating agent.
+    *   **Arsenic trioxide (ATO)** – another differentiating/apoptosis-inducing agent.
+    *   A significantly reduced reliance on intensive cytotoxic chemotherapy compared to other AML subtypes.
+    *   Specific management protocols for the associated life-threatening coagulopathy (disseminated intravascular coagulation).
+
+**Conclusion:** The knowledge graph does not provide information to answer how acute promyelocytic leukemia is treated differently. It only contains general treatment principles for AML and detailed information on acute lymphoblastic leukemia (ALL). To answer the question accurately, data on the entities ""acute promyelocytic leukemia,"" ""ATRA,"" ""arsenic trioxide,"" and ""differentiation syndrome"" would be required, which are not present in the provided context.",8,7,6,7,The answer's main strength is its clear acknowledgment of knowledge limitations and specific identification of missing APL treatment details.
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I can provide specific information about the treatment of aggressive B-cell lymphomas, which are a major category of non-follicular lymphomas.
+
+The most common and representative aggressive non-follicular lymphoma is **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ) / Diffuse Large B-cell Lymphoma (DLBCL)**.
+
+From the knowledge graph, I can see the following relevant information:
+
+1.  **For non-Hodgkin lymphomas in general**, the graph mentions the **CHOP** regimen (cyclophosphamide, doxorubicin, vincristine, prednisone) as being ""related_to"" this category. CHOP is a historical backbone for many aggressive lymphomas.
+2.  **For the specific treatment of aggressive lymphomas like DLBCL**, the modern first-line standard of care is **R-CHOP**, which is the CHOP regimen combined with the monoclonal antibody **Rituximab**. While the graph does not explicitly list ""R-CHOP,"" the presence of CHOP as a key related entity strongly implies this connection in modern clinical practice.
+3.  The graph details components of therapy for **Острый лимфобластный лейкоз (ОЛЛ) / Acute Lymphoblastic Leukemia (ALL)**, which is a different, leukemic form of lymphoid malignancy. The phases of treatment listed (**индукция / induction, консолидация / consolidation, поддерживающая терапия / maintenance therapy**) are specific to ALL protocols and are not the standard for aggressive lymphomas like DLBCL.
+4.  The graph also mentions **полихимиотерапия / polychemotherapy** in the context of acute myeloid leukemia (ОМЛ), highlighting its toxicities. This reinforces that combination chemotherapy is the core treatment for aggressive hematologic malignancies.
+
+**Therefore, synthesizing the information from the knowledge graph:**
+
+The first-line treatment for aggressive non-follicular lymphoma, specifically for its most common form **Diffuse Large B-cell Lymphoma (DLBCL)**, is **immunochemotherapy**. The cornerstone regimen is **R-CHOP** (Rituximab plus Cyclophosphamide, Doxorubicin, Vincristine, and Prednisone).
+
+**Important Notes from the Context:**
+*   The knowledge graph confirms that **CHOP** is a fundamental chemotherapy combination related to non-Hodgkin lymphomas.
+*   For specific subtypes of DLBCL (e.g., primary mediastinal, EBV-positive, associated with chronic inflammation), which are listed as ""part_of"" DLBCL, treatment protocols may be adapted, but R-CHOP often remains the backbone.
+*   The graph does not contain information on treatment for other specific aggressive non-follicular lymphomas (e.g., peripheral T-cell lymphomas), so the answer",8,9,7,8,The answer correctly identifies R-CHOP as the first-line treatment for DLBCL and provides useful context about the knowledge graph limitations.
+7,How is Hodgkin lymphoma staged and treated?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer the question about the staging and treatment of Hodgkin lymphoma (лимфома Ходжкина).
+
+**Reason:** The knowledge graph contains very limited information about Hodgkin lymphoma. It only establishes its existence and notes a relationship to ""primary mediastinal B-cell large cell lymphoma"" and ""MSLZ"" (which likely refers to mediastinal large B-cell lymphoma). There is no information on staging systems (e.g., Ann Arbor, Cotswolds), diagnostic criteria, or treatment modalities (e.g., chemotherapy regimens like ABVD, radiotherapy, immunotherapy, stem cell transplant).
+
+**What I can share from the context:**
+*   Hodgkin lymphoma (лимфома Ходжкина) is identified as a distinct entity, classified as ""Classical Hodgkin lymphoma.""
+*   It is noted as being **related to** ""primary mediastinal B-cell large cell lymphoma,"" which is a subtype of diffuse large B-cell lymphoma (ДВКЛ). This reflects the known clinical and biological similarities between these two lymphomas that can arise in the mediastinum.
+
+To answer your question accurately, the knowledge graph would need to include entities and relations for Hodgkin lymphoma staging (e.g., stages I-IV, symptoms, bulk), diagnostic procedures (e.g., biopsy, PET-CT), and specific treatment protocols. This information is not present in the provided data.",2,3,2,2,"The main weakness is that it fails to provide any actual staging or treatment information, which was the core of the question."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot give a specific treatment recommendation for follicular lymphoma stage III-IV.
+
+**Here is what I can determine from the available information:**
+
+1.  **The knowledge graph does not contain a specific entity for ""follicular lymphoma.""** The graph details conditions like ""Острые лимфобластные лейкозы"" (Acute lymphoblastic leukemia), ""Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)"" (Diffuse large B-cell lymphoma), and ""неходжкинская лимфома"" (Non-Hodgkin lymphoma) in a general sense.
+
+2.  **Follicular lymphoma is a subtype of non-Hodgkin lymphoma (NHL).** While the graph confirms that NHL exists as a condition, it provides no specific relations regarding its subtypes, staging, or stage-specific treatments.
+
+3.  **The graph outlines broad treatment categories for related conditions.** For example, for ""Острые лимфобластные лейкозы,"" the graph lists general therapeutic approaches such as:
+    *   Медикаментозная терапия (Drug therapy)
+    *   Немедикаментозная терапия (Non-drug therapy)
+    *   Полихимиотерапия (Polychemotherapy)
+    *   Specific phases like индукция (induction), консолидация (consolidation), and поддерживающая терапия (maintenance therapy)
+
+However, these are associated with acute leukemias and are not directly transferable to the management of follicular lymphoma.
+
+**Conclusion:**
+The structured knowledge graph I have access to lacks the necessary detail on the entity ""follicular lymphoma,"" its staging, and the corresponding treatment protocols. To answer this question accurately, clinical guidelines specific to follicular lymphoma, which consider factors like stage, symptom burden, tumor grade, and patient-specific risk factors, would be required.",8,7,6,7,The answer's main strength is its clear explanation of knowledge limitations and appropriate referral to clinical guidelines.
+9,What systemic therapy is used for adrenocortical carcinoma?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph, systemic therapy for adrenocortical carcinoma (АКР / адренокортикальный рак) includes several chemotherapy regimens and specific drugs.
+
+Here is a comprehensive list of systemic treatments extracted from the graph:
+
+**1. Chemotherapy Regimens:**
+*   **EP+M:** Etoposide + Cisplatin + Mitotane
+*   **EDP+M:** Etoposide + Doxorubicin + Cisplatin + Mitotane
+*   **EC+M:** Etoposide + Carboplatin + Mitotane
+*   **EDP-M:** Etoposide + Doxorubicin + Cisplatin (without Mitotane) – noted as a treatment option.
+
+**2. Individual Chemotherapeutic and Cytotoxic Agents:**
+*   **Doxorubicin** (доксорубицин)
+*   **Etoposide** (этопозид)
+*   **Cisplatin** (цисплатин)
+*   **Carboplatin** (карбоплатин)
+*   **Gemcitabine** (гемцитабина)
+*   **Capecitabine** (капецитабина)
+*   **Temozolomide** (темозоломида)
+*   A general class of **platinum-based drugs (L01XA)** is also indicated.
+
+**3. Adrenolytic Therapy:**
+*   **Mitotane** (митотан / митотана) is a cornerstone drug specifically for adrenocortical carcinoma. It is listed both as a single agent and in combination with chemotherapy regimens (e.g., EDP+M).
+
+**4. Immunotherapy:**
+*   **Pembrolizumab** (пембролизумаб) is explicitly mentioned as a treatment for адренокортикальный рак.
+
+**5. Clinical Trial Reference:**
+*   The protocol **ARAR0332** is listed as a treatment, indicating that enrollment in clinical trials is a recognized therapeutic option.
+
+**Important Context from the Graph:**
+*   The graph notes that **anthracyclines** (антрациклины, a class that includes doxorubicin) are also listed as ""contraindicated_for"" АКР. This apparent contradiction highlights that treatment selection is complex, depends on the specific clinical scenario (e.g., line of therapy, combination regimens), and requires careful consideration of benefits versus risks.
+*   Systemic therapy is used in the context of **advanced, recurrent, or metastatic disease** (as the graph states АКР causes рецидив and метастаз).
+*   **Surgical treatment** (хирургическое лечение, R0 резекции) is the primary treatment when possible, with systemic therapy often employed for non-resectable or disseminated disease.
+
+**Conclusion:**
+Systemic therapy for adrenocortical carcinoma primarily involves **mitot",9,8,9,9,"The answer's main strength is its detailed categorization of multiple treatment modalities including specific drug regimens, individual agents, immunotherapy, and clinical trial references."
+10,How is anal squamous cell carcinoma treated with chemoradiation?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer the question about the treatment of **anal squamous cell carcinoma with chemoradiation**.
+
+The knowledge graph does not contain any information about **anal squamous cell carcinoma**, its treatment, or the use of chemoradiation for any condition. The entities and relations in the graph are focused on a different set of malignancies, primarily:
+*   Adrenocortical carcinoma (АКР / адренокортикальный рак)
+*   Acute lymphoblastic leukemia (Острые лимфобластные лейкозы)
+*   Lymphomas (e.g., крупноклеточная лимфома)
+
+While the graph mentions **химиотерапия (chemotherapy)** as a treatment for some of these conditions, there is no mention of **radiation therapy** or the combined modality of **chemoradiation** for any disease, and certainly not for anal cancer.
+
+**To answer your question accurately, information would be needed on entities such as:**
+*   Anal squamous cell carcinoma
+*   Radiation therapy
+*   Chemoradiation as a combined procedure
+*   Specific chemotherapy drugs or radiation protocols used for this specific cancer.
+
+Since this information is absent from the provided knowledge graph, I cannot provide a clinically accurate answer.",2,3,1,2,The main weakness is that it fails to provide any actual treatment information for anal squamous cell carcinoma with chemoradiation.
+11,What is the recommended treatment for basal cell skin cancer?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a recommended treatment for basal cell skin cancer.
+
+The knowledge graph contains detailed information about several conditions, including **Острые лимфобластные лейкозы (Acute Lymphoblastic Leukemia)** and **адренокортикальный рак (Adrenocortical Carcinoma)**, along with their associated treatments, diagnostic methods, and anatomical structures.
+
+However, **basal cell skin cancer** is not mentioned as an entity in this knowledge graph. The graph does contain an entity for **кожа (skin)**, but its relations are only to acute lymphoblastic leukemia and the gastrointestinal tract, not to any form of skin cancer or its treatments.
+
+Therefore, the structured data I have access to does not contain information on the etiology, diagnosis, or management of basal cell carcinoma.
+
+**To answer your question accurately, I would need access to clinical guidelines or a knowledge graph specifically covering dermatological oncology and skin cancers.**",2,3,1,2,"The main weakness is that it fails to provide any actual treatment information for basal cell skin cancer, instead explaining why it cannot answer."
+12,How is biliary tract cancer managed with chemotherapy?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, there is no specific information on the management of biliary tract cancer with chemotherapy.  
+
+The knowledge graph contains details about several cancers (endometrial, adrenal cortical, acute lymphoblastic leukemia, lung, gastric) and their treatments, but biliary tract cancer is not mentioned.  
+
+From the available data, I can only confirm that **systemic chemotherapy** is listed as a procedure entity, and other cancers such as **adrenocortical cancer** and **acute lymphoblastic leukemia** have documented chemotherapy or drug-based treatments (e.g., pembrolizumab, mitotane, medical therapy). However, no connections are made between chemotherapy and biliary tract cancer in this knowledge graph.  
+
+If you need information on biliary tract cancer chemotherapy, current clinical guidelines recommend regimens such as gemcitabine plus cisplatin for advanced disease, but this is outside the scope of the given structured knowledge.",3,4,2,3,The answer's main weakness is failing to provide the requested information about biliary tract cancer chemotherapy management despite having external knowledge of standard treatments.
+13,What is the standard treatment protocol for bladder cancer?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the standard treatment protocol for bladder cancer.
+
+The knowledge graph does not contain any information about bladder cancer, its treatment protocols, or related procedures. The entities and relations are focused on other conditions and treatments, such as:
+*   **Адренокортикальный рак (Adrenocortical carcinoma):** Treatments mentioned include хирургическое лечение (surgical treatment), химиотерапия (chemotherapy), митотан (mitotane), and пембролизумаб (pembrolizumab).
+*   **Острый лейкоз (Acute leukemia):** Treatments mentioned include полихимиотерапия (polychemotherapy), индуктивная химиотерапия (induction chemotherapy), and general химиотерапия (chemotherapy).
+*   **General surgical and chemotherapy procedures** and their side effects or contexts.
+
+**To answer your question accurately, the knowledge graph would need to include entities related to bladder cancer (e.g., ""рак мочевого пузыря""), its specific treatment modalities (e.g., трансуретральная резекция, внутрипузырная терапия, цистэктомия, иммунотерапия, лучевая терапия), and their relations within a standard protocol.**
+
+Therefore, based solely on the provided data, I do not have information on the standard treatment protocol for bladder cancer.",2,1,3,2,The answer's main weakness is that it provides no actual information about bladder cancer treatment despite being asked a direct medical question.
+14,How are bone and cartilage sarcomas treated?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the treatment of bone and cartilage sarcomas.
+
+The knowledge graph contains information about **sarcoma (саркомы)** and **soft tissue sarcomas (сарком мягких тканей)**, but it does not contain any information about their treatment. The relations for these entities focus on:
+*   Association with **AML (ОМЛ)**.
+*   A genetic cause (**синдром Ли-Фраумени** or Li-Fraumeni syndrome) for soft tissue sarcomas.
+
+Crucially, there are no entities or relations in the provided context that describe treatment modalities (such as surgery, chemotherapy, radiation therapy, targeted therapy) for any type of sarcoma, including bone or cartilage sarcomas.
+
+**What I can state from the context:**
+The graph details diagnostic and treatment information extensively for **Acute Lymphoblastic Leukemia (Острые лимфобластные лейкозы)**, but this is a blood cancer (leukemia) and is not relevant to the treatment of solid tumors like sarcomas.
+
+**Conclusion:**
+To answer the question about treating bone and cartilage sarcomas, information on surgical resection, radiotherapy, chemotherapy regimens, and other oncologic therapies would be required. This information is not present in the provided knowledge graph excerpt.",2,1,1,2,The answer correctly identifies the limitations of its knowledge base but fails to provide any actual treatment information for bone and cartilage sarcomas.
+15,How is febrile neutropenia managed during chemotherapy?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, there is **no specific information** on the management of febrile neutropenia during chemotherapy.
+
+The knowledge graph focuses on chemotherapy procedures (like induction, intrathecal), specific conditions they treat (e.g., leukemia, relapse), and complications they cause (e.g., osteonecrosis). It also details diagnostic and treatment methods for specific conditions like **нейролейкемия (neuroleukemia)**.
+
+However, the entity **""febrile neutropenia""** is not present in the graph, and none of the listed relations or entities describe its management, supportive care, or associated protocols.
+
+**What can be inferred from the context:**
+The graph confirms that chemotherapy (химиотерапия) is a core treatment and is associated with affecting **гемопоэза (hematopoiesis)**, which is the process of blood cell formation. Febrile neutropenia is a common and serious complication of chemotherapy-induced suppression of hematopoiesis, specifically affecting neutrophil production. While this connection is logically implied, the specific guidelines for its management—such as the use of empiric broad-spectrum antibiotics, growth factors (G-CSF), diagnostic workup, and supportive care—are **not detailed** in the provided knowledge graph snippets.
+
+**Conclusion:**
+To answer the question specifically, information on the management of febrile neutropenia is outside the scope of the provided structured data. You would need to consult clinical guidelines that specifically address this common oncologic emergency.",2,1,1,2,"The main weakness is that it fails to provide any actual management information for febrile neutropenia, which is the core of the question."
+16,What antiemetic regimens are used with highly emetogenic chemotherapy?,HiRAG (baseline),hybrid_rrf,"Based on the knowledge graph provided, I can offer the following information regarding antiemetic regimens for chemotherapy:
+
+The knowledge graph confirms that **антиэметическая терапия (antiemetic therapy)** is a procedure used to treat **тошнота (nausea)** and **рвота (vomiting)**, which are common side effects of chemotherapy.
+
+Specifically, the graph details the components of a standard antiemetic regimen. According to the relations, antiemetic therapy includes:
+1.  **Антагонисты серотониновых рецепторов (Serotonin receptor antagonists)**
+2.  **Глюкокортикоиды (Glucocorticoids)**
+
+This combination (a serotonin antagonist plus a corticosteroid) is a cornerstone of prophylaxis for highly emetogenic chemotherapy.
+
+**However, the knowledge graph has a significant gap for your specific question.** It does not explicitly link the entity **""антиэметическая терапия""** or its components to any specific type of chemotherapy, such as **""интенсивная химиотерапия"" (intensive chemotherapy)** or **""высокоэметогенная химиотерапия"" (highly emetogenic chemotherapy)**. The graph does not contain an entity for ""highly emetogenic chemotherapy"" itself.
+
+**In summary, from the provided context:**
+*   We know the standard drug classes used in antiemetic therapy: **serotonin receptor antagonists** and **glucocorticoids**.
+*   We know this therapy is indicated for treating nausea and vomiting.
+*   We **cannot confirm from this graph** that this specific regimen is *recommended for use with highly emetogenic chemotherapy*, as that specific clinical indication is not modeled in the provided relations.
+
+For a complete clinical guideline, additional information such as the specific drugs (e.g., ondansetron, dexamethasone), their dosages, timing of administration, and the potential addition of other agents like NK1 receptor antagonists for highly emetogenic regimens would be required. This information is not present in the provided knowledge graph snippet.",3,2,2,3,"The main weakness is that the answer fails to provide the specific antiemetic regimens used for highly emetogenic chemotherapy, instead focusing on what the knowledge graph lacks."
+17,How is tumor lysis syndrome prevented and treated?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph, here is a summary of the prevention and treatment strategies for Tumor Lysis Syndrome (TLS).
+
+**Prevention and Treatment of Tumor Lysis Syndrome**
+
+The primary approach involves proactive management for patients at high risk (e.g., those with bulky, rapidly proliferating tumors starting chemotherapy). The core strategies are:
+
+**1. Hydration and Diuresis (Volume Expansion):**
+*   **Гидратационная терапия (Hydration therapy):** Aggressive intravenous hydration is fundamental to maintain high urine output and prevent the precipitation of uric acid and phosphate crystals in the renal tubules.
+*   **Форсированный диурез (Forced diuresis):** This refers to the active enhancement of urine production.
+*   **Петлевые диуретики (Loop diuretics):** Drugs like furosemide may be used **cautiously** to maintain urine flow, but only after adequate hydration is established to avoid intravascular volume depletion.
+
+**2. Pharmacologic Prevention/Treatment:**
+*   **Аллопуринол (Allopurinol):** A xanthine oxidase inhibitor used prophylactically to reduce the formation of uric acid, a key component of TLS.
+*   **Защелачивание мочи (Alkalinization of urine):** This is mentioned as a treatment in the context of ""синдром лизиса опухоли (СОЛ)"". Historically, it was used to increase uric acid solubility, but its use is now controversial and not universally recommended, as it can promote calcium phosphate deposition.
+*   **Глюкокортикоиды (Glucocorticoids):** Mentioned as a treatment for ""синдром лизиса опухоли (СОЛ)"". They may be used in specific contexts, such as TLS associated with highly steroid-sensitive lymphomas (e.g., certain types of acute lymphoblastic leukemia), to rapidly reduce tumor burden.
+
+**3. Management of Underlying Cause:**
+*   The knowledge graph explicitly states that TLS is caused by **ХТ (Химиотерапия - Chemotherapy)** and the drug **венетоклакс (Venetoclax)**. Prevention strategies are therefore critically applied at the initiation of these treatments.
+
+**4. Important Notes from the Knowledge Graph Context:**
+*   The graph distinguishes between **синдром лизиса опухоли** (general Tumor Lysis Syndrome) and **синдром опухолевого лизиса** (a complication of it), with the latter specifically linked to venetoclax.
+*   TLS leads to **электролитные нарушения (electrolyte disturbances)**, such as hyperkalemia, hyperphosphatemia, hypocalcemia, and hyperuricemia. Treatment, therefore, also includes specific management of these abnormalities (e.g., kayexalate for hyperkalemia, phosphate",8,7,9,8,"The answer provides a well-structured, detailed overview of TLS prevention and treatment strategies with good coverage of hydration, pharmacologic approaches, and underlying causes."
+18,What supportive care is recommended during intensive chemotherapy?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, the specific supportive care measures recommended during intensive chemotherapy are not detailed. However, the graph establishes a clear and relevant connection.
+
+From the context, I can state the following:
+
+*   The knowledge graph explicitly links **""ХТ миелолейкоза""** (chemotherapy for myeloid leukemia) to **""сопроводительное лечение""** (supportive care treatment) via a `related_to` relation. This confirms that supportive care is an integral component of the treatment framework for intensive chemotherapy regimens, at least in the context of myeloid leukemia.
+*   The graph also indicates that **""живые вакцины""** (live vaccines) are `contraindicated_for` **""интенсивная терапия""** (intensive therapy period). This is a critical piece of supportive care advice, as it highlights an important preventive measure to avoid infections during a period of likely immunosuppression.
+
+**What is not specified in the provided context:**
+The graph does not list the specific components of supportive care (e.g., antimicrobial prophylaxis, growth factor support, transfusion protocols, antiemetics, tumor lysis syndrome management, or nutritional support).
+
+**Answer:**
+According to the structured knowledge graph, supportive care (""сопроводительное лечение"") is recognized as a related and necessary component during chemotherapy for conditions like myeloid leukemia. A key specific recommendation is that **live vaccines are contraindicated during the intensive therapy period**. For comprehensive details on all recommended supportive care measures (including infection prophylaxis, transfusion support, and management of treatment side effects), one must consult the full clinical guidelines (""клинические рекомендации"") from which this knowledge graph was derived.",3,4,2,3,The answer's main weakness is that it acknowledges the lack of specific supportive care details while providing only one concrete recommendation (live vaccine contraindication) from the knowledge graph.
+19,Which chemotherapy drugs require dose adjustment for renal impairment?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I cannot give a specific list of chemotherapy drugs that require dose adjustment for renal impairment.
+
+The knowledge graph contains information about chemotherapy procedures and drug classes, but it does not include specific data on pharmacokinetics, metabolism, excretion, or dose adjustment guidelines related to organ dysfunction (like renal or hepatic impairment).
+
+Here is what I can confirm from the context:
+
+*   The graph identifies **""препаратам платины (L01XA)"" (platinum-based drugs)** as a class of antitumor drugs used to treat certain conditions.
+*   In standard clinical practice, many **platinum-based agents (e.g., cisplatin, carboplatin)** are known to be renally excreted and require significant dose adjustment or are contraindicated in patients with renal impairment. However, this **specific relation is not stated** in the provided knowledge graph.
+*   The graph mentions that drugs have dosages (""дозы лекарственных препаратов"") and should be used according to their official instructions (""инструкции по применению лекарственного препарата""). It is within these official instructions that details on contraindications and dose adjustments for renal impairment would be found, but the graph does not extract or link that specific information.
+
+**Conclusion:** While the knowledge graph notes the existence of chemotherapy drugs and their general dosage principles, it lacks the necessary detailed pharmacological data to answer which specific agents require renal dose adjustment. To answer this question accurately, one would need to consult drug monographs, pharmacokinetic databases, or clinical guidelines that specify excretion pathways and adjustment rules for individual chemotherapeutic agents.",8,7,6,7,The answer's main strength is its clear explanation of knowledge graph limitations and practical guidance on where to find accurate information.
+20,What biomarkers are used to stratify risk in hematological malignancies?,HiRAG (baseline),hybrid_rrf,"Based on the provided knowledge graph context, I can identify several biomarkers used for risk stratification in hematological malignancies, specifically focusing on **Acute Lymphoblastic Leukemia (ОЛЛ/Острый лимфобластный лейкоз)**. The graph does not contain explicit information on risk stratification for other hematological malignancies like lymphomas or myeloid leukemias.
+
+Here are the key biomarkers and genetic alterations mentioned that are used for risk stratification in ALL:
+
+1.  **Cytogenetic and Molecular Genetic Markers:**
+    *   **BCR::ABL1 (Ph-позитивный ОЛЛ):** The presence of the Philadelphia chromosome, detected by **FISH** or cytogenetics, defines a high-risk subgroup.
+    *   **KMT2A (MLL) rearrangements:** Specifically **t(4;11)** and other **11q23/KMT2A** rearrangements are associated with high risk.
+    *   **t(1;19):** This translocation is a recognized genetic abnormality used in risk assessment.
+    *   **IRF4 rearrangement:** Mentioned in the context of Diffuse Large B-cell Lymphoma (крупноклеточная лимфома с реарранжировкой IRF4), this is a diagnostic biomarker but its role in risk stratification for ALL is not specified in this graph.
+    *   **Low Hypodiploidy/Near Triploidy:** While not explicitly listed, the context of **цитогенетическое исследование (кариотип)** is the primary method to detect these numerical abnormalities, which are critical for risk stratification.
+
+2.  **Immunophenotypic Subtypes (linked to genetic risk):**
+    *   **Early T-cell Precursor (ETP) ALL (ETP варианты):** This immunophenotypic subtype is mentioned as a cause/poor-risk feature.
+    *   **B-ALL vs. T-ALL:** The graph distinguishes between **B-ОЛЛ** and **Т-ОЛЛ**, which have different risk profiles and treatment approaches. **T-ЛБЛ** and **В-ЛБЛ** are noted as part of ОЛЛ.
+
+3.  **Minimal Residual Disease (МОБ):** The graph strongly links **FISH** and other methods to the assessment of **Минимальная остаточная болезнь (МОБ)**. MRD level after initial therapy is one of the most powerful biomarkers for risk stratification, determining the intensity of subsequent treatment.
+
+4.  **Response to Initial Therapy (as a functional biomarker):**
+    *   **Prednisone Response (преднизолон):** The graph notes that ОЛЛ is ""diagnosed by"" prednisone, which in clinical practice refers to the prednisone prophase response—a early response biomarker used in some pediatric protocols for risk stratification.
+
+**Summary of the Risk Strat",7,8,6,7,"The answer provides detailed, actionable biomarker information for ALL but is limited in scope to that specific malignancy."
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I can give a partial answer regarding the treatment protocol for acute lymphoblastic leukemia (Острый лимфобластный лейкоз) in children. However, the graph does not contain a complete, detailed protocol.
+
+Here is what I can state with certainty from the structured knowledge:
+
+The treatment for Acute Lymphoblastic Leukemia (ALL) in children involves a multi-phase chemotherapy protocol. The specific phases mentioned are:
+
+1.  **Индукционная терапия (Induction therapy):** This is the initial phase of treatment aimed at achieving a remission by eliminating detectable leukemia cells from the bone marrow and blood.
+2.  **Консолидация (Consolidation therapy):** This phase follows induction and is intended to eliminate any remaining leukemia cells that may not be detectable.
+3.  **Поддерживающая терапия (Maintenance therapy):** This is a longer, less intensive phase of treatment designed to prevent relapse.
+
+**Additional Context from the Graph:**
+*   The condition is coded as **C91.0** according to ICD.
+*   The treatment protocol is related to guidelines from the **Министерство Здравоохранения Российской Федерации (Ministry of Health of the Russian Federation)**.
+*   The disease can involve extramedullary sites such as the **ЦНС (Central Nervous System)**, **яички (testes)**, and **кожа (skin)**. Specific related conditions mentioned are **нейролейкемия (neuroleukemia)** and **опухолевое поражение ЦНС (CNS tumor involvement)**, indicating that CNS-directed therapy (e.g., intrathecal chemotherapy) is a critical component of the protocol, though the exact agents are not specified here.
+*   A known complication of treatment mentioned is **асептический остеонекроз (aseptic osteonecrosis)**.
+
+**Important Information Not in the Graph:**
+The knowledge graph does **not** provide the following crucial details for a complete protocol:
+*   The specific chemotherapeutic drugs used in each phase (e.g., vincristine, prednisone, asparaginase, anthracyclines during induction; high-dose methotrexate, cytarabine during consolidation; mercaptopurine and methotrexate during maintenance).
+*   The exact duration, dosage, and sequence of each phase.
+*   The criteria for risk stratification (standard, high, very high-risk) which determines therapy intensity.
+*   The role of allogeneic hematopoietic stem cell transplantation for specific high-risk subgroups.
+*   The detailed protocol for the treatment of CNS disease.
+*   The management of specific genetic subtypes (e.g., *BCR-ABL1*-positive ALL, which is related to транслокация t(9;22), and would now include targeted therapy with tyrosine kinase inhibitors).
+
+**Conclusion:**
+The treatment protocol for childhood ALL is",6,5,7,6,"The answer provides a structured overview of treatment phases and acknowledges important limitations, but lacks specific actionable details about drugs, dosages, and risk stratification."
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph, the induction therapy for ALL with a BCR-ABL1 mutation involves a combination of standard chemotherapy and targeted therapy.
+
+Here is a specific and comprehensive breakdown:
+
+**1. Standard Induction Chemotherapy:**
+The foundation is a **4-компонентная индукционная терапия (four-drug induction regimen)**. This regimen is indicated for treating ОЛЛ (ALL) and includes:
+*   Глюкокортикоид (a glucocorticoid, e.g., prednisone or dexamethasone)
+*   Винкристин (vincristine)
+*   Антрациклины (an anthracycline, e.g., daunorubicin)
+*   Аспарагиназа or Пэгаспаргаза (asparaginase or pegaspargase)
+
+**2. Targeted Therapy for BCR-ABL1:**
+Crucially, for Ph-позитивный ОЛЛ (Philadelphia chromosome-positive ALL, which is defined by the BCR::ABL1 fusion gene), the induction regimen is combined with an **ингибитор BCR-ABL-тирозинкиназы (BCR-ABL tyrosine kinase inhibitor - TKI)**. This class of drugs (e.g., imatinib, dasatinib, ponatinib) directly targets the molecular driver of the leukemia.
+
+**3. Additional Context from the Knowledge Graph:**
+*   The entity **BCR-ABL1-подобных ОЛЛ (BCR-ABL1-like ALL)** is also treated with ТКИ (TKIs). This is a distinct genetic subtype that mimics the signaling pathways of Ph+ ALL but lacks the classic BCR::ABL1 fusion. The presence of mutations or rearrangements in genes like **ABL1, ABL2, JAK2, EPOR, PDGFRB, or CRLF2** can define this subgroup and make it responsive to TKIs.
+*   The graph mentions **эпигенетическая терапия (epigenetic therapy)**, which includes agents like децитабин (decitabine), as part of индукция ремиссии (induction of remission). However, its specific link to BCR-ABL1 mutated ALL is not detailed in the provided context.
+
+**Clinical Summary:**
+Therefore, the standard induction therapy for **ALL with a BCR-ABL1 mutation (Ph+ ALL)** is a **multimodal regimen combining a four-drug chemotherapy backbone (glucocorticoid, vincristine, anthracycline, asparaginase) with a BCR-ABL tyrosine kinase inhibitor (TKI)**. This approach targets both the rapidly dividing leukemic cells (chemotherapy) and the specific oncogenic BCR-ABL signaling pathway (targeted therapy).
+
+*Note: The knowledge graph does not specify the exact sequencing or dosing of these components",9,8,8,9,The answer provides a detailed breakdown of both standard chemotherapy and targeted therapy components while correctly distinguishing between Ph+ ALL and BCR-ABL1-like ALL.
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** on how minimal residual disease (MRD) is monitored in acute lymphoblastic leukemia (ALL).
+
+The knowledge graph contains detailed information about ALL (Острый лимфобластный лейкоз), including its ICD-10 code (C91.0), relation to the Philadelphia chromosome, parts of its treatment (induction, consolidation, maintenance therapy), and potential sites of involvement (CNS, testes, skin). However, it does not mention the concept of **minimal residual disease (MRD)**, nor does it describe any diagnostic or monitoring techniques specifically for MRD, such as:
+* Flow cytometry
+* Polymerase chain reaction (PCR) for specific genetic markers
+* Next-generation sequencing (NGS)
+
+**Conclusion:** While the knowledge graph confirms that ALL is a diagnosed condition (linked to diagnostic codes and physical/laboratory exams), the specific and critical clinical practice of **MRD monitoring is not covered** in the extracted data provided. To answer the question fully, information on the methodologies and timing of MRD assessment would be required, which is not present in this knowledge graph subset.",2,3,2,2,"The main weakness is that the answer fails to provide any actual information about MRD monitoring in ALL, instead focusing on what the knowledge graph lacks."
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the standard induction chemotherapy for **acute myeloid leukemia (AML)**.
+
+Here is what I can determine from the available information:
+
+1.  **The knowledge graph focuses on other conditions and therapies.** The entities and relations are centered on conditions like **лейкемия (leukemia)**, **ОЛЛ (likely Acute Lymphoblastic Leukemia - ALL)**, **ЛБЛ (Lymphoblastic Lymphoma)**, and **Диффузная В-клеточная крупноклеточная лимфома (Diffuse Large B-Cell Lymphoma)**. The specific query about **acute myeloid leukemia (AML)** is not addressed.
+
+2.  **The graph details intensive chemotherapy, but not for AML.** The entity **интенсивная эндолюмбальная химиотерапия (intensive intrathecal chemotherapy)** is described with many synonyms, including ""индуктивная химиотерапия (induction chemotherapy)."" However, its listed treatment relations are to **рак коры надпочечника (adrenal cortex cancer)** and **Диффузная В-клеточная крупноклеточная лимфома**, not to AML.
+
+3.  **No link between AML and a specific induction regimen is present.** While the graph contains entities for **цитотоксическая химиотерапия (cytotoxic chemotherapy)** and general **противоопухолевая терапия (anti-tumor therapy)**, there is no connection established from these, or any specific drug regimen, to the treatment of AML.
+
+**Conclusion:** The structured knowledge graph provided does not contain information on the standard induction chemotherapy for acute myeloid leukemia (AML). To answer this question, a knowledge graph containing entities and relations specific to AML treatment protocols (e.g., linking ""7+3"" regimen, cytarabine, anthracyclines to AML) would be required.",8,7,6,7,"The answer's main strength is its clear explanation of why the knowledge graph cannot provide the requested information, including specific examples of what is and isn't covered."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding how acute promyelocytic leukemia (APL) is treated differently from other AML subtypes.
+
+**Reason:** The knowledge graph does not contain specific information on **acute promyelocytic leukemia (APL)** as a distinct entity, nor does it detail treatment protocols for different subtypes of acute myeloid leukemia (AML). The entities and relations provided focus on general leukemia concepts, specific procedures (like leukapheresis or ovarian focus removal), and diagnostic components (like white blood cell counts), but do not include the critical therapeutic information needed to answer your question.
+
+**What I can confirm from the context:**
+*   The graph recognizes **лейкемия (leukemia)** as a malignant blood disease.
+*   It contains a procedure **лейкоцитаферезы (leukapheresis)** which is indicated for treating **ОЛЛ (ALL - Acute Lymphoblastic Leukemia)**, but this is a different disease from AML.
+*   It mentions **противоопухолевой терапии (anti-tumor therapy)** in relation to leukemia cells, but without specifying agents or regimens.
+
+**Conclusion:** To answer your question accurately, information on specific treatments such as **all-trans retinoic acid (ATRA)** and **arsenic trioxide (ATO)**, which are cornerstone therapies for APL, and how they differ from standard AML induction chemotherapy (e.g., ""7+3"" regimen), would be required. This level of detail is not present in the given knowledge graph.",2,1,3,2,The answer correctly identifies its inability to provide the requested information but fails to offer any actual treatment comparison between APL and other AML subtypes.
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, a direct and specific answer to the first-line treatment for ""aggressive non-follicular lymphoma"" cannot be given, as the treatment protocols are not detailed in the extracted relations.
+
+However, the knowledge graph provides relevant information that allows for a structured, clinically relevant response based on the available data:
+
+1.  **Condition Identification:** The term ""aggressive non-follicular lymphoma"" strongly aligns with entities in the graph:
+    *   **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)** is explicitly mentioned as being *related to* **неходжкинская лимфома** (Non-Hodgkin lymphoma). DLBCL is the most common type of aggressive non-Hodgkin lymphoma.
+    *   **В-клеточная лимфома высокой степени злокачественности** (High-grade B-cell lymphoma) is described as an aggressive type with gene rearrangements (c-MYC, BCL2, BCL6), which often falls under the category of aggressive lymphomas, including some ""non-follicular"" types.
+
+2.  **Treatment Context:** The graph mentions **CHOP** in relation to **неходжкинских лимфом** (Non-Hodgkin lymphomas). Historically, the CHOP regimen (cyclophosphamide, doxorubicin, vincristine, prednisone) was a cornerstone of therapy for aggressive lymphomas like DLBCL.
+
+3.  **Critical Missing Information:** The graph does **not** specify:
+    *   That CHOP is the *first-line* treatment.
+    *   The current standard of care, which is **R-CHOP** (CHOP plus the monoclonal antibody rituximab). R-CHOP is universally accepted as the first-line therapy for DLBCL and many other aggressive B-cell non-Hodgkin lymphomas.
+    *   Treatment details for other specific aggressive non-follicular subtypes (e.g., Burkitt lymphoma, lymphoblastic lymphoma), though the graph links **противоопухолевая терапия** (antineoplastic therapy) to treating conditions like **ОЛЛ/ЛБЛ** (ALL/LBL, which includes lymphoblastic lymphoma).
+
+**Conclusion from the Knowledge Graph:**
+While the graph confirms the relevance of **CHOP chemotherapy** to **Non-Hodgkin lymphomas** (which include aggressive non-follicular types), it lacks the specificity to state the definitive first-line treatment. In modern clinical practice, the first-line treatment for the most common aggressive non-follicular lymphoma (Diffuse Large B-Cell Lymphoma) is **R-CHOP immunochemotherapy**. For other specific subtypes (e.g., Burkitt lymphoma, high-grade B-cell lymphoma with MYC and BCL2 rearrangements), more intensive regimens are typically used",8,7,9,8,"The answer's main strength is its thorough analysis of what the knowledge graph contains versus what it lacks, providing both historical context and modern clinical standards."
+7,How is Hodgkin lymphoma staged and treated?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot provide a specific or comprehensive answer regarding the staging and treatment of Hodgkin lymphoma. The knowledge graph does not contain direct information on Hodgkin lymphoma (лимфома Ходжкина).
+
+Here is what I can tell you from the context provided:
+
+1.  **Terminology Clarification:** The graph notes that ""неходжкинская лимфома"" (non-Hodgkin lymphoma) is also known as ""лимфома Ходжкина."" This appears to be a terminological error or conflation in the source material, as in standard medical classification, Hodgkin lymphoma and non-Hodgkin lymphoma are two distinct major categories of lymphoma.
+
+2.  **Lack of Relevant Data:** The graph contains no entities or relations specifically describing Hodgkin lymphoma's characteristics, staging criteria (such as the Ann Arbor or Lugano classification), or treatment modalities (such as chemotherapy regimens like ABVD, radiotherapy, or stem cell transplantation).
+
+3.  **Related but Indirect Information:** The graph contains information on procedures and concepts that may be *tangentially* related to lymphoma management in general, but not specific to Hodgkin lymphoma:
+    *   **Lymph Node Procedures:** It details **лимфодиссекции** (lymph node dissection), stating it improves **безрецидивной выживаемости** (relapse-free survival) and reduces **АКР-ассоциированной смертности** (likely ""axillary lymph node recurrence-associated mortality""). However, this information is not linked to Hodgkin lymphoma and is more relevant to solid tumor surgeries.
+    *   **Diagnostic Procedures:** It notes that **пункционная биопсия** (puncture biopsy) is indicated for **неходжкинская лимфома** (non-Hodgkin lymphoma). While biopsy is central to diagnosing all lymphomas, the specific staging and treatment pathways for Hodgkin lymphoma are not described.
+
+**Conclusion:** To answer the question accurately, information is needed on the specific staging systems (involving physical exam, imaging like PET-CT, and bone marrow biopsy) and the standard treatment protocols for Hodgkin lymphoma (which differ significantly by stage and subtype), which are absent from the provided knowledge graph.",2,1,3,2,"The main weakness is that it fails to answer the question about Hodgkin lymphoma staging and treatment, instead focusing on what information is missing from a knowledge graph."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about the recommended treatment for follicular lymphoma (FL) stage III-IV.
+
+The knowledge graph contains detailed information about several lymphoma types and related procedures, but none directly address follicular lymphoma. Specifically, the graph includes entities for:
+
+*   **В-клеточная лимфома высокой степени злокачественности** (High-grade B-cell lymphoma)
+*   **Лимфома Беркитта** (Burkitt lymphoma)
+*   **Лимфобластная лимфома** (Lymphoblastic lymphoma)
+*   **неходжкинская лимфома** (Non-Hodgkin lymphoma) as a broad category
+*   **лимфоматоидный гранулематоз** (Lymphomatoid granulomatosis)
+*   **плазмобластная лимфома** (Plasmablastic lymphoma)
+
+While follicular lymphoma is a subtype of non-Hodgkin lymphoma, the graph does not elaborate on its management. The procedures mentioned (**лимфодиссекции** - lymph node dissection and **превентивной лимфодиссекции** - preventive lymphadenectomy) are discussed in relation to other conditions or general outcomes (like improving disease-free survival), but not specifically for follicular lymphoma.
+
+**Conclusion:** The knowledge graph lacks the necessary data to answer the question about first-line or standard treatment recommendations for advanced-stage (III-IV) follicular lymphoma. To answer this question, clinical guidelines detailing systemic therapies such as immunotherapy (e.g., rituximab), chemotherapy, radioimmunotherapy, or watchful waiting strategies would be required.",2,1,3,2,The answer's main weakness is that it fails to provide any actual treatment information despite acknowledging the question's clinical importance.
+9,What systemic therapy is used for adrenocortical carcinoma?,HiRAG + Dedup,semantic_only,"На основании предоставленного контекста графа знаний, системной терапией, применяемой при адренокортикальном раке (злокачественной опухоли коры надпочечников), являются:
+
+1.  **Митотан** — указан как препарат, который лечит (`treats`) как непосредственно **адренокортикальный рак**, так и связанное с ним состояние **рак коры надпочечника**.
+2.  **Пембролизумаб** — также указан как препарат, который лечит (`treats`) **адренокортикальный рак**.
+
+**Важные уточнения и ограничения на основе контекста:**
+
+*   В графе знаний не указаны конкретные схемы лечения (монотерапия или комбинация), дозировки или линии терапии (первая, вторая).
+*   Контекст не содержит информации о других возможных вариантах системной терапии (например, химиотерапевтических комбинациях с цисплатином, этопозидом, доксорубицином), которые могут использоваться в клинической практике.
+*   Упоминание **интенсивной эндолюмбальной химиотерапии** относится к лечению состояния **рак коры надпочечника**, однако эта процедура, судя по описанию (""интенсивная интратекальная химиотерапия""), является локальным, а не системным методом лечения (направлена в спинномозговой канал).
+
+**Вывод:**
+Согласно предоставленным данным, к системной лекарственной терапии адренокортикального рака относятся **митотан** и **пембролизумаб**. Для определения полного спектра стандартных схем лечения, их последовательности и критериев выбора необходима консультация актуальных клинических рекомендаций.",7,6,5,6,The answer correctly identifies two systemic therapies but acknowledges limitations in covering standard treatment combinations and clinical guidelines.
+10,How is anal squamous cell carcinoma treated with chemoradiation?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is no specific information about **anal squamous cell carcinoma** or its treatment with **chemoradiation**.
+
+The knowledge graph contains information on various cancers and treatments, but none directly address your question. Specifically, it includes details on:
+*   **Procedures:** противоопухолевая терапия (antitumor therapy), цитотоксическая химиотерапия (cytotoxic chemotherapy).
+*   **Conditions:** рак коры надпочечника (adrenal cortex cancer), адренокортикальный рак (adrenocortical cancer), колоректальный рак (colorectal cancer).
+*   **Relations:** It shows that certain therapies *treat* specific conditions (e.g., митотан treats адренокортикальный рак) and can *cause* side effects.
+
+**Conclusion from Available Context:**
+The knowledge graph does not contain entities or relationships pertaining to anal cancer, squamous cell carcinoma of the anus, or the combined modality treatment known as chemoradiation. Therefore, I cannot provide a specific answer on how anal squamous cell carcinoma is treated with chemoradiation based on the given data.
+
+To answer your question accurately, information would be needed on the specific chemotherapeutic agents (e.g., mitomycin C, 5-fluorouracil, capecitabine) used in conjunction with radiation therapy, the standard radiation protocols, and the clinical context (stage of disease) for this particular malignancy.",2,3,4,3,"The answer's main weakness is that it fails to provide the requested medical information, instead focusing on explaining why it cannot answer."
+11,What is the recommended treatment for basal cell skin cancer?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is no specific information regarding the recommended treatment for basal cell skin cancer (базальноклеточный рак кожи).
+
+The knowledge graph contains information on various cancer treatments, such as:
+*   **Противоопухолевая терапия (Antitumor therapy):** Described as a treatment for oncological diseases, including specific types like ОЛЛ/ЛБЛ (likely ALL/LBL - acute lymphoblastic leukemia/lymphoma) and ОЛНЛ (likely a type of leukemia or lymphoma).
+*   **Хирургические методы (Surgical methods):** Mentioned in the context of a surgical oncology department.
+*   **Specific procedures and drugs for other cancers:** Such as интенсивная эндолюмбальная химиотерапия, ДЛТ, РЧА, and митотан for рак коры надпочечника (adrenocortical carcinoma).
+
+However, none of these entities or relations are linked to basal cell carcinoma. The graph does not contain entities for skin cancer, dermatology, or treatments specifically associated with dermatological oncology (e.g., topical therapies, curettage, electrodessication, Mohs surgery, or radiation therapy commonly used for basal cell carcinoma).
+
+**Conclusion:** The knowledge graph does not contain sufficient information to answer the question about the recommended treatment for basal cell skin cancer. To answer this question, clinical guidelines specific to dermatology and skin cancer management would be required.",2,1,3,2,"The main weakness is that the answer fails to provide any actual treatment information for basal cell skin cancer, instead focusing on what the knowledge graph lacks."
+12,How is biliary tract cancer managed with chemotherapy?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot answer the question about the management of biliary tract cancer with chemotherapy.
+
+**Reason:** The knowledge graph does not contain any information about **biliary tract cancer** (рак желчевыводящих путей). The entities and relations in the context are focused on other specific cancers and conditions, such as:
+*   Колоректальный рак (colorectal cancer)
+*   Рак коры надпочечника / адренокортикальный рак (adrenocortical carcinoma)
+*   Опухолевый процесс (tumor process in general)
+*   Неоперабельный метастатический опухолевый процесс (inoperable metastatic tumor process)
+
+The graph includes treatments like **пембролизумаб (pembrolizumab)** and **митотан (mitotane)**, and procedures like **интенсивная эндолюмбальная химиотерапия (intensive intralumbar chemotherapy)**, but these are specifically linked to the cancers listed above (e.g., pembrolizumab is contraindicated for colorectal cancer but treats adrenocortical carcinoma).
+
+**Conclusion:** There is no information in the provided knowledge graph regarding the etiology, diagnosis, staging, or management (including chemotherapy regimens) for biliary tract cancer. To answer this question, a knowledge graph containing entities and relations specific to biliary tract cancer would be required.",2,1,1,2,"The main weakness is that it provides no actual information about biliary tract cancer management, only explaining why it cannot answer."
+13,What is the standard treatment protocol for bladder cancer?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about the standard treatment protocol for bladder cancer.
+
+Here is what the knowledge graph does contain regarding cancer treatment:
+
+1.  **Treatment Modalities:** The graph mentions **противоопухолевая терапия** (antitumor therapy), which is a broad category that includes drug therapy (лекарственная противоопухолевая терапия, противоопухолевые препараты, цитостатические препараты). It also references **хирургические методы лечения** (surgical treatment methods) within an oncology department structure.
+
+2.  **Treatment Targets:** The antitumor therapy described is indicated for treating various leukemias and lymphomas (ОЛЛ/ЛБЛ, ОЛНЛ, ОЛЛ, ЛБЛ), but **bladder cancer is not listed** as a specific condition it treats.
+
+3.  **Healthcare Structure:** The graph details components of oncology care delivery, such as the **онкологический диспансер** (oncology dispensary), which includes a **поликлиническое отделение** (outpatient department) and a **центр амбулаторной онкологической помощи** (outpatient oncology care center). It also mentions **онкологический консилиум** (oncology consultation board) for surgical cases.
+
+4.  **Protocols:** The context refers to **терапевтические протоколы** (treatment protocols with known outcomes) and **терапевтический протокол** (therapeutic protocol) in a general sense, but none are linked to a specific cancer type like bladder cancer.
+
+**Conclusion:** While the knowledge graph confirms the existence of standard treatment protocols, antitumor drug therapy, surgical oncology departments, and a structured oncology care system, it lacks the specific entities and relationships needed to describe the **standard treatment protocol for bladder cancer**. This protocol would typically involve specific details on surgery, intravesical therapy, chemotherapy, immunotherapy, or radiation, depending on the stage and grade, which are not present in the provided data.",2,1,3,2,"The answer's main weakness is that it fails to provide any actual treatment information for bladder cancer, instead focusing on what the knowledge graph lacks."
+14,How are bone and cartilage sarcomas treated?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot give a specific or comprehensive answer about the treatment of bone and cartilage sarcomas in general.
+
+The knowledge graph contains information about specific conditions and treatments, but it does not include direct data on the standard treatment protocols for primary bone and cartilage sarcomas (like osteosarcoma, chondrosarcoma, Ewing's sarcoma).
+
+Here is what I **can** tell you from the available context, which relates to complications and specific scenarios that may involve bone:
+
+1.  **Treatment for Bone Metastases (Secondary Bone Involvement):** The graph details treatment for **костные метастазы (bone metastases)**, which is the spread of cancer to the bones. This is not a primary sarcoma but a complication of other cancers. The treatments listed are:
+    *   **Антирезорбтивная терапия (Antiresorptive therapy)**
+    *   **Ингибиторы костной резорбции (Bone resorption inhibitors)**
+    *   **Бисфосфонаты (Bisphosphonates)**
+    *   **Деносумаб (Denosumab)**
+    These drugs are used to strengthen bone, reduce pain, and prevent skeletal-related events (like fractures) caused by metastases.
+
+2.  **Related Conditions Mentioned:**
+    *   **Миелоидная саркома (Myeloid sarcoma):** This is an extramedullary tumor of myeloid cells, related to **Острый миелоидный лейкоз (Acute Myeloid Leukemia - AML)**. Its treatment would be part of systemic AML therapy, not specific surgery or radiation for a primary bone sarcoma.
+    *   **Саркомы (Sarcomas):** Only a generic relation is noted, stating that **ОМЛ (AML)** is related to sarcomas (likely referring to myeloid sarcoma).
+    *   **Саркоматоидный вариант АКР:** This appears to be a specific histological variant (with loss of cortical differentiation), but no treatment information is provided.
+
+**Conclusion:**
+The knowledge graph lacks the necessary information on the primary treatment modalities for bone and cartilage sarcomas, such as surgical resection, chemotherapy regimens, radiation therapy, or targeted therapies. It only provides information on supportive care for bone metastases and diagnostic methods for various bone-related conditions.
+
+**To answer the question fully, information would be needed on:**
+*   Surgical treatment principles (limb-sparing vs. amputation).
+*   The role of neoadjuvant and adjuvant chemotherapy for specific sarcoma types.
+*   The use of radiation therapy.
+*   Specific drug names and protocols for different sarcoma subtypes.",2,3,4,3,"The answer's main weakness is that it explicitly states it cannot provide the requested information about primary bone and cartilage sarcoma treatment, instead discussing unrelated conditions like bone metastases."
+15,How is febrile neutropenia managed during chemotherapy?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** on the management of febrile neutropenia during chemotherapy.
+
+The knowledge graph focuses on the types, applications, components, and some complications of chemotherapy (such as infectious complications), but it does not detail management protocols for specific side effects.
+
+Here is what can be inferred from the context:
+
+1.  **Infectious Risk:** The graph states that **интенсивная эндолюмбальная химиотерапия (intensive intrathecal chemotherapy)** `--[causes]--> инфекционные осложнения (infectious complications)`. Febrile neutropenia is a classic and serious infectious complication of myelosuppressive chemotherapy.
+2.  **Related Infrastructure:** The management of intensive chemotherapy, and by extension its complications, involves supportive devices. The graph notes that a **центральный венозный катетер (central venous catheter)** is a `--[part_of]-->` this chemotherapy regimen, which is also the standard access for administering antibiotics and supportive care.
+3.  **Gap in Knowledge:** The graph does not contain entities or relations for **antibiotics, granulocyte colony-stimulating factors (G-CSF), hospitalization, or diagnostic workup**—all of which are cornerstone elements of febrile neutropenia management.
+
+**Conclusion:** While the knowledge graph confirms that chemotherapy (particularly intensive regimens) causes infectious complications, the specific clinical guidelines for **managing febrile neutropenia** are not covered in the provided data. To answer the question fully, information on antibiotic protocols, use of growth factors, and criteria for hospitalization would be required.",3,2,4,3,"The answer correctly identifies the knowledge gap but fails to provide any actual management information, making it unhelpful for clinical guidance."
+16,What antiemetic regimens are used with highly emetogenic chemotherapy?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, I cannot answer your question about specific antiemetic regimens for highly emetogenic chemotherapy.
+
+**Reason:** The knowledge graph does not contain any information on antiemetic drugs, antiemetic regimens, or the emetogenic potential (e.g., highly emetogenic) of chemotherapy. The entities and relations are focused on the classification of chemotherapy (e.g., cytotoxic, intensive, intrathecal), specific drugs used in those regimens, their indications, complications, and supportive care devices, but not on the management of nausea and vomiting.
+
+**What I can tell you from the context:**
+The graph details several types of chemotherapy, including:
+*   **Цитотоксическая химиотерапия (Cytotoxic chemotherapy):** Known to cause teratogenic effects.
+*   **Интенсивная эндолюмбальная химиотерапия (Intensive intrathecal chemotherapy):** Can cause infectious complications and has specific contraindications.
+*   **Противоопухолевая терапия (Antitumor therapy):** A broad category that treats conditions like ALL/LBL and can cause adverse events (нежелательные явления).
+
+However, the management of these adverse events, particularly nausea and vomiting, is not covered in the extracted knowledge.
+
+**Conclusion:** To determine appropriate antiemetic regimens, you would need to consult clinical guidelines specifically addressing the prophylaxis and treatment of chemotherapy-induced nausea and vomiting (CINV), which classify chemotherapeutic agents by their emetogenic risk and recommend corresponding antiemetic protocols.",8,7,6,7,The answer's main strength is its clear explanation of knowledge limitations and redirection to appropriate clinical guidelines.
+17,How is tumor lysis syndrome prevented and treated?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph, here is a summary of the prevention and treatment strategies for tumor lysis syndrome (TLS).
+
+**Prevention:**
+The primary preventive strategy is **prophylaxis for patients at high risk**, particularly those initiating therapies known to cause TLS. From the graph, the key causative agents are:
+*   **ХТ (Химиотерапия - Chemotherapy)**
+*   **Венетоклакс (Venetoclax)**
+
+**Treatment:**
+The treatment of TLS is multi-modal and focuses on managing metabolic complications. The recommended interventions from the knowledge graph are:
+
+1.  **Гидратационная терапия / Гидратация (Hydration therapy):** The cornerstone of management to maintain renal perfusion and flush out uric acid and phosphate.
+2.  **Защелачивание мочи (Alkalinization of urine):** Used to increase the solubility of uric acid, preventing its crystallization in the renal tubules.
+3.  **Аллопуринол (Allopurinol):** A xanthine oxidase inhibitor used to reduce the formation of uric acid.
+4.  **Форсированный диурез (Forced diuresis):** Enhancing urine output, often in conjunction with hydration.
+5.  **Петлевые диуретики (Loop diuretics):** Such as furosemide, may be used to manage fluid balance and support diuresis, but caution is needed to avoid dehydration.
+6.  **Глюкокортикоиды (Glucocorticoids):** Listed as a treatment, which may be particularly relevant in TLS associated with hematologic malignancies like lymphomas where steroids are part of the chemotherapeutic regimen.
+
+**Important Clinical Note:** The knowledge graph states that TLS **causes электролитные нарушения (electrolyte disturbances)**. Therefore, effective treatment must include **close monitoring and correction of electrolyte imbalances** (such as hyperkalemia, hyperphosphatemia, hypocalcemia, and hyperuricemia), even though specific corrective measures are not detailed in the provided context.
+
+**In summary,** prevention involves identifying high-risk patients (e.g., those with aggressive lymphomas starting chemotherapy or venetoclax) and initiating prophylactic hydration and allopurinol. Treatment is an escalation of these measures with vigorous hydration, forced diuresis, urine alkalinization, specific medications (allopurinol, diuretics, glucocorticoids), and active management of resulting electrolyte abnormalities.",8,9,7,8,"The answer provides clear, actionable prevention and treatment strategies but could be more comprehensive by including specific electrolyte correction methods and rasburicase as an alternative to allopurinol."
+18,What supportive care is recommended during intensive chemotherapy?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, the following supportive care measures are explicitly recommended or implied during intensive chemotherapy:
+
+1.  **Use of Central Venous Access:** The procedure **интенсивная эндолюмбальная химиотерапия (intensive intrathecal chemotherapy)** is directly linked to the use of a **центральный венозный катетер (central venous catheter)** as a part of the procedure. This is a critical supportive care measure to safely administer intensive chemotherapy and manage complications.
+
+2.  **Infection Prophylaxis and Management:** The same intensive chemotherapy **causes** **инфекционные осложнения (infectious complications)**. Therefore, supportive care must include strategies for the **профилактика осложнений специфической терапии (prevention of specific therapy complications)**, which is noted as part of long-term follow-up (Диспансерное наблюдение). This implies the need for antimicrobial prophylaxis, growth factor support (e.g., G-CSF), and vigilant monitoring for infections.
+
+3.  **Hematopoietic Support:** The entity **гемопоэтических клеток (hematopoietic cells)** is listed as a **part_of** intensive intrathecal chemotherapy. This strongly implies that **support with hematopoietic stem cell transplantation (HSCT)** or the use of **growth factors** is an integral supportive component of this intensive treatment regimen.
+
+4.  **Patient Selection and Monitoring for Toxicity:** The graph indicates that **тяжелое соматическое состояние (severe somatic condition)** is a **contraindication for** intensive chemotherapy. This underscores the importance of rigorous patient assessment and supportive care to optimize organ function before treatment. Furthermore, the graph notes that **противоопухолевой терапии (anti-tumor therapy)** in general **causes** **нежелательные явления (adverse events)**, necessitating comprehensive supportive care for management of side effects like nausea, mucositis, and organ toxicities.
+
+**Important Limitations from the Knowledge Graph:**
+The provided context does not contain specific details on other common supportive care measures such as antiemetics, hydration, nutritional support, specific antimicrobial regimens, or psychological support. The information is focused on procedural and complication-related aspects.
+
+**Answer:**
+According to the knowledge graph, supportive care during intensive chemotherapy should include:
+*   **Placement of a central venous catheter** for safe drug administration.
+*   **Proactive prevention and management of infectious complications**, as they are a direct consequence of this therapy.
+*   **Support with hematopoietic cells** (implying stem cell transplantation or growth factor support) as an integral part of the treatment protocol.
+*   **Careful patient selection**, avoiding therapy in those with a severe somatic condition, and vigilant monitoring for adverse events common to anti-tumor therapies.
+
+The graph does not provide exhaustive details on other supportive care modalities.",7,8,6,7,The answer effectively extracts and interprets key supportive care measures from the knowledge graph but acknowledges its limitations regarding common supportive care elements not covered.
+19,Which chemotherapy drugs require dose adjustment for renal impairment?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is no direct information specifying which **specific chemotherapy drugs** require dose adjustment for renal impairment.
+
+The knowledge graph contains information about chemotherapy procedures, regimens, and related concepts, but it does not list individual drugs with their renal dosing requirements.
+
+Here is what the context does tell us that is relevant:
+
+1.  **High-Dose Methotrexate and Monitoring:** There is an entity for **терапия высокими дозами метотрексата (high-dose methotrexate therapy)**, which is linked via a `diagnosed_by` relation to **мониторинг концентрации метотрексата (monitoring of methotrexate concentration)**. This implies that methotrexate levels are carefully monitored, which is a standard practice due to its renal excretion and the high risk of toxicity in renal impairment. However, the graph does not explicitly state that its dose must be *adjusted* for renal impairment.
+
+2.  **General Dosage Considerations:** The entity **дозы лекарственных препаратов (medication dosage regimens)** is central and is linked to concepts like `part_of` поддерживающая терапия (maintenance therapy) and `contraindicated_for` цитопенией (cytopenia). This shows that dosage is a critical consideration, but renal function is not mentioned as a specific factor in these relations.
+
+3.  **Drugs Mentioned in Specific Regimens:** The graph lists drugs that are part of specific protocols:
+    *   **Метотрексат (Methotrexate)**, **Цитарабин (Cytarabine)**, and **Преднизолон (Prednisone)** are listed as components (`part_of`) of **тройная интратекальная химиотерапия (triple intrathecal chemotherapy)**. For intrathecal (spinal) administration, renal impairment is generally less relevant for dosing than it is for systemic administration.
+
+**Conclusion:**
+
+From the structured knowledge provided, I cannot identify a list of chemotherapy drugs that require renal dose adjustment. The context highlights the importance of dosage regimens and monitoring for specific drugs like methotrexate, but it does not contain the necessary pharmacologic data (e.g., drug excretion pathways, specific guidelines for renal impairment) to answer the question comprehensively.
+
+To answer this question accurately, one would need access to pharmacological databases or clinical guidelines that detail the pharmacokinetics and dosing recommendations for individual chemotherapeutic agents in patients with reduced kidney function.",8,6,7,7,The answer's main strength is its honest assessment of knowledge limitations while extracting relevant contextual clues about methotrexate and general dosing considerations.
+20,What biomarkers are used to stratify risk in hematological malignancies?,HiRAG + Dedup,semantic_only,"Based on the provided knowledge graph context, there is **no specific information** about biomarkers used for risk stratification in hematological malignancies.
+
+The knowledge graph contains information about diagnostic procedures and tests for various tumors, but none are explicitly labeled as ""biomarkers"" for ""risk stratification"" in the context of **hematological malignancies**.
+
+Here is what the context does contain that is somewhat related:
+
+1.  **A specific test for a hematological condition:** There is a mention of **""цитологическое и цитохимическое исследования опухолевых клеток в пунктате КМ""** (cytological and cytochemical examination of tumor cells in bone marrow aspirate) used to diagnose **""ОПЛ""** (which is likely an abbreviation for ""острый промиелоцитарный лейкоз"" or Acute Promyelocytic Leukemia). While cytochemistry is a diagnostic tool, it is not typically referred to as a ""biomarker"" in the modern sense of molecular or genetic markers used for risk stratification.
+
+2.  **Other diagnostic methods for tumors:** The graph lists imaging techniques (CT, ultrasound) for diagnosing malignant tumors and a biopsy procedure for diagnosing extramedullary lesions. It also mentions **""антимитохондриальные антитела""** (anti-mitochondrial antibodies) in relation to diagnosing **""онкоцитарная дифференцировка опухоли""** (oncocytic differentiation of a tumor), which is more relevant to certain solid tumors (e.g., of the thyroid or kidney) rather than hematological malignancies.
+
+**Conclusion:** The knowledge graph lacks data on molecular, genetic, or protein-based biomarkers (such as specific gene mutations, cytogenetic abnormalities, or levels of certain proteins) that are used to stratify risk in diseases like acute myeloid leukemia, myelodysplastic syndromes, multiple myeloma, or lymphomas. To answer the original question, information on markers like *FLT3-ITD*, *NPM1* mutations, cytogenetic risk groups, *IGHV* mutation status, or *del(17p)* would be needed, which is not present in the provided context.",2,1,1,1,"The answer's main weakness is that it fails to provide any actual biomarkers despite acknowledging their importance, making it unhelpful for the question asked."
+1,What is the treatment protocol for acute lymphoblastic leukemia in children?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, the specific treatment protocol for acute lymphoblastic leukemia (ALL) in children is not detailed in a step-by-step manner. However, the graph contains relevant information on the general structure and components of ALL treatment, particularly for the condition ""Острый лимфобластный лейкоз"" (Acute lymphoblastic leukemia), which is explicitly related to ""Дети"" (Children).
+
+Here is a synthesis of the treatment-related information available from the knowledge graph:
+
+1.  **Overall Treatment Phases:** The treatment for Acute Lymphoblastic Leukemia is structured into distinct phases:
+    *   **Индукционная терапия (Induction therapy):** This is listed both as a part of the condition and as a treatment (`индукция --[treats]--> Острый лимфобластный лейкоз`). The goal of this phase is to achieve remission.
+    *   **Консолидация (Consolidation therapy):** This phase follows induction to eliminate any remaining leukemia cells.
+    *   **Поддерживающая терапия (Maintenance therapy):** A longer-term phase of treatment to prevent relapse.
+
+2.  **Broader Treatment Modalities for ALL:** The entity ""Острые лимфобластные лейкозы"" (Acute lymphoblastic leukemias) is linked to several general treatment approaches:
+    *   Медикаментозная терапия (Drug therapy)
+    *   Диетотерапия (Diet therapy)
+    *   Обезболивание (Pain management)
+    *   Медицинская реабилитация (Medical rehabilitation)
+    *   Санаторно-курортное лечение (Spa treatment)
+
+3.  **Specific Agents for T-ALL Subtype:** For the subtype Т-ОЛЛ (T-cell ALL), the graph mentions specific drugs:
+    *   Клофарабин (Clofarabine)
+    *   Неларабин (Nelarabine)
+
+4.  **Important Considerations in Management:** The graph notes that ""Острый лимфобластный лейкоз"" can involve extramedullary sites, which impacts treatment planning. These include:
+    *   ЦНС (Central Nervous System) - requiring specific prophylaxis/therapy (e.g., intrathecal chemotherapy).
+    *   Яички (Testes)
+    *   Кожа (Skin)
+
+**Conclusion from Knowledge Graph:**
+The treatment protocol for childhood ALL involves a multi-phase chemotherapy regimen consisting of **induction, consolidation, and maintenance therapy**. Specific attention must be paid to prophylaxis or treatment of central nervous system involvement. For the T-ALL subtype, agents like clofarabine and nelarabine are relevant. The overall management also includes supportive care such as pain management, nutritional support, and rehabilitation.
+
+**Missing Information:**
+The knowledge graph does not",7,6,8,7,The answer provides a well-structured synthesis of treatment phases and considerations but lacks specific chemotherapy regimens and dosing details needed for a complete protocol.
+2,What induction therapy is used for ALL with BCR-ABL1 mutation?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph, the induction therapy for ALL with a BCR-ABL1 mutation involves a combination of standard chemotherapy and targeted therapy.
+
+Here is a specific and comprehensive breakdown:
+
+1.  **Standard Induction Chemotherapy:** The core regimen is a **4-компонентная индукционная терапия (four-drug induction regimen)**. This is indicated for treating ОЛЛ (ALL) in general and includes:
+    *   Глюкокортикоид (glucocorticoid)
+    *   Винкристин (vincristine)
+    *   Антрациклины (anthracyclines)
+    *   Аспарагиназа (asparaginase) or Пэгаспаргаза (pegaspargase)
+
+2.  **Targeted Therapy:** Crucially, for cases involving the **BCR-ABL1 mutation** (which defines Ph-позитивный ОЛЛ or BCR-ABL1-подобных ОЛЛ), the knowledge graph specifies the addition of a **ТКИ (tyrosine kinase inhibitor)**.
+    *   ТКИ is explicitly stated to treat both **BCR-ABL1-подобных ОЛЛ** and **ABL1** gene rearrangements.
+    *   These drugs are also categorized as **ингибитор BCR-ABL-тирозинкиназы (BCR-ABL tyrosine kinase inhibitor)**, which are indicated for **Ph-позитивный ОЛЛ**.
+
+**Conclusion:** The induction therapy for ALL with a BCR-ABL1 mutation is **a four-drug induction chemotherapy regimen combined concurrently with a BCR-ABL tyrosine kinase inhibitor (TKI)**.
+
+**Note from the knowledge graph context:** The provided information does not specify the exact TKI drug (e.g., imatinib, dasatinib) or the detailed dosing schedule for the combination. It establishes the principle of combined chemo-targeted therapy for this subtype.",9,8,8,9,"The answer's main strength is its clear breakdown of both standard chemotherapy components and targeted TKI therapy, directly addressing the BCR-ABL1 mutation."
+3,How is minimal residual disease monitored in acute lymphoblastic leukemia?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the knowledge graph provided, the monitoring of minimal residual disease (MRD) in acute lymphoblastic leukemia (ALL) involves several diagnostic methods. The graph does not explicitly link MRD monitoring to ALL in a single relation, but by combining entities and relations, a clear picture emerges.
+
+Here is a comprehensive answer based on the extracted knowledge:
+
+**Methods for Monitoring Minimal Residual Disease (MRD) in ALL:**
+
+1.  **Immunophenotyping by Flow Cytometry:** This is a primary method. The graph states that `проточная цитофлуориметрия` (flow cytofluorimetry), `проточная цитометрия` (flow cytometry), and `иммунофенотипирование` (immunophenotyping) are used to diagnose or monitor `Минимальная остаточная болезнь`.
+
+2.  **Molecular Genetic Studies (Polymerase Chain Reaction - PCR):** This is another core technique. The graph lists `полимеразная цепная реакция` (polymerase chain reaction), `количественная ПЦР` (quantitative PCR), and `ПЦР` (PCR) as methods to diagnose MRD. It also specifies `молекулярно-генетических исследований` (molecular genetic studies) for the condition `минимальной остаточной болезни`.
+
+3.  **Fluorescence In Situ Hybridization (FISH):** The method `FISH` is listed as a diagnostic tool for `Минимальная остаточная болезнь`.
+
+4.  **Bone Marrow Aspiration:** The procedure `пункция костного мозга` (bone marrow puncture/aspiration) is indicated as a diagnostic method for MRD, which is the necessary sample source for the above tests.
+
+5.  **Light Microscopy:** While likely less sensitive for low-level MRD, `световая микроскопия` (light microscopy) is also listed as a diagnostic method.
+
+**Important Context from the Knowledge Graph:**
+
+*   **Standard Cytogenetics and FISH (for initial diagnosis) may be insufficient:** The graph notes that `стандартного цитогенетического исследования` (standard cytogenetic study) and `метод FISH` are `contraindicated_for` monitoring MRD. This implies that while FISH can be used, the standard techniques for initial genetic characterization are not the recommended methods for sensitive MRD assessment, highlighting the need for the more sensitive flow cytometry and PCR methods.
+*   **MRD is a Key Condition in Hematologic Malignancies:** MRD (`минимальной остаточной болезни`) is noted as being a `part_of` `гемобластозах` (hemoblastoses), which is the category of diseases that includes leukemias like ALL.
+
+**Limitations of the Provided Context:**
+The knowledge graph does not specify the exact timing (e.g., post-indu",8,7,9,8,The answer's main strength is its detailed enumeration of multiple MRD monitoring methods with specific technical terms and contextual limitations.
+4,What is the standard induction chemotherapy for acute myeloid leukemia?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, the standard induction chemotherapy for acute myeloid leukemia (AML, ОМЛ) is not explicitly detailed as a single named regimen. However, the graph contains specific information about the agents and phases of treatment used for AML.
+
+From the context, the following key points about induction therapy for AML can be extracted:
+
+1.  **Treatment Agents:** The graph lists several chemotherapeutic agents with a `[treats]` relation to ОМЛ (AML), which are core components of induction regimens:
+    *   **Цитарабин** (Cytarabine)
+    *   **Антрациклины** (Anthracyclines, e.g., daunorubicin or idarubicin)
+    *   **Этопозид** (Etoposide)
+
+2.  **Treatment Phase:** The process of **индукция ремиссии** (induction of remission) is explicitly stated to `[treat]` AML. Furthermore, the entity **индукционная терапия** (induction therapy) is also listed as a treatment (`[treats]`) for AML.
+
+3.  **Lack of Specific Protocol Name:** While the graph mentions a specific protocol for one subtype (**протокол ML-DS-2006** for AML associated with Down syndrome), it does not provide a named standard protocol (like ""7+3"") for general adult AML induction.
+
+**Answer:**
+The knowledge graph indicates that standard induction chemotherapy for acute myeloid leukemia (AML) involves **индукционная терапия** (induction therapy) using a combination of chemotherapeutic agents. The core drugs specified are **цитарабин** (cytarabine), **антрациклины** (anthracyclines), and **этопозид** (etoposide). This aligns with the common clinical practice of using a cytarabine and anthracycline backbone (e.g., the ""7+3"" regimen) for remission induction. The graph does not specify exact dosages, schedules, or a definitive protocol name for standard-risk adult AML outside the context of Down syndrome.",8,7,7,8,"The answer effectively synthesizes knowledge graph data with clinical context to provide a clear, accurate explanation of AML induction therapy."
+5,How is acute promyelocytic leukemia treated differently from other AML subtypes?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding how acute promyelocytic leukemia (APL) is treated differently from other AML subtypes.
+
+**Reason:** The knowledge graph does not contain any information on the entity ""acute promyelocytic leukemia"" (APL). The context details general **ОМЛ (acute myeloid leukemia)** and its treatments, but does not differentiate between subtypes.
+
+**What I can tell you from the context about general AML treatment:**
+
+The knowledge graph lists several treatment modalities and specific drugs used for **ОМЛ (AML)**, which would be common to many subtypes. These include:
+*   **Core Therapies:** Полихимиотерапия (polychemotherapy), индукционная терапия (induction therapy), курс индукции (induction course), консолидационная терапия (consolidation therapy).
+*   **Specific Drugs:** Цитарабин (cytarabine), антрациклины (anthracyclines), этопозид (etoposide), венетоклакс (venetoclax), децитабин (decitabine).
+*   **Procedures:** Трансплантация аллогенных гемопоэтических стволовых клеток (allogeneic hematopoietic stem cell transplantation).
+
+**Conclusion:** To answer how APL treatment differs, specific information about APL is required. APL is characterized by a specific genetic translocation (PML::RARA) and is treated uniquely with agents like **all-trans retinoic acid (ATRA)** and **arsenic trioxide (ATO)**, which are not mentioned in the provided knowledge graph. The graph lacks the necessary entities and relations to compare APL to other AML subtypes.
+
+**Answer:** The provided knowledge graph does not contain information on acute promyelocytic leukemia (APL) or its specific treatment protocols. Therefore, I cannot describe how it is treated differently from other AML subtypes. For that comparison, data on the APL entity and its specific treatment relations (e.g., to ATRA or arsenic trioxide) would be required.",8,7,6,7,The answer's main strength is its clear explanation of why it cannot provide the requested comparison while still offering relevant general AML treatment information from the available context.
+6,What is the first-line treatment for aggressive non-follicular lymphoma?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the knowledge graph provided, the first-line treatment for aggressive non-follicular lymphoma is not explicitly stated. However, the graph contains relevant information that allows for a clinically informed inference.
+
+The most relevant entity is **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)**, which is described as the most common type of non-Hodgkin lymphoma in adults and is a classic example of an aggressive non-follicular lymphoma.
+
+From the graph, I can see the following:
+1.  For the related condition ""неходжкинских лимфом"" (non-Hodgkin lymphomas), the chemotherapy regimen **CHOP** is mentioned as a related entity. CHOP (cyclophosphamide, doxorubicin, vincristine, prednisone) is a historical backbone for treating aggressive lymphomas like DLBCL.
+2.  For **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)** specifically, the graph lists ""интенсивная эндолюмбальная химиотерапия"" (intensive intrathecal chemotherapy) as a treatment. This is typically a component of therapy for cases with high risk of central nervous system involvement, not the standard first-line systemic treatment.
+
+**Critical Inference from Clinical Knowledge (not in the graph):**
+Standard global first-line treatment for aggressive DLBCL is **R-CHOP** (rituximab plus CHOP). The knowledge graph mentions CHOP but does not include the critical anti-CD20 monoclonal antibody (rituximab or its biosimilars). For specific subtypes like **первичная медиастинальная В-клеточная лимфома** (primary mediastinal B-cell lymphoma), which is listed as part of ДВКЛ, dose-adjusted **R-EPOCH** is often a preferred regimen.
+
+**Conclusion from Provided Context:**
+The knowledge graph does not contain a direct, complete statement on the first-line treatment for aggressive non-follicular lymphoma. It indicates that **CHOP-based chemotherapy** is relevant to non-Hodgkin lymphomas and that **intensive chemotherapy** is used for ДВКЛ. For a precise, modern treatment protocol, the guidelines would need to specify the incorporation of **immunotherapy (rituximab)** with chemotherapy and differentiate regimens based on specific subtypes and patient risk factors.",7,6,8,7,"The answer's main strength is its careful distinction between what the knowledge graph explicitly states and what requires clinical inference, while its main weakness is that it does not provide a clear, actionable first-line treatment recommendation."
+7,How is Hodgkin lymphoma staged and treated?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide specific information on the staging and treatment of Hodgkin lymphoma.
+
+**Here is what I can tell you from the available information:**
+
+The knowledge graph focuses on **non-Hodgkin lymphomas (НХЛ)** and **acute lymphoblastic leukemias (ОЛЛ)**. While the entity ""неходжкинская лимфома"" (non-Hodgkin lymphoma) is mentioned, its ""Also known as"" field incorrectly lists ""лимфома Ходжкина"" (Hodgkin lymphoma) as a synonym. This appears to be a contextual error or mislabeling, as Hodgkin and non-Hodgkin lymphomas are distinct disease categories. The graph contains no dedicated entity for Hodgkin lymphoma and no relations describing its staging, specific diagnostic methods, or treatment protocols.
+
+The graph does provide detailed information on related conditions, such as:
+*   **Diffuse Large B-cell Lymphoma (ДВКЛ):** A common type of non-Hodgkin lymphoma, with listed subtypes, associated factors (e.g., EBV, HIV), and a mention of **intensive intrathecal chemotherapy** as a treatment.
+*   **Acute Lymphoblastic Leukemia (ОЛЛ/Острые лимфобластные лейкозы):** With information on diagnostic methods (physical exam, lab tests) and broad treatment categories (drug therapy, diet therapy, pain management, rehabilitation).
+*   **Lymphoblastic Lymphoma (Лимфобластная лимфома):** A condition related to both leukemia and lymphoma classifications.
+
+**Conclusion:** To answer your question about Hodgkin lymphoma accurately, I would need access to clinical guidelines or a knowledge graph specifically detailing entities and relations for **Hodgkin lymphoma (Лимфома Ходжкина)**, which is not present in the current context. You should consult dedicated oncology resources or guidelines for information on the Ann Arbor staging system and standard treatment regimens (e.g., chemotherapy protocols like ABVD, radiotherapy, targeted therapies) for Hodgkin lymphoma.",2,4,3,3,"The answer's main weakness is that it fails to provide any actual information about Hodgkin lymphoma staging and treatment, which was the specific question asked."
+8,What treatment is recommended for follicular lymphoma stage III-IV?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific treatment recommendation for follicular lymphoma stage III-IV.
+
+**Reason:** The knowledge graph does not contain any information about the condition ""follicular lymphoma."" The graph details several lymphoproliferative disorders, such as:
+*   Diffuse large B-cell lymphoma (ДВКЛ)
+*   Acute lymphoblastic leukemia/lymphoma (Острые лимфобластные лейкозы)
+*   Lymphoblastic lymphoma (Лимфобластная лимфома)
+*   Non-Hodgkin lymphoma (неходжкинская лимфома) in general terms
+
+However, ""follicular lymphoma"" is a distinct and common subtype of non-Hodgkin lymphoma with its own clinical guidelines, staging, and treatment protocols that are not mentioned in the provided data.
+
+**What I can share from the context:**
+For the conditions that *are* listed, the graph shows that treatments can include:
+*   **Медикаментозная терапия / полихимиотерапия** (Drug therapy / Polychemotherapy)
+*   **Интенсивная эндолюмбальная химиотерапия** (Intensive intrathecal chemotherapy) for specific cases like CNS involvement.
+*   Supportive and adjunctive treatments like **Диетотерапия** (Diet therapy), **Обезболивание** (Pain management), and **Медицинская реабилитация** (Medical rehabilitation).
+
+**Conclusion:** To answer the question about follicular lymphoma stage III-IV, consultation of specific clinical guidelines for that entity is required, as treatment decisions depend on factors like symptom burden, tumor bulk, patient age, and comorbidities, which are not covered in the given knowledge graph.",8,7,6,7,The answer's main strength is its clear acknowledgment of knowledge limitations and appropriate referral to clinical guidelines.
+9,What systemic therapy is used for adrenocortical carcinoma?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph, the systemic therapies used for adrenocortical carcinoma (АКР / адренокортикальный рак) include several chemotherapy regimens and targeted agents.
+
+Here is a comprehensive list of systemic treatments extracted from the graph:
+
+**1. Chemotherapy Regimens:**
+*   **EP+M:** Etoposide + Cisplatin + Mitotane
+*   **EC+M:** Etoposide + Doxorubicin (also known as Adriamycin) + Cisplatin + Mitotane
+*   **EDP+M:** Etoposide + Doxorubicin + Cisplatin + Mitotane (This appears to be a detailed listing of the EC+M regimen)
+*   **ARAR0332:** This refers to a specific clinical trial protocol, which includes a systemic therapy regimen.
+
+**2. Individual Chemotherapy and Cytotoxic Agents:**
+*   **Mitotane** (митотан/митотана): A specific adrenolytic agent, often used as a cornerstone of systemic therapy.
+*   **Doxorubicin** (доксорубицин)
+*   **Etoposide** (етопозид)
+*   **Cisplatin** (цисплатин)
+*   **Carboplatin** (карбоплатин)
+*   **Gemcitabine** (гемцитабина)
+*   **Capecitabine** (капецитабина)
+*   **Temozolomide** (темозоломида)
+*   **Platinum-based drugs** (препараты платины) as a class.
+
+**3. Immunotherapy:**
+*   **Pembrolizumab** (пембролизумаб) is indicated for treating ""адренокортикальный рак.""
+
+**4. Important Context and Exclusions:**
+*   The graph specifies that **anthracyclines** (антрациклины, a class that includes doxorubicin) are listed as **contraindicated for** АКР. This is a critical point of caution, as doxorubicin appears in the listed regimens (EC+M, EDP+M). This contradiction suggests that the use of these regimens requires careful risk-benefit evaluation and may be context-dependent (e.g., in aggressive, advanced cases).
+*   The graph also links **fludrocortisone** (флудрокортизон) to АКР, but this is part of **replacement therapy for adrenal insufficiency** (заместительная терапия надпочечниковой недостаточности), which is a supportive treatment, not a direct anti-cancer systemic therapy.
+
+**Summary Answer:**
+Systemic therapy for adrenocortical carcinoma primarily involves **mitotane-based chemotherapy**. Common regimens include **EDP (etoposide, doxorubicin, cisplatin) combined with mitotane**. Other agents used include carboplatin,",8,7,9,8,"The answer's main strength is its detailed categorization of treatments and critical identification of contradictions, though it ends abruptly in the summary."
+10,How is anal squamous cell carcinoma treated with chemoradiation?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot answer the question about the treatment of anal squamous cell carcinoma with chemoradiation.
+
+**Reason:** The knowledge graph does not contain any information about ""anal squamous cell carcinoma,"" its treatment, or the use of chemoradiation for it. The entities and relations in the graph are focused on entirely different conditions:
+*   Adrenocortical carcinoma (АКР, адренокортикальный рак)
+*   Acute lymphoblastic leukemias and lymphomas (Острые лимфобластные лейкозы)
+*   Tumors of the adrenal gland (опухоль надпочечника)
+*   The general concept of chemotherapy (химиотерапия) and relapse (рецидив) in the context of these blood cancers.
+
+**What I can state from the context:** The graph details treatment modalities for the conditions it covers (e.g., surgical resection, specific chemotherapy regimens like EDP+M, and drugs like mitotane for adrenal cancer), but these are not applicable to anal cancer.
+
+To answer your question, information on standard chemoradiation protocols for anal squamous cell carcinoma (typically involving agents like 5-fluorouracil and mitomycin C or cisplatin combined with radiation therapy) would be required, which is not present in the provided knowledge base.",2,1,1,2,The main weakness is that it fails to provide any actual treatment information for anal squamous cell carcinoma despite correctly identifying the knowledge gap.
+11,What is the recommended treatment for basal cell skin cancer?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, there is no information regarding the recommended treatment for basal cell skin cancer.
+
+The knowledge graph contains detailed information about several conditions and treatments, including:
+*   **Acute lymphoblastic leukemia (Острые лимфобластные лейкозы)** and its treatments (e.g., Медикаментозная терапия, полихимиотерапия).
+*   **Adrenocortical carcinoma (адренокортикальный рак)** and its treatments (e.g., митотан, пембролизумаб).
+*   **Leukemia cutis (кожные лейкемиды)** as a skin manifestation of leukemia.
+*   General treatments like **таргетная терапия (targeted therapy)** and **иммунотерапия (immunotherapy)** in relation to tumor cells.
+
+However, the entity ""базальноклеточный рак кожи"" (basal cell skin cancer) is not present in the graph. The graph mentions ""кожа"" (skin) only as an anatomical structure or in the context of leukemia-related skin lesions.
+
+**Therefore, I cannot provide a recommended treatment for basal cell carcinoma from this knowledge base.** To answer this question, a knowledge graph containing entities specific to dermatological oncology, such as surgical excision, Mohs surgery, topical therapies, radiation therapy, or other modalities for basal cell carcinoma, would be required.",2,1,3,2,The answer correctly identifies the knowledge gap but fails to provide any treatment information for the specific medical condition asked about.
+12,How is biliary tract cancer managed with chemotherapy?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide specific information on the management of biliary tract cancer with chemotherapy.
+
+The knowledge graph contains detailed information on several cancers, including acute lymphoblastic leukemia, endometrial cancer, lung cancer, adrenocortical cancer, and stomach cancer. It also includes information on chemotherapy procedures (specifically intensive intrathecal chemotherapy) and their applications for other conditions like diffuse large B-cell lymphoma.
+
+However, **biliary tract cancer is not mentioned as an entity or related condition anywhere in the provided knowledge graph.** Therefore, there is no information available on its management, chemotherapy regimens, or related diagnostic procedures within this context.
+
+**To answer your question accurately, information would need to be available on entities such as ""рак желчных путей"" or ""холангиокарцинома"" and their relations to specific chemotherapy drugs or protocols, which are not present in the current knowledge graph extract.**",2,1,1,2,The answer's main weakness is that it provides no actual information about biliary tract cancer management despite being asked a direct medical question.
+13,What is the standard treatment protocol for bladder cancer?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the standard treatment protocol for bladder cancer.
+
+The knowledge graph does not contain any information about bladder cancer, its associated conditions, or its treatment protocols. The entities and relations in the graph are focused on other conditions and treatments, such as:
+*   **Адренокортикальный рак (Adrenocortical carcinoma):** Its treatment involves хирургическое лечение (surgical treatment), химиотерапия (chemotherapy), and drugs like митотан (mitotane) and пембролизумаб (pembrolizumab).
+*   **Острый лейкоз (Acute leukemia):** Treated with полихимиотерапия (polychemotherapy) and химиотерапия (chemotherapy) protocols.
+*   **Лимфобластный лимфомы (Lymphoblastic lymphomas):** Also treated with химиотерапия (chemotherapy).
+
+**Conclusion:** To answer your question about bladder cancer treatment, I would need access to clinical guidelines or a knowledge graph that includes entities related to bladder cancer (e.g., ""рак мочевого пузыря""), its specific surgical procedures (e.g., трансуретральная резекция), intravesical therapies, chemotherapy regimens, immunotherapy agents, and radiation therapy protocols. The current context is insufficient for this specific query.",2,1,3,2,The answer's main weakness is that it provides no actual information about bladder cancer treatment despite being asked a direct medical question.
+14,How are bone and cartilage sarcomas treated?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding the treatment of bone and cartilage sarcomas.
+
+**Here is what I can tell you from the available information:**
+
+The knowledge graph contains information about **sarcoma** in general and **soft tissue sarcomas** specifically, but it does not contain any entities or relations that describe treatment protocols for **bone or cartilage sarcomas**.
+
+*   The entity **""саркомы"" (sarcomas)** is mentioned as being **related to ""ОМЛ"" (Acute Myeloid Leukemia)**, but no treatment information is given.
+*   The entity **""сарком мягких тканей"" (soft tissue sarcomas)** is linked to a cause (**""синдром Ли-Фраумени"" / Li-Fraumeni syndrome**), but again, no treatment details are provided.
+*   There is no mention of treatment modalities (such as surgery, chemotherapy, radiation therapy, targeted therapy) for any type of sarcoma within the extracted data.
+*   The graph's treatment information is focused exclusively on **""Острые лимфобластные лейкозы"" (Acute Lymphoblastic Leukemias)**, listing therapies like medication, diet therapy, pain management, and rehabilitation.
+
+**Conclusion:**
+The knowledge graph context provided is insufficient to answer the question. To determine how bone and cartilage sarcomas are treated, one would need to consult clinical guidelines specific to those conditions, which would detail multimodal approaches including surgery, radiotherapy, and systemic therapies based on the sarcoma's type, grade, location, and stage.",2,3,2,2,The answer's main weakness is that it fails to provide any actual treatment information for bone and cartilage sarcomas despite being asked directly.
+15,How is febrile neutropenia managed during chemotherapy?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, there is **no specific information** on the management of febrile neutropenia during chemotherapy.
+
+The knowledge graph focuses on chemotherapy protocols (including intensive intrathecal and standard chemotherapy), specific conditions like neuroleukemia and acute lymphoblastic leukemia, and procedures for diagnosis and treatment of relapses. While it notes that intensive intrathecal chemotherapy **causes infectious complications**, it does not detail the management strategy for these complications, including febrile neutropenia.
+
+**What can be inferred from the context:**
+*   The graph acknowledges that intensive chemotherapy is a cause of **инфекционные осложнения (infectious complications)**.
+*   It lists **тяжелое соматическое состояние (severe somatic condition)** as a contraindication for intensive chemotherapy, which could potentially encompass uncontrolled infection.
+*   However, the specific steps for evaluation, antibiotic use, supportive care, or guidelines for managing febrile neutropenia are not described in the provided data.
+
+**Conclusion:** To answer the question on how febrile neutropenia is managed during chemotherapy, information beyond this knowledge graph is required. Standard management typically involves prompt assessment, empiric broad-spectrum antibiotics, supportive care, and sometimes the use of granulocyte colony-stimulating factors (G-CSFs), but these details are not present in the given context.",2,3,4,3,"The answer's main weakness is that it fails to provide any actual management information, instead focusing on what the knowledge graph lacks."
+16,What antiemetic regimens are used with highly emetogenic chemotherapy?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I cannot provide a specific answer regarding antiemetic regimens for highly emetogenic chemotherapy.
+
+**Here is what I know from the context:**
+
+1.  **Antiemetic Therapy Exists:** The knowledge graph confirms the entity ""антиэметическая терапия"" (antiemetic therapy) and lists some of its components:
+    *   Антагонисты серотониновых рецепторов (serotonin receptor antagonists)
+    *   Глюкокортикоиды (glucocorticoids)
+
+2.  **Its Documented Purpose:** According to the graph, this therapy is used to treat ""тошнота"" (nausea) and ""рвота"" (vomiting), which are side effects of chemotherapy.
+
+3.  **Gap in Information:** The knowledge graph does **not** contain specific information linking antiemetic regimens to the emetogenic potential of chemotherapy (e.g., highly, moderately, or lowly emetogenic). It also does not define which specific chemotherapies are considered ""highly emetogenic.""
+
+4.  **Indirect Context on Chemotherapy:** The graph mentions ""интенсивная эндолюмбальная химиотерапия"" (intensive intrathecal chemotherapy) and its synonyms, which include ""высокодозная химиотерапия"" (high-dose chemotherapy). However, there is no direct relation established between this or any other chemotherapy and a specific antiemetic regimen.
+
+**Conclusion:**
+While the knowledge graph confirms the existence of antiemetic therapy and some of its drug classes, it lacks the necessary relations to answer which specific regimens are recommended for use with highly emetogenic chemotherapy. Clinical guidelines for this purpose would typically specify regimens based on the emetogenic risk of the chemotherapeutic agents used, often combining multiple drug classes (e.g., NK1 receptor antagonists, serotonin antagonists, glucocorticoids, and others) for the highest risk category. This level of detail is not present in the provided context.",3,2,4,3,The answer correctly identifies the limitations of its knowledge base but fails to provide any specific antiemetic regimens for highly emetogenic chemotherapy as requested.
+17,How is tumor lysis syndrome prevented and treated?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph, here is a summary of the prevention and treatment strategies for tumor lysis syndrome (синдром лизиса опухоли).
+
+### Prevention and Treatment Strategies
+
+The primary approach involves proactive management, especially in patients at high risk (e.g., those with bulky, rapidly proliferating tumors starting chemotherapy or targeted therapy like венетоклакс).
+
+**1. Preventive/Prophylactic Measures:**
+*   **Hydration (Гидратационная терапия/Гидратация):** The cornerstone of prevention. Aggressive intravenous fluids are administered to maintain high urine output, which helps flush out and dilute the products of tumor cell breakdown (uric acid, potassium, phosphate) before they can crystallize and cause damage.
+*   **Allopurinol (Аллопуринол):** A medication used prophylactically to inhibit the enzyme xanthine oxidase, thereby reducing the formation of uric acid. This helps prevent hyperuricemia and subsequent acute kidney injury.
+*   **Urine Alkalinization (Защелачивание мочи):** This may be used in conjunction with hydration and allopurinol. By increasing urine pH, it helps increase the solubility of uric acid, preventing its crystallization in the renal tubules.
+
+**2. Active Treatment Measures:**
+When TLS is established or laboratory values are critically abnormal, the above measures are intensified and supplemented with:
+*   **Forced Diuresis (Форсированный диурез):** This is an intensified form of hydration therapy aimed at aggressively increasing urine output to excrete metabolic waste.
+*   **Loop Diuretics (Петлевые диуретики):** Medications like furosemide may be used to stimulate urine production, particularly if fluid overload becomes a concern during aggressive hydration. Their use requires careful monitoring.
+*   **Glucocorticoids (Глюкокортикоиды):** The knowledge graph lists these as a treatment for TLS. In clinical practice, their role is more specific. They may be used in the context of treating the underlying malignancy (like certain lymphomas or leukemias) that is causing the TLS, as they can induce rapid tumor cell death (and potentially worsen TLS initially) or be part of the anti-inflammatory management.
+
+### Important Context from the Knowledge Graph
+
+*   **Cause:** The graph explicitly states that TLS can be caused by **ХТ** (an abbreviation for химиотерапия, or chemotherapy) and by the targeted therapy drug **венетоклакс (venetoclax)**. This highlights specific high-risk treatments.
+*   **Main Complication:** The key consequence of TLS is **электролитные нарушения (electrolyte disturbances)**, specifically hyperkalemia, hyperphosphatemia, hypocalcemia, and hyperuricemia. Treatment is directed at correcting these abnormalities (e.g., kayexalate for hyperkalemia, phosphate",9,8,8,9,"The answer provides a thorough and well-structured overview of both prevention and treatment strategies, including specific medications and their mechanisms."
+18,What supportive care is recommended during intensive chemotherapy?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, the specific supportive care measures during intensive chemotherapy are not explicitly detailed. However, the graph does contain relevant information that allows for a structured and clinically informed answer.
+
+Here is what can be concluded from the available data:
+
+1.  **Existence of Supportive Care:** The knowledge graph explicitly includes an entity called **""сопроводительное лечение"" (supportive care treatment)**, confirming it is a recognized and integral part of the treatment protocol.
+
+2.  **Link to Specific Treatment:** This supportive care is directly **related to** a procedure named **""ХТ миелолейкоза"" (chemotherapy for myeloid leukemia)**. This establishes a clear connection between intensive chemotherapy regimens (particularly for leukemia) and the necessity of concomitant supportive care.
+
+3.  **Critical Supportive Measures Implied by Chemotherapy Risks:** The graph details several serious risks and requirements associated with **""интенсивная эндолюмбальная химиотерапия"" (intensive intrathecal chemotherapy)**, which strongly imply the necessary components of supportive care:
+    *   **Management of Infectious Complications:** The procedure **causes ""инфекционные осложнения"" (infectious complications)**. Therefore, supportive care must include **infection prophylaxis, monitoring, and treatment** (e.g., antimicrobials, growth factors like G-CSF).
+    *   **Vascular Access:** The procedure requires a **""центральный венозный катетер"" (central venous catheter)** as a **part of** the treatment. Supportive care involves the **insertion, maintenance, and care of this central line** to prevent complications.
+    *   **Hematopoietic Support:** The procedure involves **""гемопоэтических клеток"" (hematopoietic cells)**. Given that intensive chemotherapy severely suppresses bone marrow, supportive care necessarily includes **management of cytopenias**—such as **transfusions** of red blood cells and platelets, and likely the use of **growth factors**.
+    *   **Patient Status Monitoring:** The procedure is **contraindicated for ""тяжелое соматическое состояние"" (severe somatic condition)**. This implies that supportive care involves **continuous monitoring and stabilization of the patient's organ function** (e.g., renal, hepatic, cardiac) and nutritional status to make them eligible for and to tolerate the treatment.
+
+4.  **Context from Broader Guidelines:** The entity **""клинические рекомендации"" (clinical practice guidelines)** includes **""лечение"" (treatment)**, **""Медицинская реабилитация"" (Medical rehabilitation)**, and **""Профилактика"" (Prevention)** as its parts. Supportive care falls under all these categories, emphasizing its role in active treatment, recovery, and preventing complications.
+
+**Summary Answer:**
+
+The knowledge graph does not list specific medications or protocols for supportive care. However, it confirms that **""",8,7,9,8,The answer's main strength is its thorough deduction of specific supportive care measures from implied chemotherapy risks in the knowledge graph.
+19,Which chemotherapy drugs require dose adjustment for renal impairment?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I can identify one specific chemotherapy drug and regimen that requires careful monitoring and dose adjustment in relation to renal function.
+
+**From the knowledge graph:**
+
+1.  **Терапия высокими дозами метотрексата (High-dose methotrexate therapy):** This regimen is explicitly linked to a requirement for **мониторинг концентрации метотрексата (monitoring of methotrexate concentration)**. Methotrexate is primarily eliminated by the kidneys. Impaired renal function drastically reduces its clearance, leading to prolonged high plasma concentrations and a significantly increased risk of severe toxicity (e.g., myelosuppression, mucositis, nephrotoxicity itself). Therefore, dose adjustment and rigorous monitoring (including drug level monitoring and renal function assessment) are mandatory for high-dose methotrexate in patients with renal impairment.
+
+**Limitations and Inferences from the Context:**
+
+*   The knowledge graph does not provide an exhaustive list of chemotherapy drugs requiring renal dose adjustment.
+*   However, it mentions **платиносодержащей химиотерапии (platinum-containing chemotherapy)**. Drugs like cisplatin and carboplatin are well-known in clinical practice for their nephrotoxic potential and the critical need for dose adjustment based on renal function (especially carboplatin, which is dosed using formulas like the Calvert formula, which incorporates glomerular filtration rate). While the graph does not explicitly state ""requires dose adjustment for renal impairment,"" the strong association with nephrotoxicity is a key clinical implication.
+*   The graph also lists **противоопухолевых препаратов (antitumor drugs)** and **лекарственные препараты (medicinal drugs)** in general, noting they have associated dosages. This implies that dose individualization is a general principle for these agents, which in practice includes adjustment for organ function.
+
+**Conclusion:**
+
+Based solely on the structured knowledge graph provided:
+*   **Терапия высокими дозами метотрексата (High-dose methotrexate therapy)** is explicitly identified as a regimen requiring therapeutic drug monitoring, which is intrinsically linked to renal function and necessitates dose adjustment.
+*   The presence of **платиносодержащей химиотерапии (platinum-containing chemotherapy)** is highly suggestive, as this drug class is clinically renowned for nephrotoxicity and required renal dose adjustments, though this specific relation is not stated in the provided context.
+
+For a comprehensive clinical answer beyond this knowledge graph, many other chemotherapy agents (e.g., bleomycin, hydroxyurea, certain antimetabolites) also require dose modification for renal impairment.",7,8,6,7,"The answer provides specific, actionable examples like methotrexate and platinum agents but acknowledges its limited scope from the knowledge graph."
+20,What biomarkers are used to stratify risk in hematological malignancies?,HiRAG-Ontology (Ours),hybrid_rrf,"Based on the provided knowledge graph context, I can give specific information about biomarkers used for risk stratification in the hematological malignancies mentioned.
+
+From the context, the primary biomarkers for risk stratification are genetic and molecular findings, used to define a **""группа высокого риска"" (high-risk group)**. The key biomarkers and criteria are:
+
+1.  **Генетические аберрации высокого риска (High-risk genetic aberrations):** The presence of specific high-risk genetic abnormalities is a direct cause for being classified into the high-risk group.
+2.  **Минимальная остаточная болезнь (МОБ) / Minimal Residual Disease (MRD):** The persistence of MRD (персистенция МОБ) after treatment is a critical biomarker that causes assignment to the high-risk group. The test **FISH** is specifically mentioned as a method used to diagnose (detect) MRD.
+3.  **Ответ на индукционную терапию (Response to induction therapy):** The absence of remission after the induction phase of treatment (отсутствие ремиссии после индукции) is another biomarker that defines the high-risk group.
+4.  **Иммунофенотип клеток (Cell immunophenotype):** The immunophenotype of the cells is used to diagnose or determine the high-risk group classification.
+5.  **Specific Genetic Markers for Subtyping (which informs risk):**
+    *   **TP53:** Mutations in the TP53 gene are a diagnostic biomarker for **Диффузная В-клеточная крупноклеточная лимфома (ДВКЛ)**.
+    *   **Translocation t(9;22) / Philadelphia chromosome:** This genetic marker is related to **Острый лимфобластный лейкоз** (Ph-позитивный ОЛЛ). The test **FISH** is explicitly stated as the method used to diagnose Ph-positive ALL.
+    *   **Double-Expressor lymphoma (DEL):** This is a molecular subtype related to ДВКЛ.
+    *   **Rearrangement of IRF4:** Present in a subtype of ДВКЛ (крупноклеточная лимфома с реарранжировкой IRF4).
+
+**Limitations based on the provided context:**
+The knowledge graph does not contain information on risk stratification biomarkers for all hematological malignancies (e.g., acute myeloid leukemias, multiple myeloma, or classical Hodgkin lymphoma are not covered). The answer is specifically derived from the entities related to Diffuse Large B-cell Lymphoma (ДВКЛ) and Acute Lymphoblastic Leukemia/Lymphoma (ОЛЛ/Острые лимфобластные лейкозы).
+
+**Conclusion:**
+According to the provided knowledge graph, risk stratification in the covered hematological malignancies",7,8,8,8,"The answer's main strength is its clear, specific listing of biomarkers with disease associations and diagnostic methods, though it acknowledges limitations in scope."

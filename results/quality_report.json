@@ -1,0 +1,29 @@
+{
+  "before_pipeline": {
+    "coverage": 1.0,
+    "consistency": 0.8128,
+    "precision": 0.9889,
+    "redundancy": 0.0,
+    "Q": 0.7416,
+    "lambdas": {
+      "lambda1": 0.3,
+      "lambda2": 0.3,
+      "lambda3": 0.2,
+      "lambda4": 0.2
+    }
+  },
+  "after_pipeline": {
+    "coverage": 1.0,
+    "consistency": 0.8133,
+    "precision": 0.9889,
+    "redundancy": 0.0,
+    "Q": 0.7418,
+    "lambdas": {
+      "lambda1": 0.3,
+      "lambda2": 0.3,
+      "lambda3": 0.2,
+      "lambda4": 0.2
+    }
+  },
+  "improvement": 0.0002
+}
