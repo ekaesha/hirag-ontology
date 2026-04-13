@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HiRAG-Ontology — Knowledge Graph Explorer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #0f0f13; color: #e0e0e0; height: 100vh; display: flex; flex-direction: column; }
+header { padding: 12px 20px; background: #1a1a24; border-bottom: 1px solid #2a2a3a;
+          display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+header h1 { font-size: 16px; font-weight: 600; color: #fff; }
+header span { font-size: 12px; color: #888; }
+.toolbar { padding: 8px 16px; background: #15151f; border-bottom: 1px solid #2a2a3a;
+            display: flex; gap: 10px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+.filter-btn { padding: 4px 12px; border-radius: 20px; border: 1px solid #333;
+               background: transparent; color: #aaa; cursor: pointer; font-size: 12px;
+               transition: all 0.2s; }
+.filter-btn:hover { border-color: #666; color: #fff; }
+.filter-btn.active { color: #fff; border-color: transparent; }
+.filter-btn[data-type="Condition"].active    { background: #534AB7; }
+.filter-btn[data-type="Drug"].active         { background: #D85A30; }
+.filter-btn[data-type="Procedure"].active    { background: #1D9E75; }
+.filter-btn[data-type="LabTest"].active      { background: #185FA5; }
+.filter-btn[data-type="DosageRegimen"].active { background: #BA7517; }
+.filter-btn[data-type="Other"].active        { background: #888780; }
+.filter-btn[data-type="all"].active          { background: #444; }
+.main { display: flex; flex: 1; overflow: hidden; }
+#graph { flex: 1; }
+.sidebar { width: 260px; background: #15151f; border-left: 1px solid #2a2a3a;
+            padding: 16px; overflow-y: auto; flex-shrink: 0; }
+.sidebar h2 { font-size: 13px; font-weight: 600; color: #ccc; margin-bottom: 12px;
+               text-transform: uppercase; letter-spacing: 0.5px; }
+#node-info { font-size: 12px; color: #999; line-height: 1.6; }
+#node-info .entity-name { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+#node-info .entity-type { display: inline-block; padding: 2px 8px; border-radius: 10px;
+                           font-size: 11px; margin-bottom: 10px; color: #fff; }
+#node-info .rel-item { padding: 4px 0; border-bottom: 1px solid #2a2a3a; }
+#node-info .rel-item:last-child { border: none; }
+.legend { margin-top: 20px; }
+.legend h2 { font-size: 13px; font-weight: 600; color: #ccc; margin-bottom: 8px;
+              text-transform: uppercase; letter-spacing: 0.5px; }
+.legend-item { display: flex; align-items: center; gap: 8px;
+                font-size: 11px; color: #999; margin-bottom: 5px; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.stats { margin-top: 20px; }
+.stat-row { display: flex; justify-content: space-between;
+             font-size: 12px; padding: 4px 0; border-bottom: 1px solid #2a2a3a; }
+.stat-row span:first-child { color: #888; }
+.stat-row span:last-child { color: #fff; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HiRAG-Ontology — Knowledge Graph Explorer</h1>
+  <span>Top 30 entities by degree · 2,314 total entities · 2,346 total relations</span>
+</header>
+
+<div class="toolbar">
+  <span style="font-size:12px;color:#666;margin-right:4px">Filter:</span>
+  <button class="filter-btn active" data-type="all">All</button>
+  <button class="filter-btn" data-type="Condition" style="border-color:#534AB7">Condition</button>
+  <button class="filter-btn" data-type="Drug" style="border-color:#D85A30">Drug</button>
+  <button class="filter-btn" data-type="Procedure" style="border-color:#1D9E75">Procedure</button>
+  <button class="filter-btn" data-type="LabTest" style="border-color:#185FA5">LabTest</button>
+  <button class="filter-btn" data-type="DosageRegimen" style="border-color:#BA7517">DosageRegimen</button>
+  <button class="filter-btn" data-type="Other" style="border-color:#888780">Other</button>
+  <button class="filter-btn" data-type="all" 
+          style="margin-left:auto;border-color:#444"
+          onclick="network.fit()">Reset view</button>
+</div>
+
+<div class="main">
+  <div id="graph"></div>
+  <div class="sidebar">
+    <h2>Node info</h2>
+    <div id="node-info">
+      <span style="color:#555">Click a node to see details</span>
+    </div>
+
+    <div class="legend">
+      <h2>Entity types</h2>
+      <div class="legend-item"><div class="legend-dot" style="background:#534AB7"></div>Condition (642)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#185FA5"></div>LabTest (358)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#1D9E75"></div>Procedure (280)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#D85A30"></div>Drug (225)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#888780"></div>AnatomicalStr. (204)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#BA7517"></div>DosageRegimen (133)</div>
+    </div>
+
+    <div class="stats">
+      <h2>Graph statistics</h2>
+      <div class="stat-row"><span>Total entities</span><span>2,314</span></div>
+      <div class="stat-row"><span>Total relations</span><span>2,346</span></div>
+      <div class="stat-row"><span>Dedup rate</span><span>15.1%</span></div>
+      <div class="stat-row"><span>Cons(G)</span><span>0.773</span></div>
+      <div class="stat-row"><span>Q(G)</span><span>0.730</span></div>
+      <div class="stat-row"><span>Top entity</span><span>ОЛЛ (116)</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const nodesData = [
+  {
+    "id": "oll",
+    "label": "\u041e\u041b\u041b",
+    "title": "Type: Condition<br>Degree: 116",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 37.519999999999996,
+    "type": "Condition",
+    "degree": 116
+  },
+  {
+    "id": "opl",
+    "label": "\u041e\u041f\u041b",
+    "title": "Type: Condition<br>Degree: 114",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 37.08,
+    "type": "Condition",
+    "degree": 114
+  },
+  {
+    "id": "akr",
+    "label": "\u0410\u041a\u0420",
+    "title": "Type: Condition<br>Degree: 83",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 30.26,
+    "type": "Condition",
+    "degree": 83
+  },
+  {
+    "id": "mit",
+    "label": "\u043c\u0438\u0442\u043e\u0442\u0430\u043d",
+    "title": "Type: Drug<br>Degree: 71",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 27.619999999999997,
+    "type": "Drug",
+    "degree": 71
+  },
+  {
+    "id": "oml",
+    "label": "\u041e\u041c\u041b",
+    "title": "Type: Condition<br>Degree: 63",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 25.86,
+    "type": "Condition",
+    "degree": 63
+  },
+  {
+    "id": "lec",
+    "label": "\u043b\u0435\u0447\u0435\u043d\u0438\u0435",
+    "title": "Type: Procedure<br>Degree: 51",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 14
+    },
+    "size": 23.22,
+    "type": "Procedure",
+    "degree": 51
+  },
+  {
+    "id": "diag",
+    "label": "\u0434\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430",
+    "title": "Type: Procedure<br>Degree: 49",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 22.78,
+    "type": "Procedure",
+    "degree": 49
+  },
+  {
+    "id": "medt",
+    "label": "\u041c\u0435\u0434. \u0442\u0435\u0440\u0430\u043f\u0438\u044f",
+    "title": "Type: Procedure<br>Degree: 41",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 21.02,
+    "type": "Procedure",
+    "degree": 41
+  },
+  {
+    "id": "rec",
+    "label": "\u0440\u0435\u0446\u0438\u0434\u0438\u0432",
+    "title": "Type: Condition<br>Degree: 36",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 19.92,
+    "type": "Condition",
+    "degree": 36
+  },
+  {
+    "id": "lab",
+    "label": "\u041b\u0430\u0431. \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f",
+    "title": "Type: LabTest<br>Degree: 32",
+    "color": {
+      "background": "#185FA5",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 19.04,
+    "type": "LabTest",
+    "degree": 32
+  },
+  {
+    "id": "ven",
+    "label": "\u0432\u0435\u043d\u0435\u0442\u043e\u043a\u043b\u0430\u043a\u0441",
+    "title": "Type: Drug<br>Degree: 30",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 18.6,
+    "type": "Drug",
+    "degree": 30
+  },
+  {
+    "id": "lbl",
+    "label": "\u041b\u0411\u041b",
+    "title": "Type: Condition<br>Degree: 28",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 18.16,
+    "type": "Condition",
+    "degree": 28
+  },
+  {
+    "id": "cit",
+    "label": "\u0446\u0438\u0442\u0430\u0440\u0430\u0431\u0438\u043d",
+    "title": "Type: Drug<br>Degree: 28",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 18.16,
+    "type": "Drug",
+    "degree": 28
+  },
+  {
+    "id": "mob",
+    "label": "\u041c\u041e\u0411",
+    "title": "Type: LabTest<br>Degree: 27",
+    "color": {
+      "background": "#185FA5",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 17.94,
+    "type": "LabTest",
+    "degree": 27
+  },
+  {
+    "id": "ph",
+    "label": "Ph+ \u041e\u041b\u041b",
+    "title": "Type: Condition<br>Degree: 18",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 15.96,
+    "type": "Condition",
+    "degree": 18
+  },
+  {
+    "id": "fish",
+    "label": "FISH-\u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435",
+    "title": "Type: LabTest<br>Degree: 15",
+    "color": {
+      "background": "#185FA5",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 15.3,
+    "type": "LabTest",
+    "degree": 15
+  },
+  {
+    "id": "imat",
+    "label": "\u0438\u043c\u0430\u0442\u0438\u043d\u0438\u0431",
+    "title": "Type: Drug<br>Degree: 14",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 15.08,
+    "type": "Drug",
+    "degree": 14
+  },
+  {
+    "id": "ind",
+    "label": "\u0438\u043d\u0434\u0443\u043a\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0442\u0435\u0440\u0430\u043f\u0438\u044f",
+    "title": "Type: DosageRegimen<br>Degree: 12",
+    "color": {
+      "background": "#BA7517",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 14.64,
+    "type": "DosageRegimen",
+    "degree": 12
+  },
+  {
+    "id": "bcr",
+    "label": "BCR-ABL1",
+    "title": "Type: Other<br>Degree: 11",
+    "color": {
+      "background": "#888780",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 14.42,
+    "type": "Other",
+    "degree": 11
+  },
+  {
+    "id": "fiz",
+    "label": "\u0424\u0438\u0437\u0438\u043a\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0431\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435",
+    "title": "Type: Procedure<br>Degree: 20",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 16.4,
+    "type": "Procedure",
+    "degree": 20
+  },
+  {
+    "id": "prof",
+    "label": "\u041f\u0440\u043e\u0444\u0438\u043b\u0430\u043a\u0442\u0438\u043a\u0430",
+    "title": "Type: Procedure<br>Degree: 16",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 15.52,
+    "type": "Procedure",
+    "degree": 16
+  },
+  {
+    "id": "disp",
+    "label": "\u0414\u0438\u0441\u043f\u0430\u043d\u0441\u0435\u0440\u043d\u043e\u0435 \u043d\u0430\u0431\u043b\u044e\u0434\u0435\u043d\u0438\u0435",
+    "title": "Type: Procedure<br>Degree: 14",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 15.08,
+    "type": "Procedure",
+    "degree": 14
+  },
+  {
+    "id": "mreab",
+    "label": "\u041c\u0435\u0434. \u0440\u0435\u0430\u0431\u0438\u043b\u0438\u0442\u0430\u0446\u0438\u044f",
+    "title": "Type: Procedure<br>Degree: 11",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 14.42,
+    "type": "Procedure",
+    "degree": 11
+  },
+  {
+    "id": "kons",
+    "label": "\u043a\u043e\u043d\u0441\u043e\u043b\u0438\u0434\u0430\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u0442\u0435\u0440\u0430\u043f\u0438\u044f",
+    "title": "Type: DosageRegimen<br>Degree: 10",
+    "color": {
+      "background": "#BA7517",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 14.2,
+    "type": "DosageRegimen",
+    "degree": 10
+  },
+  {
+    "id": "podd",
+    "label": "\u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0449\u0430\u044f \u0442\u0435\u0440\u0430\u043f\u0438\u044f",
+    "title": "Type: DosageRegimen<br>Degree: 9",
+    "color": {
+      "background": "#BA7517",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.98,
+    "type": "DosageRegimen",
+    "degree": 9
+  },
+  {
+    "id": "diet",
+    "label": "\u0414\u0438\u0435\u0442\u043e\u0442\u0435\u0440\u0430\u043f\u0438\u044f",
+    "title": "Type: Procedure<br>Degree: 8",
+    "color": {
+      "background": "#1D9E75",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.76,
+    "type": "Procedure",
+    "degree": 8
+  },
+  {
+    "id": "trans",
+    "label": "\u0442\u0440\u0430\u043d\u0441\u043b\u043e\u043a\u0430\u0446\u0438\u044f t(9;22)",
+    "title": "Type: Condition<br>Degree: 8",
+    "color": {
+      "background": "#534AB7",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.76,
+    "type": "Condition",
+    "degree": 8
+  },
+  {
+    "id": "dex",
+    "label": "\u0434\u0435\u043a\u0441\u0430\u043c\u0435\u0442\u0430\u0437\u043e\u043d",
+    "title": "Type: Drug<br>Degree: 7",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.54,
+    "type": "Drug",
+    "degree": 7
+  },
+  {
+    "id": "vinc",
+    "label": "\u0432\u0438\u043d\u043a\u0440\u0438\u0441\u0442\u0438\u043d",
+    "title": "Type: Drug<br>Degree: 7",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.54,
+    "type": "Drug",
+    "degree": 7
+  },
+  {
+    "id": "aspar",
+    "label": "\u0430\u0441\u043f\u0430\u0440\u0430\u0433\u0438\u043d\u0430\u0437\u0430",
+    "title": "Type: Drug<br>Degree: 6",
+    "color": {
+      "background": "#D85A30",
+      "border": "white",
+      "highlight": {
+        "background": "#FFD700",
+        "border": "#FFD700"
+      }
+    },
+    "font": {
+      "color": "white",
+      "size": 12
+    },
+    "size": 13.32,
+    "type": "Drug",
+    "degree": 6
+  }
+];
+const edgesData = [
+  {
+    "from": "oll",
+    "to": "lec",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "oll",
+    "to": "diag",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "oll",
+    "to": "lab",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "oll",
+    "to": "fiz",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "oll",
+    "to": "medt",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "oll",
+    "to": "rec",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "oll",
+    "to": "mob",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "oll",
+    "to": "prof",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "oll",
+    "to": "disp",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "opl",
+    "to": "lec",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "opl",
+    "to": "diag",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "opl",
+    "to": "medt",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "akr",
+    "to": "mit",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "akr",
+    "to": "lec",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "akr",
+    "to": "diag",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "oml",
+    "to": "ven",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "oml",
+    "to": "cit",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "oml",
+    "to": "lec",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "oml",
+    "to": "diag",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "ph",
+    "to": "imat",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "ph",
+    "to": "fish",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "ph",
+    "to": "bcr",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "ph",
+    "to": "oll",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "ph",
+    "to": "trans",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "lbl",
+    "to": "lec",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "lbl",
+    "to": "diag",
+    "label": "diagnosed_by",
+    "color": {
+      "color": "#185FA5",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "diagnosed_by"
+  },
+  {
+    "from": "ind",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "ind",
+    "to": "opl",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "kons",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "podd",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "medt",
+    "to": "lab",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "rec",
+    "to": "medt",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "mob",
+    "to": "oll",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "ven",
+    "to": "oml",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "cit",
+    "to": "oml",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "dex",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "vinc",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "aspar",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "diet",
+    "to": "oll",
+    "label": "treats",
+    "color": {
+      "color": "#1D9E75",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "treats"
+  },
+  {
+    "from": "mreab",
+    "to": "oll",
+    "label": "related_to",
+    "color": {
+      "color": "#888780",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "related_to"
+  },
+  {
+    "from": "ind",
+    "to": "kons",
+    "label": "part_of",
+    "color": {
+      "color": "#BA7517",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "part_of"
+  },
+  {
+    "from": "kons",
+    "to": "podd",
+    "label": "part_of",
+    "color": {
+      "color": "#BA7517",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "part_of"
+  },
+  {
+    "from": "lec",
+    "to": "medt",
+    "label": "part_of",
+    "color": {
+      "color": "#BA7517",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "part_of"
+  },
+  {
+    "from": "lec",
+    "to": "diet",
+    "label": "part_of",
+    "color": {
+      "color": "#BA7517",
+      "opacity": 0.7
+    },
+    "font": {
+      "size": 9,
+      "color": "#555",
+      "align": "middle"
+    },
+    "arrows": "to",
+    "width": 1.5,
+    "smooth": {
+      "type": "curvedCW",
+      "roundness": 0.1
+    },
+    "predicate": "part_of"
+  }
+];
+
+const relMap = {};
+edgesData.forEach(e => {
+  if (!relMap[e.from]) relMap[e.from] = [];
+  if (!relMap[e.to])   relMap[e.to]   = [];
+  relMap[e.from].push({dir:'out', pred:e.label, target:e.to});
+  relMap[e.to].push({dir:'in',  pred:e.label, source:e.from});
+});
+
+const nodeIndex = {};
+nodesData.forEach(n => nodeIndex[n.id] = n);
+
+const nodes = new vis.DataSet(nodesData);
+const edges = new vis.DataSet(edgesData);
+
+const options = {
+  physics: {
+    enabled: true,
+    solver: 'forceAtlas2Based',
+    forceAtlas2Based: {
+      gravitationalConstant: -80,
+      centralGravity: 0.005,
+      springLength: 120,
+      springConstant: 0.08,
+      damping: 0.4,
+    },
+    stabilization: { iterations: 200 },
+  },
+  interaction: {
+    hover: true,
+    tooltipDelay: 100,
+    navigationButtons: true,
+    keyboard: true,
+  },
+  layout: { improvedLayout: true },
+};
+
+const container = document.getElementById('graph');
+const network = new vis.Network(container, { nodes, edges }, options);
+
+const TYPE_COLORS = {
+  "Condition":"#534AB7","Drug":"#D85A30","Procedure":"#1D9E75",
+  "LabTest":"#185FA5","DosageRegimen":"#BA7517","Other":"#888780"
+};
+
+network.on('click', function(params) {
+  if (!params.nodes.length) return;
+  const id = params.nodes[0];
+  const node = nodeIndex[id];
+  const rels = relMap[id] || [];
+  const color = TYPE_COLORS[node.type] || '#888';
+
+  let html = `<div class="entity-name">${node.label}</div>
+    <div class="entity-type" style="background:${color}">${node.type}</div>
+    <div style="margin-bottom:8px;color:#888">Degree: <b style="color:#fff">${node.degree}</b> connections</div>
+    <div style="font-size:11px;color:#666;margin-bottom:6px">RELATIONS (${rels.length}):</div>`;
+
+  rels.slice(0,12).forEach(r => {
+    const other = nodeIndex[r.dir === 'out' ? r.target : r.source];
+    const arrow = r.dir === 'out' ? '→' : '←';
+    html += `<div class="rel-item">
+      <span style="color:#888">${arrow} [${r.pred}]</span><br>
+      <span style="color:#ccc">${other ? other.label : (r.target||r.source)}</span>
+    </div>`;
+  });
+
+  if (rels.length > 12) html += `<div style="color:#666;margin-top:6px">+${rels.length-12} more...</div>`;
+  document.getElementById('node-info').innerHTML = html;
+});
+
+// Filter buttons
+document.querySelectorAll('.filter-btn[data-type]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const type = this.dataset.type;
+    if (type === 'all' && this.textContent !== 'Reset view') {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      nodes.update(nodesData.map(n => ({ id:n.id, hidden:false })));
+    } else if (type !== 'all') {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      nodes.update(nodesData.map(n => ({ id:n.id, hidden: n.type !== type })));
+    }
+  });
+});
+</script>
+</body>
+</html>

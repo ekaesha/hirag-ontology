@@ -1,0 +1,28 @@
+[
+  {
+    "iteration": 0,
+    "nodes": 2314,
+    "edges": 2346,
+    "violations": 2184,
+    "consistency": 0.8133,
+    "coverage": 1.0,
+    "precision": 0.9889,
+    "redundancy": 0.0,
+    "Q": 0.7418,
+    "suggestions": 2129,
+    "added": 6
+  },
+  {
+    "iteration": 1,
+    "nodes": 2314,
+    "edges": 2356,
+    "violations": 2185,
+    "consistency": 0.8137,
+    "coverage": 1.0,
+    "precision": 0.989,
+    "redundancy": 0.0,
+    "Q": 0.7419,
+    "suggestions": 2110,
+    "added": 10
+  }
+]
