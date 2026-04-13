@@ -4,7 +4,7 @@ Multi-agent pipeline for automatic ontology construction and knowledge graph
 improvement from unstructured text, with hybrid RRF-based retrieval for 
 GraphRAG quality enhancement.
 
-Bachelor's Thesis — HSE DSBA, 2025  
+Bachelor's Thesis — HSE DSBA, 2026  
 Authors: Eva Karimova, Alexey Popov
 
 ## Results
