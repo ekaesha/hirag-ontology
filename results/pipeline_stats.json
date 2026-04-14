@@ -1,41 +1,41 @@
 {
   "A1_extraction": {
-    "nodes": 2727,
-    "edges": 2351
+    "nodes": 4557,
+    "edges": 4258
   },
   "A2_typing": {
-    "typed": 2727,
+    "typed": 4557,
     "type_distribution": {
-      "Drug": 245,
-      "Condition": 761,
-      "Procedure": 339,
-      "Symptom": 78,
-      "AnatomicalStructure": 220,
-      "DosageRegimen": 196,
-      "LabTest": 435,
-      "Organization": 88,
-      "Other": 365
+      "Drug": 361,
+      "Condition": 1356,
+      "Procedure": 673,
+      "Symptom": 146,
+      "AnatomicalStructure": 400,
+      "DosageRegimen": 384,
+      "LabTest": 619,
+      "Organization": 127,
+      "Other": 491
     }
   },
   "A3_deduplication": {
-    "pairs_found": 603,
-    "entities_before": 2727,
-    "entities_after": 2314,
-    "edges_before": 2351,
-    "edges_after": 2340,
-    "reduction_pct": 15.14
+    "pairs_found": 1164,
+    "entities_before": 4557,
+    "entities_after": 3793,
+    "edges_before": 4258,
+    "edges_after": 4237,
+    "reduction_pct": 16.77
   },
   "A4_validation": {
-    "cons_before": 0.8128,
-    "cons_after": 0.8132,
+    "cons_before": 0.8118,
+    "cons_after": 0.8113,
     "violations_repaired": 0
   },
   "A5_reasoning": {
-    "suggestions_found": 2129,
-    "relations_added": 6
+    "suggestions_found": 5060,
+    "relations_added": 8
   },
   "A6_update": {
-    "final_nodes": 2314,
-    "final_edges": 2346
+    "final_nodes": 3793,
+    "final_edges": 4245
   }
 }

@@ -165,7 +165,7 @@ def create_demo_graph():
     return kg
 
 
-def build_graph_from_dataset(docs_folder, n_docs=10):
+def build_graph_from_dataset(docs_folder, n_docs=78):
     from pipeline.extractor import ExtractionAgent, build_graph_from_text
     md_files = sorted(Path(docs_folder).glob("*.md"))
     print(f"  Found {len(md_files)} documents, using first {n_docs}")

@@ -1,5 +1,5 @@
 System,Comprehensiveness,Empowerment,Diversity,Overall
-Baseline,5.20,4.80,5.20,5.20
-w/o Hybrid Retriever,4.90,4.60,5.40,4.90
-w/o Deduplication,7.10,6.40,7.00,6.90
-Full System (Ours),6.80,5.80,6.40,6.40
+Baseline,5.60,4.80,5.20,5.20
+w/o Hybrid Retriever,6.00,4.60,5.60,5.40
+w/o Deduplication,7.40,6.40,7.20,7.20
+Full System (Ours),7.30,6.20,7.40,7.10

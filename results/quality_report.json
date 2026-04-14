@@ -1,10 +1,10 @@
 {
   "before_pipeline": {
     "coverage": 1.0,
-    "consistency": 0.8128,
-    "precision": 0.9889,
+    "consistency": 0.8118,
+    "precision": 0.9911,
     "redundancy": 0.0,
-    "Q": 0.7416,
+    "Q": 0.7418,
     "lambdas": {
       "lambda1": 0.3,
       "lambda2": 0.3,
@@ -14,10 +14,10 @@
   },
   "after_pipeline": {
     "coverage": 1.0,
-    "consistency": 0.8132,
-    "precision": 0.9889,
+    "consistency": 0.8113,
+    "precision": 0.991,
     "redundancy": 0.0,
-    "Q": 0.7417,
+    "Q": 0.7416,
     "lambdas": {
       "lambda1": 0.3,
       "lambda2": 0.3,
@@ -25,5 +25,5 @@
       "lambda4": 0.2
     }
   },
-  "improvement": 0.0001
+  "improvement": -0.0002
 }
