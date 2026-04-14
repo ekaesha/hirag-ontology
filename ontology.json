@@ -1,0 +1,81 @@
+{
+  "name": "HiRAG-Ontology: Oncological Clinical Guidelines",
+  "version": "1.0",
+  "domain": "Oncology",
+  "language": "ru+en",
+  "classes": {
+    "Drug": "A pharmacological substance used for treatment or prevention of disease",
+    "Condition": "A medical disease, disorder, syndrome or diagnosis",
+    "Procedure": "A medical intervention, surgery or therapeutic procedure",
+    "Symptom": "A subjective manifestation of disease reported by patient",
+    "AnatomicalStructure": "A body part, organ or tissue",
+    "DosageRegimen": "A specific dosing schedule or treatment protocol",
+    "LabTest": "A laboratory or diagnostic test or measurement",
+    "Organization": "A medical institution, company or regulatory body",
+    "Other": "Does not fit any of the above categories"
+  },
+  "properties": {
+    "treats": {
+      "domain": "Drug",
+      "range": "Condition",
+      "description": "Drug is used to treat Condition"
+    },
+    "causes": {
+      "domain": "Drug",
+      "range": "Symptom",
+      "description": "Drug causes Symptom as side effect"
+    },
+    "contraindicated_for": {
+      "domain": "Drug",
+      "range": "Condition",
+      "description": "Drug is contraindicated for Condition"
+    },
+    "part_of": {
+      "domain": "AnatomicalStructure",
+      "range": "AnatomicalStructure",
+      "description": "AnatomicalStructure is part of another AnatomicalStructure"
+    },
+    "diagnosed_by": {
+      "domain": "Condition",
+      "range": "LabTest",
+      "description": "Condition is diagnosed by LabTest"
+    },
+    "dosage_is": {
+      "domain": "Drug",
+      "range": "DosageRegimen",
+      "description": "Drug has a specific DosageRegimen"
+    },
+    "related_to": {
+      "domain": "Other",
+      "range": "Other",
+      "description": "Generic relation between any two entities"
+    }
+  },
+  "axioms": [
+    {
+      "id": "A1",
+      "type": "domain_constraint",
+      "description": "Subject of predicate must match predicate domain type"
+    },
+    {
+      "id": "A2",
+      "type": "range_constraint",
+      "description": "Object of predicate must match predicate range type"
+    },
+    {
+      "id": "A3",
+      "type": "valid_type",
+      "description": "Every entity must have a type from the class set C"
+    },
+    {
+      "id": "A4",
+      "type": "valid_predicate",
+      "description": "Every predicate must be from the property set P"
+    },
+    {
+      "id": "A5",
+      "type": "no_self_loops",
+      "description": "No entity may be related to itself"
+    }
+  ]
+}

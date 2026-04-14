@@ -20,34 +20,59 @@ from evaluation.judge import LLMJudge
 load_dotenv()
 
 QUESTIONS = [
-    # Acute lymphoblastic leukemia
+    # Оригинальные 20 вопросов
     "What is the treatment protocol for acute lymphoblastic leukemia in children?",
     "What induction therapy is used for ALL with BCR-ABL1 mutation?",
     "How is minimal residual disease monitored in acute lymphoblastic leukemia?",
-    # Acute myeloid leukemia
     "What is the standard induction chemotherapy for acute myeloid leukemia?",
     "How is acute promyelocytic leukemia treated differently from other AML subtypes?",
-    # Lymphomas
     "What is the first-line treatment for aggressive non-follicular lymphoma?",
     "How is Hodgkin lymphoma staged and treated?",
     "What treatment is recommended for follicular lymphoma stage III-IV?",
-    # Solid tumors
     "What systemic therapy is used for adrenocortical carcinoma?",
     "How is anal squamous cell carcinoma treated with chemoradiation?",
     "What is the recommended treatment for basal cell skin cancer?",
     "How is biliary tract cancer managed with chemotherapy?",
     "What is the standard treatment protocol for bladder cancer?",
     "How are bone and cartilage sarcomas treated?",
-    # Supportive care
     "How is febrile neutropenia managed during chemotherapy?",
     "What antiemetic regimens are used with highly emetogenic chemotherapy?",
     "How is tumor lysis syndrome prevented and treated?",
     "What supportive care is recommended during intensive chemotherapy?",
-    # Cross-document
     "Which chemotherapy drugs require dose adjustment for renal impairment?",
     "What biomarkers are used to stratify risk in hematological malignancies?",
+    # Новые 30 вопросов
+    "What cytogenetic markers define acute promyelocytic leukemia?",
+    "How is adrenocortical carcinoma staged and what is the role of mitotane?",
+    "What is the treatment algorithm for aggressive non-follicular lymphoma?",
+    "How is BCR-ABL1 positivity confirmed in ALL patients?",
+    "What is the role of allogeneic stem cell transplantation in AML?",
+    "How is minimal residual disease assessed in acute leukaemia?",
+    "What prophylaxis is recommended for tumour lysis syndrome?",
+    "Which targeted agents are approved for Ph+ ALL?",
+    "How is CNS involvement diagnosed and treated in ALL?",
+    "What antibiotic regimens are used for febrile neutropenia in haematology?",
+    "What is the significance of FISH testing in haematological malignancies?",
+    "How is venetoclax used in combination therapy for AML?",
+    "What consolidation strategies are available after AML induction therapy?",
+    "What is the role of G-CSF in chemotherapy-induced neutropenia?",
+    "How is relapsed ALL managed in paediatric patients?",
+    "What monitoring is required during asparaginase therapy?",
+    "How is cytarabine dosed in high-dose AML consolidation?",
+    "What are the diagnostic criteria for acute promyelocytic leukemia?",
+    "How is ATRA used in APL treatment protocols?",
+    "What follow-up schedule is recommended after ALL complete remission?",
+    "What supportive care measures prevent infection during induction therapy?",
+    "How is coagulopathy managed in APL patients?",
+    "What imaging studies are performed for lymphoma staging?",
+    "How is treatment response assessed in lymphoma patients?",
+    "What palliative options exist for refractory haematological malignancies?",
+    "What is the role of dexamethasone in ALL induction therapy?",
+    "How is vincristine administered in ALL treatment protocols?",
+    "What are the main toxicities of asparaginase therapy?",
+    "How is bone marrow aspiration used to monitor ALL treatment response?",
+    "What is the recommended approach for ALL relapse after stem cell transplant?",
 ]
-
 
 def create_demo_graph():
     kg = KnowledgeGraph()

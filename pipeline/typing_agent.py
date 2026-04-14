@@ -6,30 +6,16 @@ from pipeline.knowledge_graph import KnowledgeGraph
 
 load_dotenv()
 
-ONTOLOGY_CLASSES = {
-    "Drug": "A pharmacological substance used for treatment or prevention",
-    "Condition": "A medical disease, disorder, syndrome or diagnosis",
-    "Procedure": "A medical intervention, surgery or therapeutic procedure",
-    "Symptom": "A subjective manifestation of disease reported by patient",
-    "AnatomicalStructure": "A body part, organ or tissue",
-    "DosageRegimen": "A specific dosing schedule or treatment protocol",
-    "LabTest": "A laboratory or diagnostic test or measurement",
-    "Organization": "A medical institution, company or regulatory body",
-    "Other": "Does not fit any of the above categories",
-}
+from pipeline.ontology_loader import (
+    get_classes, get_properties,
+    get_valid_types, get_valid_predicates,
+    load_ontology
+)
 
-VALID_TYPES = set(ONTOLOGY_CLASSES.keys())
-
-ONTOLOGY_PROPERTIES = {
-    "treats":              {"domain": "Drug",      "range": "Condition"},
-    "causes":              {"domain": "Drug",      "range": "Symptom"},
-    "contraindicated_for": {"domain": "Drug",      "range": "Condition"},
-    "part_of":             {"domain": "AnatomicalStructure",
-                            "range": "AnatomicalStructure"},
-    "diagnosed_by":        {"domain": "Condition", "range": "LabTest"},
-    "dosage_is":           {"domain": "Drug",      "range": "DosageRegimen"},
-    "related_to":          {"domain": "Other",     "range": "Other"},
-}
+# Загружаем из ontology.json
+ONTOLOGY_CLASSES    = get_classes()
+ONTOLOGY_PROPERTIES = get_properties()
+VALID_TYPES         = get_valid_types()
 
 TYPING_PROMPT = """You are a medical ontology typing system.
 

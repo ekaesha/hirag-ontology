@@ -9,7 +9,11 @@ A5 — находит пропущенные связи:
 """
 
 from pipeline.knowledge_graph import KnowledgeGraph
-from pipeline.typing_agent import ONTOLOGY_PROPERTIES, ONTOLOGY_CLASSES
+from pipeline.ontology_loader import get_properties, get_valid_types
+
+ONTOLOGY_PROPERTIES = get_properties()
+VALID_TYPES         = get_valid_types()
+VALID_PREDICATES    = set(ONTOLOGY_PROPERTIES.keys())
 
 
 # Аксиомы онтологии A — правила которым должен удовлетворять граф
@@ -26,9 +30,6 @@ AXIOMS = [
     # Аксиома 5: нет петель (сущность не связана сама с собой)
     "no_self_loops",
 ]
-
-VALID_PREDICATES = set(ONTOLOGY_PROPERTIES.keys())
-VALID_TYPES = set(ONTOLOGY_CLASSES.keys())
 
 
 class ValidationAgent:
