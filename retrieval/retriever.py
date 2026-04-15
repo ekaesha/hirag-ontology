@@ -15,17 +15,17 @@ def _get_global_encoder():
         from sentence_transformers import SentenceTransformer
 
         if not IN_COLAB:
-            os.environ["HF_HUB_OFFLINE"] = "1"
-            os.environ["TRANSFORMERS_OFFLINE"] = "1"
+            #
+            #
             print("  [Encoder] Loading BERT model from cache...")
         else:
-            os.environ.pop("HF_HUB_OFFLINE", None)
-            os.environ.pop("TRANSFORMERS_OFFLINE", None)
+            #
+            #
             print("  [Encoder] Downloading BERT model...")
 
         _GLOBAL_ENCODER = SentenceTransformer(
             "paraphrase-multilingual-MiniLM-L12-v2",
-            local_files_only=not IN_COLAB,
+            local_files_only=False,
         )
         print("  [Encoder] Model ready.")
     return _GLOBAL_ENCODER
