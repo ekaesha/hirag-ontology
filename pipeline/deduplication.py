@@ -1,8 +1,8 @@
 import re
+import sys
 from difflib import SequenceMatcher
 from pipeline.knowledge_graph import KnowledgeGraph, Entity
 
-import sys
 IN_COLAB = 'google.colab' in sys.modules
 
 
@@ -49,16 +49,10 @@ class DeduplicationAgent:
         if self._encoder is None:
             try:
                 import os
-                # In Colab: allow downloading from HuggingFace
-                # Locally: use cached model only
-                if not IN_COLAB:
-                    #
-                    #
-                else:
-                    #
-                    #
-
                 from sentence_transformers import SentenceTransformer
+                # Remove offline restrictions so model can download anywhere
+                os.environ.pop("HF_HUB_OFFLINE", None)
+                os.environ.pop("TRANSFORMERS_OFFLINE", None)
                 print("  [Dedup] Loading model...")
                 self._encoder = SentenceTransformer(
                     "paraphrase-multilingual-MiniLM-L12-v2",
