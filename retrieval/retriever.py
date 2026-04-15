@@ -1,6 +1,9 @@
 import re
+import sys
 from enum import Enum
 from pipeline.knowledge_graph import KnowledgeGraph
+
+IN_COLAB = 'google.colab' in sys.modules
 
 _GLOBAL_ENCODER = None
 
@@ -8,14 +11,21 @@ _GLOBAL_ENCODER = None
 def _get_global_encoder():
     global _GLOBAL_ENCODER
     if _GLOBAL_ENCODER is None:
-        from sentence_transformers import SentenceTransformer
         import os
-        os.environ["HF_HUB_OFFLINE"] = "1"
-        os.environ["TRANSFORMERS_OFFLINE"] = "1"
-        print("  [Encoder] Loading BERT model from cache...")
+        from sentence_transformers import SentenceTransformer
+
+        if not IN_COLAB:
+            os.environ["HF_HUB_OFFLINE"] = "1"
+            os.environ["TRANSFORMERS_OFFLINE"] = "1"
+            print("  [Encoder] Loading BERT model from cache...")
+        else:
+            os.environ.pop("HF_HUB_OFFLINE", None)
+            os.environ.pop("TRANSFORMERS_OFFLINE", None)
+            print("  [Encoder] Downloading BERT model...")
+
         _GLOBAL_ENCODER = SentenceTransformer(
             "paraphrase-multilingual-MiniLM-L12-v2",
-            local_files_only=True,
+            local_files_only=not IN_COLAB,
         )
         print("  [Encoder] Model ready.")
     return _GLOBAL_ENCODER
