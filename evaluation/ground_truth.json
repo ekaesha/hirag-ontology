@@ -1,0 +1,305 @@
+{
+  "_readme": "Ground-truth entity annotations for the 50-question evaluation benchmark. Labels match EXACT entity labels in the knowledge graph after deduplication. Annotated by E. Karimova based on KG inspection.",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the treatment protocol for acute lymphoblastic leukemia in children?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Острые лимфобластные лейкозы", "индукция", "консолидация", "поддерживающая терапия", "ОЛЛ"]
+    },
+    {
+      "id": 2,
+      "question": "What induction therapy is used for ALL with BCR-ABL1 mutation?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["Ph+ ОЛЛ", "ингибиторы тирозинкиназы BCR-ABL", "BCR::ABL1", "системной индукционной терапии", "иматиниб"]
+    },
+    {
+      "id": 3,
+      "question": "How is minimal residual disease monitored in acute lymphoblastic leukemia?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["минимальная остаточная болезнь", "мониторинг минимальной остаточной болезни", "проточная цитометрия", "полимеразная цепная реакция", "ОЛЛ"]
+    },
+    {
+      "id": 4,
+      "question": "What is the standard induction chemotherapy for acute myeloid leukemia?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["ОМЛ", "индукция ремиссии", "цитарабин", "антрациклины", "индукционная ХТ"]
+    },
+    {
+      "id": 5,
+      "question": "How is acute promyelocytic leukemia treated differently from other AML subtypes?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["Острый промиелоцитарный лейкоз", "ATRA", "ОПЛ", "ОМЛ", "PML-RARA"]
+    },
+    {
+      "id": 6,
+      "question": "What is the first-line treatment for aggressive non-follicular lymphoma?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Агрессивные нефолликулярные лимфомы", "CHOP", "R-CHOP", "неходжкинская лимфома", "ритуксимаб"]
+    },
+    {
+      "id": 7,
+      "question": "How is Hodgkin lymphoma staged and treated?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["неходжкинская лимфома", "неходжкинских лимфом", "лимфома средостения"]
+    },
+    {
+      "id": 8,
+      "question": "What treatment is recommended for follicular lymphoma stage III-IV?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["неходжкинская лимфома", "Агрессивные нефолликулярные лимфомы", "ритуксимаб"]
+    },
+    {
+      "id": 9,
+      "question": "What systemic therapy is used for adrenocortical carcinoma?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Рак коры надпочечника (Адренокортикальный рак)", "митотан", "рак коры надпочечника", "терапия митотаном"]
+    },
+    {
+      "id": 10,
+      "question": "How is anal squamous cell carcinoma treated with chemoradiation?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Плоскоклеточный рак анального канала, анального края, перианальной кожи", "Рак анального канала", "химиолучевая терапия", "цисплатин", "фторурацил"]
+    },
+    {
+      "id": 11,
+      "question": "What is the recommended treatment for basal cell skin cancer?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Базальноклеточный рак кожи", "базальноклеточный рак", "висмодегиб", "криодеструкция", "хирургическое лечение"]
+    },
+    {
+      "id": 12,
+      "question": "How is biliary tract cancer managed with chemotherapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Рак билиарного тракта", "гемцитабин", "цисплатин", "FOLFOX6", "капецитабин"]
+    },
+    {
+      "id": 13,
+      "question": "What is the standard treatment protocol for bladder cancer?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["мочевой пузырь", "уротелиальный рак", "цистэктомия"]
+    },
+    {
+      "id": 14,
+      "question": "How are bone and cartilage sarcomas treated?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Саркома", "саркоматоидный вариант АКР", "Миелоидная саркома"]
+    },
+    {
+      "id": 15,
+      "question": "How is febrile neutropenia managed during chemotherapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Фебрильная нейтропения (ФН)", "февбрильная нейтропения", "нейтропения", "антибактериальная терапия", "нейтропении"]
+    },
+    {
+      "id": 16,
+      "question": "What antiemetic regimens are used with highly emetogenic chemotherapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["антиэметическая терапия", "противорвотные", "тошнота", "рвота"]
+    },
+    {
+      "id": 17,
+      "question": "How is tumor lysis syndrome prevented and treated?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["синдром лизиса опухоли", "аллопуринол", "гидратация", "форсированный диурез"]
+    },
+    {
+      "id": 18,
+      "question": "What supportive care is recommended during intensive chemotherapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["нутритивная поддержка", "сопроводительная терапия", "оценка нутритивного статуса", "антиэметическая терапия"]
+    },
+    {
+      "id": 19,
+      "question": "Which chemotherapy drugs require dose adjustment for renal impairment?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["цисплатин", "цитарабин", "карбоплатин", "почечная недостаточность"]
+    },
+    {
+      "id": 20,
+      "question": "What biomarkers are used to stratify risk in hematological malignancies?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["ОМЛ", "ОЛЛ", "BCR::ABL1", "t(9;22)(q34;q11)/BCR::ABL1", "FISH"]
+    },
+    {
+      "id": 21,
+      "question": "What cytogenetic markers define acute promyelocytic leukemia?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["ОПЛ с t(15;17)(q22;q12); PML-RARA", "Острый промиелоцитарный лейкоз", "PML-RARA", "FISH"]
+    },
+    {
+      "id": 22,
+      "question": "How is adrenocortical carcinoma staged and what is the role of mitotane?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["Рак коры надпочечника (Адренокортикальный рак)", "митотан", "митотана", "терапия митотаном", "рак коры надпочечника"]
+    },
+    {
+      "id": 23,
+      "question": "What is the treatment algorithm for aggressive non-follicular lymphoma?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["Агрессивные нефолликулярные лимфомы", "CHOP", "R-CHOP", "неходжкинская лимфома", "рецидивы/рефрактерные формы агрессивных нефолликулярных В-клеточных лимфом"]
+    },
+    {
+      "id": 24,
+      "question": "How is BCR-ABL1 positivity confirmed in ALL patients?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["BCR::ABL1", "ОТ-ПЦР", "мРНК BCR-ABLp210", "p190BCR-ABL", "t(9;22)(q34;q11)/BCR::ABL1"]
+    },
+    {
+      "id": 25,
+      "question": "What is the role of allogeneic stem cell transplantation in AML?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["аллогенная трансплантация гемопоэтических стволовых клеток", "ОМЛ", "алло-ТГСК", "аллогенная ТГСК"]
+    },
+    {
+      "id": 26,
+      "question": "How is minimal residual disease assessed in acute leukaemia?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["минимальная остаточная болезнь", "мониторинг минимальной остаточной болезни", "проточная цитометрия", "количественная ПЦР", "FISH"]
+    },
+    {
+      "id": 27,
+      "question": "What prophylaxis is recommended for tumour lysis syndrome?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["синдром лизиса опухоли", "аллопуринол", "гидратация", "форсированный диурез", "петлевые диуретики"]
+    },
+    {
+      "id": 28,
+      "question": "Which targeted agents are approved for Ph+ ALL?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["Ph+ ОЛЛ", "ингибиторы тирозинкиназы BCR-ABL", "иматиниб", "блинатумомаб", "инотузумаб озогамицин"]
+    },
+    {
+      "id": 29,
+      "question": "How is CNS involvement diagnosed and treated in ALL?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["ОЛЛ", "нейролейкоз", "цитарабин", "метотрексат"]
+    },
+    {
+      "id": 30,
+      "question": "What antibiotic regimens are used for febrile neutropenia in haematology?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Фебрильная нейтропения (ФН)", "антибактериальная терапия", "нейтропения", "инфекционные осложнения", "бета-лактамные антибактериальные препараты"]
+    },
+    {
+      "id": 31,
+      "question": "What is the significance of FISH testing in haematological malignancies?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["FISH", "FISH-исследование", "метод FISH", "молекулярно-генетическое исследование методом FISH", "минимальная остаточная болезнь"]
+    },
+    {
+      "id": 32,
+      "question": "How is venetoclax used in combination therapy for AML?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["венетоклакс", "ОМЛ", "синдром лизиса опухоли"]
+    },
+    {
+      "id": 33,
+      "question": "What consolidation strategies are available after AML induction therapy?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["консолидационная терапия", "консолидация", "ОМЛ", "программа консолидации ремиссии", "аллогенная трансплантация гемопоэтических стволовых клеток"]
+    },
+    {
+      "id": 34,
+      "question": "What is the role of G-CSF in chemotherapy-induced neutropenia?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["гранулоцитарный колониестимулирующий фактор (Г-КСФ)", "колониестимулирующие факторы", "нейтропения", "нейтропении"]
+    },
+    {
+      "id": 35,
+      "question": "How is relapsed ALL managed in paediatric patients?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["ОЛЛ", "терапия спасения", "алло-ТГСК", "блинатумомаб", "неларабин"]
+    },
+    {
+      "id": 36,
+      "question": "What monitoring is required during asparaginase therapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["аспарагиназа", "нативная аспарагиназа", "аспарагиназы"]
+    },
+    {
+      "id": 37,
+      "question": "How is cytarabine dosed in high-dose AML consolidation?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["цитарабин", "цитарабина", "ОМЛ", "консолидационная терапия", "30 мг цитарабина"]
+    },
+    {
+      "id": 38,
+      "question": "What are the diagnostic criteria for acute promyelocytic leukemia?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["Острый промиелоцитарный лейкоз", "ОПЛ", "ОПЛ с t(15;17)(q22;q12); PML-RARA", "PML-RARA"]
+    },
+    {
+      "id": 39,
+      "question": "How is ATRA used in APL treatment protocols?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["ATRA", "ОПЛ", "Острый промиелоцитарный лейкоз", "триоксид мышьяка"]
+    },
+    {
+      "id": 40,
+      "question": "What follow-up schedule is recommended after ALL complete remission?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["ремиссия", "клинико-гематологическая ремиссия", "ОЛЛ", "мониторинг минимальной остаточной болезни"]
+    },
+    {
+      "id": 41,
+      "question": "What supportive care measures prevent infection during induction therapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["инфекционные осложнения", "антибактериальная терапия", "нейтропения", "противогрибковая профилактика"]
+    },
+    {
+      "id": 42,
+      "question": "How is coagulopathy managed in APL patients?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["ОПЛ", "Острый промиелоцитарный лейкоз", "ATRA", "геморрагический синдром"]
+    },
+    {
+      "id": 43,
+      "question": "What imaging studies are performed for lymphoma staging?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["ПЭТ/КТ", "МРТ", "неходжкинская лимфома", "Агрессивные нефолликулярные лимфомы"]
+    },
+    {
+      "id": 44,
+      "question": "How is treatment response assessed in lymphoma patients?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["оценка ответа на лечение", "классификация Лугано", "Международная рабочая группа по лимфомам", "неходжкинская лимфома"]
+    },
+    {
+      "id": 45,
+      "question": "What palliative options exist for refractory haematological malignancies?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["ОЛЛ", "ОМЛ", "паллиативная терапия", "поддерживающая терапия"]
+    },
+    {
+      "id": 46,
+      "question": "What is the role of dexamethasone in ALL induction therapy?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["дексаметазон", "дексаметазона", "ОЛЛ", "индукция", "глюкокортикоиды"]
+    },
+    {
+      "id": 47,
+      "question": "How is vincristine administered in ALL treatment protocols?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["винкристин", "винкристина", "ОЛЛ", "алкалоиды растительного происхождения"]
+    },
+    {
+      "id": 48,
+      "question": "What are the main toxicities of asparaginase therapy?",
+      "type": "single_entity_lookup",
+      "relevant_entity_labels": ["аспарагиназа", "нативная аспарагиназа", "анафилактические реакции"]
+    },
+    {
+      "id": 49,
+      "question": "How is bone marrow aspiration used to monitor ALL treatment response?",
+      "type": "relation_inference",
+      "relevant_entity_labels": ["ОЛЛ", "минимальная остаточная болезнь", "мониторинг минимальной остаточной болезни", "костный мозг"]
+    },
+    {
+      "id": 50,
+      "question": "What is the recommended approach for ALL relapse after stem cell transplant?",
+      "type": "multi_hop_reasoning",
+      "relevant_entity_labels": ["ОЛЛ", "алло-ТГСК", "терапия спасения", "блинатумомаб", "дазатиниб"]
+    }
+  ]
+}
