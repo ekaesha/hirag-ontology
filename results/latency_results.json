@@ -1,0 +1,212 @@
+{
+  "aggregated": {
+    "retrieval_s": {
+      "mean": 2.775847960000283,
+      "std": 9.328197893278816,
+      "min": 0.6466975999974238,
+      "max": 42.406658400002925
+    },
+    "context_format_s": {
+      "mean": 2.1609999930660705e-05,
+      "std": 5.450243429406836e-06,
+      "min": 1.6400001186411828e-05,
+      "max": 3.5499997466104105e-05
+    },
+    "generation_s": {
+      "mean": 1.4134236099996997,
+      "std": 0.4585417837947762,
+      "min": 0.9588685999988229,
+      "max": 2.726002100000187
+    },
+    "total_s": {
+      "mean": 4.189293179999913,
+      "std": 9.642788302603618,
+      "min": 1.6431923999953142,
+      "max": 45.13268110000354
+    }
+  },
+  "per_query": [
+    {
+      "question": "What is the treatment protocol for acute lymphoblastic leukemia in children?",
+      "retrieval_s": 42.406658400002925,
+      "context_format_s": 2.0600000425474718e-05,
+      "generation_s": 2.726002100000187,
+      "total_s": 45.13268110000354,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 275
+    },
+    {
+      "question": "What induction therapy is used for ALL with BCR-ABL1 mutation?",
+      "retrieval_s": 0.6603194999988773,
+      "context_format_s": 2.1500000002561137e-05,
+      "generation_s": 1.4751963000016985,
+      "total_s": 2.1355373000005784,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 168
+    },
+    {
+      "question": "How is minimal residual disease monitored in acute lymphoblastic leukemia?",
+      "retrieval_s": 0.6613749999996799,
+      "context_format_s": 2.229999881819822e-05,
+      "generation_s": 1.3439392000000225,
+      "total_s": 2.0053364999985206,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 281
+    },
+    {
+      "question": "What is the standard induction chemotherapy for acute myeloid leukemia?",
+      "retrieval_s": 0.668016899999202,
+      "context_format_s": 1.68999977177009e-05,
+      "generation_s": 1.5400948000024073,
+      "total_s": 2.208128599999327,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 267
+    },
+    {
+      "question": "How is acute promyelocytic leukemia treated differently from other AML subtypes?",
+      "retrieval_s": 0.6481257000014011,
+      "context_format_s": 1.6599999071331695e-05,
+      "generation_s": 2.630663200001436,
+      "total_s": 3.2788055000019085,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 239
+    },
+    {
+      "question": "What is the first-line treatment for aggressive non-follicular lymphoma?",
+      "retrieval_s": 0.6609634000014921,
+      "context_format_s": 1.6900001355679706e-05,
+      "generation_s": 1.1572152999979153,
+      "total_s": 1.818195600000763,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 249
+    },
+    {
+      "question": "How is Hodgkin lymphoma staged and treated?",
+      "retrieval_s": 0.6466975999974238,
+      "context_format_s": 1.6400001186411828e-05,
+      "generation_s": 1.264902399998391,
+      "total_s": 1.9116163999970013,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 206
+    },
+    {
+      "question": "What treatment is recommended for follicular lymphoma stage III-IV?",
+      "retrieval_s": 0.7267400999990059,
+      "context_format_s": 2.0399998902576044e-05,
+      "generation_s": 1.1817443999971147,
+      "total_s": 1.9085048999950232,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 221
+    },
+    {
+      "question": "What systemic therapy is used for adrenocortical carcinoma?",
+      "retrieval_s": 0.7550851000014518,
+      "context_format_s": 2.2100000933278352e-05,
+      "generation_s": 1.2306017000009888,
+      "total_s": 1.9857089000033739,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 221
+    },
+    {
+      "question": "How is anal squamous cell carcinoma treated with chemoradiation?",
+      "retrieval_s": 0.7354172000013932,
+      "context_format_s": 1.720000000204891e-05,
+      "generation_s": 1.392657299998973,
+      "total_s": 2.1280917000003683,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 269
+    },
+    {
+      "question": "What is the recommended treatment for basal cell skin cancer?",
+      "retrieval_s": 0.6603109000025142,
+      "context_format_s": 2.300000051036477e-05,
+      "generation_s": 1.0239322999987053,
+      "total_s": 1.6842662000017299,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 125
+    },
+    {
+      "question": "How is biliary tract cancer managed with chemotherapy?",
+      "retrieval_s": 0.7261151999991853,
+      "context_format_s": 2.8899998142151162e-05,
+      "generation_s": 1.137862399998994,
+      "total_s": 1.8640064999963215,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 220
+    },
+    {
+      "question": "What is the standard treatment protocol for bladder cancer?",
+      "retrieval_s": 0.6819854000023042,
+      "context_format_s": 1.8900002032751217e-05,
+      "generation_s": 1.3971100000017032,
+      "total_s": 2.07911430000604,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 355
+    },
+    {
+      "question": "How are bone and cartilage sarcomas treated?",
+      "retrieval_s": 0.6632096000030288,
+      "context_format_s": 1.7700000171316788e-05,
+      "generation_s": 1.2059929999995802,
+      "total_s": 1.8692203000027803,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 247
+    },
+    {
+      "question": "How is febrile neutropenia managed during chemotherapy?",
+      "retrieval_s": 0.6644371999973373,
+      "context_format_s": 1.9099999917671084e-05,
+      "generation_s": 1.1239812999992864,
+      "total_s": 1.7884375999965414,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 272
+    },
+    {
+      "question": "What antiemetic regimens are used with highly emetogenic chemotherapy?",
+      "retrieval_s": 0.6806870000000345,
+      "context_format_s": 3.1600000511389226e-05,
+      "generation_s": 1.3696898999987752,
+      "total_s": 2.050408499999321,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 306
+    },
+    {
+      "question": "How is tumor lysis syndrome prevented and treated?",
+      "retrieval_s": 0.684303899997758,
+      "context_format_s": 1.9899998733308166e-05,
+      "generation_s": 0.9588685999988229,
+      "total_s": 1.6431923999953142,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 114
+    },
+    {
+      "question": "What supportive care is recommended during intensive chemotherapy?",
+      "retrieval_s": 0.7677554000001692,
+      "context_format_s": 3.5499997466104105e-05,
+      "generation_s": 1.2716577999999572,
+      "total_s": 2.0394486999975925,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 177
+    },
+    {
+      "question": "Which chemotherapy drugs require dose adjustment for renal impairment?",
+      "retrieval_s": 0.7322671000001719,
+      "context_format_s": 2.8800001018680632e-05,
+      "generation_s": 1.3585497999993095,
+      "total_s": 2.0908457000005,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 335
+    },
+    {
+      "question": "What biomarkers are used to stratify risk in hematological malignancies?",
+      "retrieval_s": 0.6864886000003025,
+      "context_format_s": 1.790000169421546e-05,
+      "generation_s": 1.4778103999997256,
+      "total_s": 2.1643169000017224,
+      "n_entities_retrieved": 10,
+      "answer_length_chars": 354
+    }
+  ],
+  "n_queries": 20,
+  "has_llm": true
+}

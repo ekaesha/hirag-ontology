@@ -1,0 +1,30 @@
+{
+  "semantic_only": {
+    "Hit@5": 0.36,
+    "Hit@10": 0.46,
+    "MRR": 0.2144,
+    "MAP@10": 0.0812,
+    "n_questions": 50
+  },
+  "lexical_only": {
+    "Hit@5": 0.44,
+    "Hit@10": 0.58,
+    "MRR": 0.2768,
+    "MAP@10": 0.0927,
+    "n_questions": 50
+  },
+  "structural_only": {
+    "Hit@5": 0.38,
+    "Hit@10": 0.44,
+    "MRR": 0.3007,
+    "MAP@10": 0.0778,
+    "n_questions": 50
+  },
+  "hybrid_rrf": {
+    "Hit@5": 0.62,
+    "Hit@10": 0.78,
+    "MRR": 0.4323,
+    "MAP@10": 0.153,
+    "n_questions": 50
+  }
+}
